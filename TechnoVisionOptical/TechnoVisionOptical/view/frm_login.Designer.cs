@@ -34,6 +34,7 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.metroTextBox1.CustomButton.UseSelectable = true;
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(338, 86);
+            this.metroTextBox1.Location = new System.Drawing.Point(337, 98);
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Multiline = true;
             this.metroTextBox1.Name = "metroTextBox1";
@@ -85,7 +86,7 @@
             this.metroTextBox2.CustomButton.UseSelectable = true;
             this.metroTextBox2.CustomButton.Visible = false;
             this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(341, 130);
+            this.metroTextBox2.Location = new System.Drawing.Point(340, 142);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Multiline = true;
             this.metroTextBox2.Name = "metroTextBox2";
@@ -106,7 +107,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(259, 93);
+            this.metroLabel1.Location = new System.Drawing.Point(258, 105);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(73, 20);
             this.metroLabel1.TabIndex = 1;
@@ -115,7 +116,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(259, 139);
+            this.metroLabel2.Location = new System.Drawing.Point(258, 151);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(66, 20);
             this.metroLabel2.TabIndex = 1;
@@ -123,7 +124,7 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(357, 179);
+            this.metroButton1.Location = new System.Drawing.Point(356, 191);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(123, 42);
             this.metroButton1.TabIndex = 2;
@@ -132,17 +133,28 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(65, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 82);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 135);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(409, 251);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(114, 17);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Forgot Password";
             // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 279);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel2);
@@ -169,5 +181,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
