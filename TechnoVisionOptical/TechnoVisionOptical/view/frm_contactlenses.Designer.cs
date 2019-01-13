@@ -61,6 +61,8 @@
             this.txt_lensRef = new MetroFramework.Controls.MetroTextBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -633,11 +635,31 @@
             this.metroButton2.Text = "Clear All";
             this.metroButton2.UseSelectable = true;
             // 
+            // metroLabel30
+            // 
+            this.metroLabel30.AutoSize = true;
+            this.metroLabel30.Location = new System.Drawing.Point(573, 29);
+            this.metroLabel30.Name = "metroLabel30";
+            this.metroLabel30.Size = new System.Drawing.Size(77, 19);
+            this.metroLabel30.TabIndex = 88;
+            this.metroLabel30.Text = "R+orderNo";
+            // 
+            // metroLabel29
+            // 
+            this.metroLabel29.AutoSize = true;
+            this.metroLabel29.Location = new System.Drawing.Point(498, 29);
+            this.metroLabel29.Name = "metroLabel29";
+            this.metroLabel29.Size = new System.Drawing.Size(77, 19);
+            this.metroLabel29.TabIndex = 87;
+            this.metroLabel29.Text = "Reciept No:";
+            // 
             // frm_contactlenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 515);
+            this.Controls.Add(this.metroLabel30);
+            this.Controls.Add(this.metroLabel29);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.txt_balRef);
@@ -675,7 +697,7 @@
             this.Name = "frm_contactlenses";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Contact Lenses";
+            this.Text = "Contact Lenses - Customer Details";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -716,5 +738,7 @@
         private MetroFramework.Controls.MetroTextBox txt_lensRef;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroLabel metroLabel30;
+        private MetroFramework.Controls.MetroLabel metroLabel29;
     }
 }
