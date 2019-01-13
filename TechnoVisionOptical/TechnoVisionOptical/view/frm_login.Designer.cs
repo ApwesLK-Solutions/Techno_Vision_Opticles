@@ -176,6 +176,7 @@
             this.Name = "frm_login";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Green;
             this.Load += new System.EventHandler(this.frm_login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
