@@ -70,6 +70,12 @@
     <Compile Include="view\frm_contactlenses2.Designer.cs">
       <DependentUpon>frm_contactlenses2.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\frm_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frm_dashboard.Designer.cs">
+      <DependentUpon>frm_dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\frm_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,12 +90,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="view\frm_contactlenses.resx">
       <DependentUpon>frm_contactlenses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_contactlenses2.resx">
       <DependentUpon>frm_contactlenses2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\frm_dashboard.resx">
+      <DependentUpon>frm_dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
@@ -112,6 +122,9 @@
     <Folder Include="controller\" />
     <Folder Include="model\" />
     <Folder Include="Resources\frm_login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
