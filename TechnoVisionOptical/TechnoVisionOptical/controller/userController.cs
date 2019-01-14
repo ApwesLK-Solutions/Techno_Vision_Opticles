@@ -4,15 +4,29 @@ namespace TechnoVisionOptical.controller
 {
     class userController
     {
-        public static bool register(user user)
+
+        private static technovisionDataSetTableAdapters.usersTableAdapter UserTable = new technovisionDataSetTableAdapters.usersTableAdapter();
+        private static technovisionDataSet.usersRow row;
+        private static technovisionDataSet.
+        
+        public static string register(user NewUser)
         {
-            return true;
+            try
+            {
+                UserTable.Insert(NewUser.username, NewUser.password, NewUser.fullName, NewUser.nic, NewUser.contactNumber);
+                return "New User Registration Success!";     
+            }
+            catch(MySql.Data.MySqlClient.MySqlException ex)
+            {
+                return "New User Registration Failed, " + ex.Message.ToString();
+            }
+            
         }
-        public static bool login(user user)
+        public static string login(user ExisitingUser)
         {
-            return true;
+           UserTable.GetDataByUsername(ExisitingUser.username);
         }
-        public static bool reset(user user)
+        public static string reset(user user)
         {
             return true;
         }

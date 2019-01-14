@@ -8,11 +8,11 @@ namespace TechnoVisionOptical.model
 {
     class user
     {
-        private string Username;
-        private string Password;
-        private string Nic;
-        private string FullName;
-        private string ContactNumber;
+        public string username; 
+        public string password;
+        public string nic;
+        public string fullName;
+        public string contactNumber;
 
         public user(string username , string password , object UI)
         {
@@ -26,7 +26,5 @@ namespace TechnoVisionOptical.model
         {
 
         }
-
-
     }
 }
