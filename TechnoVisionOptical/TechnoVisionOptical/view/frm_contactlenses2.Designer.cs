@@ -1432,12 +1432,11 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(0, 25);
+            this.metroTile1.Location = new System.Drawing.Point(0, 23);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(35, 25);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile1.TabIndex = 87;
-            this.metroTile1.TileImage = global::TechnoVisionOptical.Properties.Resources.back_vyv_icon;
             this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
             this.metroTile1.UseSelectable = true;
