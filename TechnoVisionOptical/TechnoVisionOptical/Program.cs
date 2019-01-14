@@ -18,8 +18,8 @@ namespace TechnoVisionOptical
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frm_login());
-            //Application.Run(new frm_contactlenses());
-            Application.Run(new frm_dashboard());
+            Application.Run(new frm_contactlenses());
+            //Application.Run(new frm_dashboard());
             //Application.Run(new frm_contactlenses2());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
