@@ -26,11 +26,5 @@ namespace TechnoVisionOptical.view
         {
 
         }
-
-        private void metroTile4_Click(object sender, EventArgs e)
-        {
-            MetroFramework.MetroMessageBox.Show(this,"Test Message", "Tset");
-            //MessageBox.Show("Hello this is a msgbox", "Message", MessageBoxButtons.OK,MessageBoxIcon.Information);
-        }
     }
 }
