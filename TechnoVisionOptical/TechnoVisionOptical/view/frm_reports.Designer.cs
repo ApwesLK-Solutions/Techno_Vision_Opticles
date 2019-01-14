@@ -38,8 +38,9 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroDateTime3 = new MetroFramework.Controls.MetroDateTime();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -94,7 +95,7 @@
             this.groupBox2.Controls.Add(this.metroDateTime2);
             this.groupBox2.Controls.Add(this.metroLabel1);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(36, 170);
+            this.groupBox2.Location = new System.Drawing.Point(36, 173);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(654, 74);
             this.groupBox2.TabIndex = 5;
@@ -133,16 +134,16 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.metroTextBox1);
             this.groupBox3.Controls.Add(this.metroTile3);
-            this.groupBox3.Controls.Add(this.metroDateTime3);
             this.groupBox3.Controls.Add(this.metroLabel3);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(36, 250);
+            this.groupBox3.Location = new System.Drawing.Point(36, 256);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(654, 74);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Daily Reports";
+            this.groupBox3.Text = "Re-print Order";
             // 
             // metroTile3
             // 
@@ -157,31 +158,69 @@
             this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile3.UseSelectable = true;
             // 
-            // metroDateTime3
-            // 
-            this.metroDateTime3.Location = new System.Drawing.Point(148, 26);
-            this.metroDateTime3.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime3.Name = "metroDateTime3";
-            this.metroDateTime3.Size = new System.Drawing.Size(293, 29);
-            this.metroDateTime3.TabIndex = 2;
-            // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(68, 31);
+            this.metroLabel3.Location = new System.Drawing.Point(44, 31);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(74, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(98, 19);
             this.metroLabel3.TabIndex = 3;
-            this.metroLabel3.Text = "Select Date";
+            this.metroLabel3.Text = "Order Number";
+            // 
+            // metroTextBox1
+            // 
+            // 
+            // 
+            // 
+            this.metroTextBox1.CustomButton.Image = null;
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(271, 1);
+            this.metroTextBox1.CustomButton.Name = "";
+            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox1.CustomButton.TabIndex = 1;
+            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox1.CustomButton.UseSelectable = true;
+            this.metroTextBox1.CustomButton.Visible = false;
+            this.metroTextBox1.Lines = new string[0];
+            this.metroTextBox1.Location = new System.Drawing.Point(148, 29);
+            this.metroTextBox1.MaxLength = 32767;
+            this.metroTextBox1.Name = "metroTextBox1";
+            this.metroTextBox1.PasswordChar = '\0';
+            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox1.SelectedText = "";
+            this.metroTextBox1.SelectionLength = 0;
+            this.metroTextBox1.SelectionStart = 0;
+            this.metroTextBox1.ShortcutsEnabled = true;
+            this.metroTextBox1.Size = new System.Drawing.Size(293, 23);
+            this.metroTextBox1.TabIndex = 5;
+            this.metroTextBox1.UseSelectable = true;
+            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroTile4
+            // 
+            this.metroTile4.ActiveControl = null;
+            this.metroTile4.Location = new System.Drawing.Point(36, 339);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(654, 65);
+            this.metroTile4.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile4.TabIndex = 6;
+            this.metroTile4.Text = "Show Order List";
+            this.metroTile4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile4.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile4.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile4.UseSelectable = true;
             // 
             // frm_reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 515);
+            this.ClientSize = new System.Drawing.Size(730, 428);
+            this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "frm_reports";
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Reports";
@@ -207,7 +246,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.GroupBox groupBox3;
         private MetroFramework.Controls.MetroTile metroTile3;
-        private MetroFramework.Controls.MetroDateTime metroDateTime3;
         private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTile metroTile4;
     }
 }
