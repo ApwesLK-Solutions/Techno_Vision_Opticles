@@ -42,7 +42,7 @@
             this.metroTile2.TabIndex = 6;
             this.metroTile2.Text = "Print";
             this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroTile2.TileImage = global::TechnoVisionOptical.Properties.Resources.back_vyv_icon;
+            //this.metroTile2.TileImage = global::TechnoVisionOptical.Properties.Resources.back_vyv_icon;
             this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile2.UseSelectable = true;
