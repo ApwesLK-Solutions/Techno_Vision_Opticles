@@ -8,7 +8,7 @@ namespace TechnoVisionOptical.controller
     {
 
         private static technovisionDataSetTableAdapters.usersTableAdapter UserTable = new technovisionDataSetTableAdapters.usersTableAdapter();
-        private static technovisionDataSet.usersDataTable UserDataTable = new technovisionDataSet.usersDataTable();
+        private static technovisionDataSet.usersDataTable UserDataTable = UserTable.GetData();
         private static technovisionDataSet.usersRow row;
         public static bool register(user NewUser , MetroForm ui)
         {
@@ -28,14 +28,14 @@ namespace TechnoVisionOptical.controller
         public static bool login(user ExisitingUser, MetroForm ui)
         {
             try
-            {
-                row = UserDataTable.FindByusername(ExisitingUser.username);
+            {           
+                row = UserDataTable.FindByusername(ExisitingUser.username);         
                 if(row == null)
                 {
-                    MSG.ERROR(ui, "Login Error!");
+                    MSG.ERROR(ui, "User Doesnt Exists in the System");
                     return false;
                 }
-                if(row.username == ExisitingUser.username && row.password == ExisitingUser.password)
+                if((row.username.ToString() == ExisitingUser.username) && (row.password.ToString() == ExisitingUser.password))
                 {
                     MSG.SUCCESS(ui,"Login Success.!");
                     return true;

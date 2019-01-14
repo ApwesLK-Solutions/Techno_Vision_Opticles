@@ -19,7 +19,7 @@ namespace TechnoVisionOptical.view
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            user u = new user("LOL", "password");
+            user u = new user(txt_username.Text , txt_password.Text);
             u.Login(this);
         }
     }
