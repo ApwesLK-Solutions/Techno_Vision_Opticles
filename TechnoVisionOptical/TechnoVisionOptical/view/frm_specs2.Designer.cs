@@ -65,6 +65,7 @@
             this.btn_close = new MetroFramework.Controls.MetroTile();
             this.btn_clearAll = new MetroFramework.Controls.MetroTile();
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // metroTextBox8
@@ -772,11 +773,26 @@
             this.metroComboBox1.TabIndex = 0;
             this.metroComboBox1.UseSelectable = true;
             // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Location = new System.Drawing.Point(0, 25);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(35, 25);
+            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile1.TabIndex = 94;
+            this.metroTile1.TileImage = global::TechnoVisionOptical.Properties.Resources.back_vyv_icon;
+            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.UseTileImage = true;
+            // 
             // frm_specs2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 413);
+            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.metroComboBox1);
             this.Controls.Add(this.btn_print);
             this.Controls.Add(this.btn_close);
@@ -816,7 +832,7 @@
             this.Controls.Add(this.metroLabel5);
             this.Name = "frm_specs2";
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Spectacles - Diagnosis";
+            this.Text = "   Spectacles - Diagnosis";
             this.Load += new System.EventHandler(this.frm_specs2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -861,5 +877,6 @@
         private MetroFramework.Controls.MetroTile btn_close;
         private MetroFramework.Controls.MetroTile btn_clearAll;
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroTile metroTile1;
     }
 }
