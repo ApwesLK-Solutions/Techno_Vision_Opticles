@@ -32,7 +32,7 @@ namespace TechnoVisionOptical.view
 
         private void btn_next_Click(object sender, EventArgs e)
         {
-            NewContactLenseInvoice.fillFormOne(txt_order_no.Text, txt_orderdate.Value.ToString("yy-MM-dd"), txt_duedate.Value.ToString("yy-MM-dd"), txt_name.Text, txt_address.Text, txt_address.Text, txt_email.Text, int.Parse(txt_age.Text), txt_proffession.Text, cmb_pay_method.Text, cmb_pay_plan.Text, Double.Parse(txt_lenseRs.Text), Double.Parse(txt_lensRef.Text), Double.Parse(txt_advRs.Text), txt_advRef.Text, Double.Parse(txt_balRs.Text), txt_balRef.Text);
+            NewContactLenseInvoice.fillFormOne(txt_order_no.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"), txt_name.Text, txt_address.Text, txt_phone.Text, txt_email.Text, int.Parse(txt_age.Text), txt_proffession.Text, cmb_pay_method.Text, cmb_pay_plan.Text, double.Parse(txt_lenseRs.Text), double.Parse(txt_lensRef.Text), double.Parse(txt_advRs.Text), txt_advRef.Text, double.Parse(txt_balRs.Text), txt_lensRef.Text);
             new frm_contactlenses2(newCustomer).Show();
         }
 

@@ -33,13 +33,16 @@ namespace TechnoVisionOptical.view
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
+            
             if (InvoiceType == "L")
             {
-                customerController.fillLenseFormDataByCustomerID(1, this);
+                new frm_customerList("L").Show();
+                //customerController.fillLenseFormDataByCustomerID(1, this);
             }
             else
             {
-                customerController.fillSpecFormDataByCustomerID(1, this);
+                new frm_customerList("S").Show();
+                //customerController.fillSpecFormDataByCustomerID(1, this);
             }
         }
 

@@ -25,9 +25,9 @@ namespace TechnoVisionOptical.model
             age = _age;
         }
 
-        public static void saveCustomer(MetroFramework.Forms.MetroForm ui)
+        public static bool saveCustomer(MetroFramework.Forms.MetroForm ui)
         {
-            customerController.register(ui);
+            return customerController.register(ui);
         }
     }
 }
