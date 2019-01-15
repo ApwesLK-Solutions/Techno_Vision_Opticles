@@ -19,7 +19,17 @@ namespace TechnoVisionOptical.view
 
         private void btn_OrderCLense_Click(object sender, EventArgs e)
         {
-            new frm_contactlenses("L").Show();
+            new frm_selectCustomer("L").Show();
+        }
+
+        private void btn_OrderSpecs_Click(object sender, EventArgs e)
+        {
+            new frm_selectCustomer("S").Show();
+        }
+
+        private void btn_ViewReports_Click(object sender, EventArgs e)
+        {
+
         }
 
        
