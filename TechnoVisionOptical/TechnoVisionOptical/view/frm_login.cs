@@ -22,5 +22,10 @@ namespace TechnoVisionOptical.view
             user u = new user(txt_username.Text , txt_password.Text);
             u.Login(this);
         }
+
+        private void frm_login_Load(object sender, EventArgs e)
+        {
+            txt_username.Focus();
+        }
     }
 }

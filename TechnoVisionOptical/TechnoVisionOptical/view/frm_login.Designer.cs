@@ -54,6 +54,7 @@
             this.txt_username.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_username.CustomButton.UseSelectable = true;
             this.txt_username.CustomButton.Visible = false;
+            this.txt_username.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_username.Lines = new string[0];
             this.txt_username.Location = new System.Drawing.Point(219, 132);
             this.txt_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -89,6 +90,7 @@
             this.txt_password.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_password.CustomButton.UseSelectable = true;
             this.txt_password.CustomButton.Visible = false;
+            this.txt_password.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_password.Lines = new string[0];
             this.txt_password.Location = new System.Drawing.Point(219, 177);
             this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -182,6 +184,7 @@
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Load += new System.EventHandler(this.frm_login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
