@@ -68,7 +68,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="technovisionDataSet.cs">
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="technovisionDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
