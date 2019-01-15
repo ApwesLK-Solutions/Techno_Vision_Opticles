@@ -2,6 +2,7 @@
 using MetroFramework.Forms;
 using System.Windows.Forms;
 using TechnoVisionOptical;
+using TechnoVisionOptical.view;
 namespace TechnoVisionOptical.controller
 {
     class userController
@@ -38,6 +39,8 @@ namespace TechnoVisionOptical.controller
                 if((row.username.ToString() == ExisitingUser.username) && (row.password.ToString() == ExisitingUser.password))
                 {
                     MSG.SUCCESS(ui,"Login Success.!");
+                    ui.Hide();
+                    new frm_dashboard().Show();
                     return true;
                 }
                 else
