@@ -32,7 +32,7 @@ namespace TechnoVisionOptical.controller
             try
             {
                 row = dtable.FindBycustomerId(custID);
-                new frm_specs(row.name, row.address, row.phone, row.email, row.profession, row.age).Show();
+                new frm_specs(true, row.name, row.address, row.phone, row.email, row.profession, row.age).Show();
             }
             catch(MySql.Data.MySqlClient.MySqlException ex)
             {
@@ -46,7 +46,7 @@ namespace TechnoVisionOptical.controller
             try
             {
                 row = dtable.FindBycustomerId(custID);
-                new frm_contactlenses(row.name, row.address, row.phone, row.email, row.profession, row.age).Show();
+                new frm_contactlenses(true , row.name, row.address, row.phone, row.email, row.profession, row.age).Show();
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
