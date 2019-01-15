@@ -482,7 +482,7 @@
             this.txt_order.UseSelectable = true;
             this.txt_order.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_order.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_order.Click += new System.EventHandler(this.txt_order_Click);
+            
             // 
             // metroLabel8
             // 
