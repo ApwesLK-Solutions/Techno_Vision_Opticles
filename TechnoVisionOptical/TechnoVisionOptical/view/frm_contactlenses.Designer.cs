@@ -831,6 +831,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Contact Lenses - Customer Details";
+            this.Load += new System.EventHandler(this.frm_contactlenses_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

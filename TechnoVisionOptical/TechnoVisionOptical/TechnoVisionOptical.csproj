@@ -61,7 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\contactLenseInvoiceController.cs" />
+    <Compile Include="controller\customerController.cs" />
     <Compile Include="controller\userController.cs" />
+    <Compile Include="model\Customer.cs" />
     <Compile Include="model\NewContactLenseInvoice.cs" />
     <Compile Include="model\NewSpectaclesInvoice.cs" />
     <Compile Include="model\user.cs" />
@@ -70,6 +73,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="technovisionDataSet.cs">
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="technovisionDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace TechnoVisionOptical.view
 {
-    public partial class frm_dashboard : MetroFramework.Forms.MetroForm
+    public partial class frm_customerList : MetroFramework.Forms.MetroForm
     {
-        public frm_dashboard()
+        public frm_customerList()
         {
             InitializeComponent();
         }
-
-        private void btn_OrderCLense_Click(object sender, EventArgs e)
-        {
-            new frm_contactlenses("L").Show();
-        }
-
-       
     }
 }
