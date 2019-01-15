@@ -164,9 +164,9 @@
             // 
             this.metroTile4.ActiveControl = null;
             this.metroTile4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.metroTile4.Location = new System.Drawing.Point(595, 3);
+            this.metroTile4.Location = new System.Drawing.Point(587, 3);
             this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(40, 41);
+            this.metroTile4.Size = new System.Drawing.Size(48, 41);
             this.metroTile4.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile4.TabIndex = 4;
             this.metroTile4.TileImage = global::TechnoVisionOptical.Properties.Resources.backup_KjJ_icon;
