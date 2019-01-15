@@ -125,5 +125,10 @@ namespace TechnoVisionOptical.model
              RBefore=_RBefore;
              LAfter=_LAfter;
         }
+
+        public static void save(MetroFramework.Forms.MetroForm ui)
+        {
+
+        }
     }
 }
