@@ -26,8 +26,8 @@ namespace TechnoVisionOptical.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=127.0.0.1;user id=root;password=1234;persistsecurityinfo=False;database=te" +
-            "chnovision")]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=1234;persistsecurityinfo=True;database=tec" +
+            "hnovision")]
         public string technovisionConnectionString {
             get {
                 return ((string)(this["technovisionConnectionString"]));
