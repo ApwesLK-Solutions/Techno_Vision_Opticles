@@ -172,16 +172,10 @@
             // 
             this.metroTile4.ActiveControl = null;
             this.metroTile4.Dock = System.Windows.Forms.DockStyle.Right;
-<<<<<<< HEAD
-            this.metroTile4.Location = new System.Drawing.Point(587, 3);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(48, 41);
-=======
             this.metroTile4.Location = new System.Drawing.Point(793, 4);
             this.metroTile4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(53, 50);
->>>>>>> 0bb5bf96d6e4172e84aaecccb6d97beca6e5bfee
             this.metroTile4.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile4.TabIndex = 4;
             this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
