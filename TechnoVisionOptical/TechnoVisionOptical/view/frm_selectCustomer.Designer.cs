@@ -35,9 +35,10 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(34, 47);
+            this.metroTile1.Location = new System.Drawing.Point(45, 58);
+            this.metroTile1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(233, 208);
+            this.metroTile1.Size = new System.Drawing.Size(311, 256);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile1.TabIndex = 0;
             this.metroTile1.Text = "New Customer";
@@ -50,9 +51,10 @@
             // metroTile2
             // 
             this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(291, 47);
+            this.metroTile2.Location = new System.Drawing.Point(388, 58);
+            this.metroTile2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(233, 208);
+            this.metroTile2.Size = new System.Drawing.Size(311, 256);
             this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile2.TabIndex = 1;
             this.metroTile2.Text = "Existing Customer";
@@ -64,13 +66,16 @@
             // 
             // frm_selectCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 300);
+            this.ClientSize = new System.Drawing.Size(753, 369);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_selectCustomer";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Load += new System.EventHandler(this.frm_selectCustomer_Load);
             this.ResumeLayout(false);
 
         }
