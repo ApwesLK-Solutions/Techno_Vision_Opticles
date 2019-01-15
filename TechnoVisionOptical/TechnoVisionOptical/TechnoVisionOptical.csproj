@@ -116,6 +116,12 @@
     <Compile Include="view\frm_paymentPlan.Designer.cs">
       <DependentUpon>frm_paymentPlan.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\frm_productlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frm_productlist.Designer.cs">
+      <DependentUpon>frm_productlist.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\frm_reports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,12 @@
     </Compile>
     <Compile Include="view\frm_specs2.Designer.cs">
       <DependentUpon>frm_specs2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\frm_testersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frm_testersList.Designer.cs">
+      <DependentUpon>frm_testersList.cs</DependentUpon>
     </Compile>
     <Compile Include="view\orderList.cs">
       <SubType>Form</SubType>
@@ -165,6 +177,9 @@
     <EmbeddedResource Include="view\frm_paymentPlan.resx">
       <DependentUpon>frm_paymentPlan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\frm_productlist.resx">
+      <DependentUpon>frm_productlist.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\frm_reports.resx">
       <DependentUpon>frm_reports.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_specs2.resx">
       <DependentUpon>frm_specs2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\frm_testersList.resx">
+      <DependentUpon>frm_testersList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\orderList.resx">
       <DependentUpon>orderList.cs</DependentUpon>
