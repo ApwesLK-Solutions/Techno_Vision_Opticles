@@ -17,7 +17,7 @@ namespace TechnoVisionOptical
             if (Environment.OSVersion.Version.Major >= 6) SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_login());
+            Application.Run(new frm_contactlenses());
 
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
