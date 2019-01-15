@@ -13,9 +13,20 @@ namespace TechnoVisionOptical.view
 {
     public partial class frm_contactlenses : MetroFramework.Forms.MetroForm
     {
-        public frm_contactlenses(string type)
+        
+        public frm_contactlenses()
         {
             InitializeComponent();
+        }
+        public frm_contactlenses(string _name , string _address , string _phone , string _email , string _profession , int _age)
+        {
+            InitializeComponent();
+            txt_address.Text = _address;
+            txt_name.Text = _name;
+            txt_phone.Text = _phone;
+            txt_email.Text = _email;
+            txt_proffession.Text = _profession;
+            txt_age.Text = _age.ToString();
         }
 
         private void btn_next_Click(object sender, EventArgs e)

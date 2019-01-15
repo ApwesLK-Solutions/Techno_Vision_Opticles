@@ -7,47 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TechnoVisionOptical.controller;
 namespace TechnoVisionOptical.view
 {
     public partial class frm_selectCustomer : MetroFramework.Forms.MetroForm
     {
-        private string product = null;
 
-        public frm_selectCustomer()
+        private string InvoiceType;
+        public frm_selectCustomer(string type)
         {
             InitializeComponent();
+            InvoiceType = type;
         }
-
-        public frm_selectCustomer(String product)
-        {
-        
-        }
-
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            
-
-            if(product == "L")
+            if(InvoiceType == "L")
             {
                 new frm_contactlenses().Show();
             }
             else
             {
-                new frm_specs().Show();            
-            }            
+                new frm_specs().Show();
+            }
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            if (product == "L")
+            if (InvoiceType == "L")
             {
-                new frm_selectCustomer().Show();
+                customerController.fillLenseFormDataByCustomerID(1, this);
             }
-            else 
+            else
             {
-                new frm_selectCustomer().Show();
+                customerController.fillSpecFormDataByCustomerID(1, this);
             }
+        }
+
+        private void frm_selectCustomer_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

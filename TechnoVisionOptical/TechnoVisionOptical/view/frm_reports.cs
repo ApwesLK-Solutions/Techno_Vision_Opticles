@@ -16,5 +16,10 @@ namespace TechnoVisionOptical.view
         {
             InitializeComponent();
         }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            new orderList().Show();
+        }
     }
 }
