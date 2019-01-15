@@ -92,9 +92,9 @@
             this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.btn_clearAll = new MetroFramework.Controls.MetroTile();
+            this.btn_close = new MetroFramework.Controls.MetroTile();
+            this.btn_print = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
@@ -1390,44 +1390,44 @@
             this.metroLabel30.TabIndex = 86;
             this.metroLabel30.Text = "R+orderNo";
             // 
-            // metroTile2
+            // btn_clearAll
             // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(431, 453);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(88, 45);
-            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 88;
-            this.metroTile2.Text = "Clear All";
-            this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile2.UseSelectable = true;
+            this.btn_clearAll.ActiveControl = null;
+            this.btn_clearAll.Location = new System.Drawing.Point(431, 453);
+            this.btn_clearAll.Name = "btn_clearAll";
+            this.btn_clearAll.Size = new System.Drawing.Size(88, 45);
+            this.btn_clearAll.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_clearAll.TabIndex = 88;
+            this.btn_clearAll.Text = "Clear All";
+            this.btn_clearAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_clearAll.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.btn_clearAll.UseSelectable = true;
             // 
-            // metroTile3
+            // btn_close
             // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Location = new System.Drawing.Point(616, 453);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(85, 45);
-            this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 89;
-            this.metroTile3.Text = "Close";
-            this.metroTile3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile3.UseSelectable = true;
+            this.btn_close.ActiveControl = null;
+            this.btn_close.Location = new System.Drawing.Point(616, 453);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(85, 45);
+            this.btn_close.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_close.TabIndex = 89;
+            this.btn_close.Text = "Close";
+            this.btn_close.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_close.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.btn_close.UseSelectable = true;
             // 
-            // metroTile4
+            // btn_print
             // 
-            this.metroTile4.ActiveControl = null;
-            this.metroTile4.Location = new System.Drawing.Point(525, 453);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(85, 45);
-            this.metroTile4.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile4.TabIndex = 90;
-            this.metroTile4.Text = "Print";
-            this.metroTile4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile4.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile4.UseSelectable = true;
+            this.btn_print.ActiveControl = null;
+            this.btn_print.Location = new System.Drawing.Point(525, 453);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(85, 45);
+            this.btn_print.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_print.TabIndex = 90;
+            this.btn_print.Text = "Print";
+            this.btn_print.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_print.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.btn_print.UseSelectable = true;
             // 
             // metroTile1
             // 
@@ -1447,9 +1447,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 515);
-            this.Controls.Add(this.metroTile4);
-            this.Controls.Add(this.metroTile3);
-            this.Controls.Add(this.metroTile2);
+            this.Controls.Add(this.btn_print);
+            this.Controls.Add(this.btn_close);
+            this.Controls.Add(this.btn_clearAll);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.metroLabel30);
             this.Controls.Add(this.metroLabel29);
@@ -1589,8 +1589,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel29;
         private MetroFramework.Controls.MetroLabel metroLabel30;
         private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroTile metroTile2;
-        private MetroFramework.Controls.MetroTile metroTile3;
-        private MetroFramework.Controls.MetroTile metroTile4;
+        private MetroFramework.Controls.MetroTile btn_clearAll;
+        private MetroFramework.Controls.MetroTile btn_close;
+        private MetroFramework.Controls.MetroTile btn_print;
     }
 }
