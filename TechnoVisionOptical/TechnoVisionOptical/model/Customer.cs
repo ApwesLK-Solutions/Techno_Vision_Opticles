@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using TechnoVisionOptical.controller;
 namespace TechnoVisionOptical.model
 {
     class Customer
@@ -25,9 +25,9 @@ namespace TechnoVisionOptical.model
             age = _age;
         }
 
-        public static void saveCustomer()
+        public static void saveCustomer(MetroFramework.Forms.MetroForm ui)
         {
-
+            customerController.register(ui);
         }
     }
 }
