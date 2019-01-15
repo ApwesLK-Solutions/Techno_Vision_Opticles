@@ -17,6 +17,11 @@ namespace TechnoVisionOptical.view
             InitializeComponent();
         }
 
+        private void btn_OrderCLense_Click(object sender, EventArgs e)
+        {
+            new frm_contactlenses().Show();
+        }
+
        
     }
 }
