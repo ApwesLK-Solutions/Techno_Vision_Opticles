@@ -27,5 +27,10 @@ namespace TechnoVisionOptical.view
         {
             txt_username.Focus();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

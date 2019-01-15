@@ -28,52 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.btn_new_customer = new MetroFramework.Controls.MetroTile();
+            this.btn_existing_customer = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
-            // metroTile1
+            // btn_new_customer
             // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(45, 58);
-            this.metroTile1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(311, 256);
-            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile1.TabIndex = 0;
-            this.metroTile1.Text = "New Customer";
-            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            this.btn_new_customer.ActiveControl = null;
+            this.btn_new_customer.Location = new System.Drawing.Point(34, 47);
+            this.btn_new_customer.Name = "btn_new_customer";
+            this.btn_new_customer.Size = new System.Drawing.Size(233, 208);
+            this.btn_new_customer.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_new_customer.TabIndex = 0;
+            this.btn_new_customer.Text = "New Customer";
+            this.btn_new_customer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_new_customer.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.btn_new_customer.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.btn_new_customer.UseSelectable = true;
+            this.btn_new_customer.Click += new System.EventHandler(this.metroTile1_Click);
             // 
-            // metroTile2
+            // btn_existing_customer
             // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(388, 58);
-            this.metroTile2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(311, 256);
-            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 1;
-            this.metroTile2.Text = "Existing Customer";
-            this.metroTile2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile2.UseSelectable = true;
-            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
+            this.btn_existing_customer.ActiveControl = null;
+            this.btn_existing_customer.Location = new System.Drawing.Point(291, 47);
+            this.btn_existing_customer.Name = "btn_existing_customer";
+            this.btn_existing_customer.Size = new System.Drawing.Size(233, 208);
+            this.btn_existing_customer.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_existing_customer.TabIndex = 1;
+            this.btn_existing_customer.Text = "Existing Customer";
+            this.btn_existing_customer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_existing_customer.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.btn_existing_customer.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.btn_existing_customer.UseSelectable = true;
+            this.btn_existing_customer.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // frm_selectCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 369);
-            this.Controls.Add(this.metroTile2);
-            this.Controls.Add(this.metroTile1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientSize = new System.Drawing.Size(565, 300);
+            this.Controls.Add(this.btn_existing_customer);
+            this.Controls.Add(this.btn_new_customer);
             this.Name = "frm_selectCustomer";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Load += new System.EventHandler(this.frm_selectCustomer_Load);
             this.ResumeLayout(false);
@@ -82,7 +78,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroTile metroTile2;
+        private MetroFramework.Controls.MetroTile btn_new_customer;
+        private MetroFramework.Controls.MetroTile btn_existing_customer;
     }
 }

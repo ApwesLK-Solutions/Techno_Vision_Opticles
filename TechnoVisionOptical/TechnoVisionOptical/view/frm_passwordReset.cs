@@ -16,5 +16,15 @@ namespace TechnoVisionOptical.view
         {
             InitializeComponent();
         }
+
+        private void metroTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

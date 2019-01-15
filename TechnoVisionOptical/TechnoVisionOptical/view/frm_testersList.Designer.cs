@@ -28,46 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.text_model_name = new MetroFramework.Controls.MetroTextBox();
             this.text_emp_name = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.btn_update = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
-            // 
-            // text_model_name
-            // 
-            // 
-            // 
-            // 
-            this.text_model_name.CustomButton.Image = null;
-            this.text_model_name.CustomButton.Location = new System.Drawing.Point(152, 1);
-            this.text_model_name.CustomButton.Name = "";
-            this.text_model_name.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.text_model_name.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.text_model_name.CustomButton.TabIndex = 1;
-            this.text_model_name.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.text_model_name.CustomButton.UseSelectable = true;
-            this.text_model_name.CustomButton.Visible = false;
-            this.text_model_name.Lines = new string[0];
-            this.text_model_name.Location = new System.Drawing.Point(506, 329);
-            this.text_model_name.MaxLength = 32767;
-            this.text_model_name.Name = "text_model_name";
-            this.text_model_name.PasswordChar = '\0';
-            this.text_model_name.PromptText = "Enter Model Name";
-            this.text_model_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.text_model_name.SelectedText = "";
-            this.text_model_name.SelectionLength = 0;
-            this.text_model_name.SelectionStart = 0;
-            this.text_model_name.ShortcutsEnabled = true;
-            this.text_model_name.Size = new System.Drawing.Size(174, 23);
-            this.text_model_name.TabIndex = 14;
-            this.text_model_name.UseSelectable = true;
-            this.text_model_name.WaterMark = "Enter Model Name";
-            this.text_model_name.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.text_model_name.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // text_emp_name
             // 
@@ -100,15 +66,6 @@
             this.text_emp_name.WaterMark = "Enter Frame ID";
             this.text_emp_name.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.text_emp_name.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(413, 329);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(87, 19);
-            this.metroLabel2.TabIndex = 12;
-            this.metroLabel2.Text = "Model Name";
             // 
             // metroLabel1
             // 
@@ -164,9 +121,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.text_model_name);
             this.Controls.Add(this.text_emp_name);
-            this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.metroTile2);
@@ -181,9 +136,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroTextBox text_model_name;
         private MetroFramework.Controls.MetroTextBox text_emp_name;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroTile btn_update;
         private MetroFramework.Controls.MetroTile metroTile2;
