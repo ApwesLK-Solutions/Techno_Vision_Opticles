@@ -17,14 +17,6 @@ namespace TechnoVisionOptical.view
             InitializeComponent();
         }
 
-        private void metroTile2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTile1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
