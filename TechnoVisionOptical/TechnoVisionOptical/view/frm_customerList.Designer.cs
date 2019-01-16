@@ -192,7 +192,7 @@
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(660, 266);
             this.metroGrid1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroGrid1.TabIndex = 7;
+            this.metroGrid1.TabIndex = 7;         
             // 
             // customerIdDataGridViewTextBoxColumn
             // 

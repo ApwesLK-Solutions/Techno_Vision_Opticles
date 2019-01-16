@@ -43,7 +43,10 @@
             this.txt_lenseRs = new MetroFramework.Controls.MetroTextBox();
             this.txt_advRs = new MetroFramework.Controls.MetroTextBox();
             this.txt_balRs = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
+            this.txt_balRef = new MetroFramework.Controls.MetroTextBox();
+            this.txt_advRef = new MetroFramework.Controls.MetroTextBox();
+            this.txt_lensRef = new MetroFramework.Controls.MetroTextBox();
+            this.lbl_receiptNo = new MetroFramework.Controls.MetroLabel();
             this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
             this.btn_clear = new MetroFramework.Controls.MetroTile();
             this.btn_next = new MetroFramework.Controls.MetroTile();
@@ -51,6 +54,10 @@
             this.cmb_pay_method = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
             this.cmb_pay_plan = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.cmb_jobType = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.cmb_orderStatus = new MetroFramework.Controls.MetroComboBox();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -285,14 +292,120 @@
             this.txt_balRs.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_balRs.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel30
+            // txt_balRef
             // 
-            this.metroLabel30.AutoSize = true;
-            this.metroLabel30.Location = new System.Drawing.Point(573, 29);
-            this.metroLabel30.Name = "metroLabel30";
-            this.metroLabel30.Size = new System.Drawing.Size(77, 19);
-            this.metroLabel30.TabIndex = 88;
-            this.metroLabel30.Text = "R+orderNo";
+            // 
+            // 
+            // 
+            this.txt_balRef.CustomButton.Image = null;
+            this.txt_balRef.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_balRef.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_balRef.CustomButton.Name = "";
+            this.txt_balRef.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.txt_balRef.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_balRef.CustomButton.TabIndex = 1;
+            this.txt_balRef.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_balRef.CustomButton.UseSelectable = true;
+            this.txt_balRef.CustomButton.Visible = false;
+            this.txt_balRef.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.txt_balRef.Lines = new string[0];
+            this.txt_balRef.Location = new System.Drawing.Point(775, 224);
+            this.txt_balRef.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_balRef.MaxLength = 32767;
+            this.txt_balRef.Name = "txt_balRef";
+            this.txt_balRef.PasswordChar = '\0';
+            this.txt_balRef.PromptText = "Reference";
+            this.txt_balRef.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_balRef.SelectedText = "";
+            this.txt_balRef.SelectionLength = 0;
+            this.txt_balRef.SelectionStart = 0;
+            this.txt_balRef.ShortcutsEnabled = true;
+            this.txt_balRef.Size = new System.Drawing.Size(160, 36);
+            this.txt_balRef.TabIndex = 32;
+            this.txt_balRef.UseSelectable = true;
+            this.txt_balRef.WaterMark = "Reference";
+            this.txt_balRef.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_balRef.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txt_advRef
+            // 
+            // 
+            // 
+            // 
+            this.txt_advRef.CustomButton.Image = null;
+            this.txt_advRef.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_advRef.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_advRef.CustomButton.Name = "";
+            this.txt_advRef.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.txt_advRef.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_advRef.CustomButton.TabIndex = 1;
+            this.txt_advRef.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_advRef.CustomButton.UseSelectable = true;
+            this.txt_advRef.CustomButton.Visible = false;
+            this.txt_advRef.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.txt_advRef.Lines = new string[0];
+            this.txt_advRef.Location = new System.Drawing.Point(775, 181);
+            this.txt_advRef.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_advRef.MaxLength = 32767;
+            this.txt_advRef.Name = "txt_advRef";
+            this.txt_advRef.PasswordChar = '\0';
+            this.txt_advRef.PromptText = "Reference";
+            this.txt_advRef.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_advRef.SelectedText = "";
+            this.txt_advRef.SelectionLength = 0;
+            this.txt_advRef.SelectionStart = 0;
+            this.txt_advRef.ShortcutsEnabled = true;
+            this.txt_advRef.Size = new System.Drawing.Size(160, 36);
+            this.txt_advRef.TabIndex = 31;
+            this.txt_advRef.UseSelectable = true;
+            this.txt_advRef.WaterMark = "Reference";
+            this.txt_advRef.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_advRef.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txt_lensRef
+            // 
+            // 
+            // 
+            // 
+            this.txt_lensRef.CustomButton.Image = null;
+            this.txt_lensRef.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_lensRef.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_lensRef.CustomButton.Name = "";
+            this.txt_lensRef.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.txt_lensRef.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_lensRef.CustomButton.TabIndex = 1;
+            this.txt_lensRef.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_lensRef.CustomButton.UseSelectable = true;
+            this.txt_lensRef.CustomButton.Visible = false;
+            this.txt_lensRef.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.txt_lensRef.Lines = new string[0];
+            this.txt_lensRef.Location = new System.Drawing.Point(775, 138);
+            this.txt_lensRef.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_lensRef.MaxLength = 32767;
+            this.txt_lensRef.Name = "txt_lensRef";
+            this.txt_lensRef.PasswordChar = '\0';
+            this.txt_lensRef.PromptText = "Reference";
+            this.txt_lensRef.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_lensRef.SelectedText = "";
+            this.txt_lensRef.SelectionLength = 0;
+            this.txt_lensRef.SelectionStart = 0;
+            this.txt_lensRef.ShortcutsEnabled = true;
+            this.txt_lensRef.Size = new System.Drawing.Size(160, 36);
+            this.txt_lensRef.TabIndex = 30;
+            this.txt_lensRef.UseSelectable = true;
+            this.txt_lensRef.WaterMark = "Reference";
+            this.txt_lensRef.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_lensRef.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lbl_receiptNo
+            // 
+            this.lbl_receiptNo.AutoSize = true;
+            this.lbl_receiptNo.Location = new System.Drawing.Point(764, 36);
+            this.lbl_receiptNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_receiptNo.Name = "lbl_receiptNo";
+            this.lbl_receiptNo.Size = new System.Drawing.Size(80, 20);
+            this.lbl_receiptNo.TabIndex = 88;
+            this.lbl_receiptNo.Text = "R+orderNo";
             // 
             // metroLabel29
             // 
@@ -377,6 +490,57 @@
             this.cmb_pay_plan.TabIndex = 94;
             this.cmb_pay_plan.UseSelectable = true;
             // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(33, 364);
+            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(64, 20);
+            this.metroLabel4.TabIndex = 20;
+            this.metroLabel4.Text = "Job Type";
+            // 
+            // cmb_jobType
+            // 
+            this.cmb_jobType.FormattingEnabled = true;
+            this.cmb_jobType.ItemHeight = 24;
+            this.cmb_jobType.Items.AddRange(new object[] {
+            "New ",
+            "Replacement"});
+            this.cmb_jobType.Location = new System.Drawing.Point(165, 358);
+            this.cmb_jobType.Margin = new System.Windows.Forms.Padding(4);
+            this.cmb_jobType.Name = "cmb_jobType";
+            this.cmb_jobType.PromptText = "Select";
+            this.cmb_jobType.Size = new System.Drawing.Size(316, 30);
+            this.cmb_jobType.TabIndex = 21;
+            this.cmb_jobType.UseSelectable = true;
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(32, 413);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(86, 20);
+            this.metroLabel5.TabIndex = 20;
+            this.metroLabel5.Text = "Order Status";
+            // 
+            // cmb_orderStatus
+            // 
+            this.cmb_orderStatus.FormattingEnabled = true;
+            this.cmb_orderStatus.ItemHeight = 24;
+            this.cmb_orderStatus.Items.AddRange(new object[] {
+            "PENDING ",
+            "DELIVERED",
+            "CANCELED"});
+            this.cmb_orderStatus.Location = new System.Drawing.Point(164, 407);
+            this.cmb_orderStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.cmb_orderStatus.Name = "cmb_orderStatus";
+            this.cmb_orderStatus.PromptText = "Select";
+            this.cmb_orderStatus.Size = new System.Drawing.Size(316, 30);
+            this.cmb_orderStatus.TabIndex = 21;
+            this.cmb_orderStatus.UseSelectable = true;
+            // 
             // frm_contactlenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,7 +552,7 @@
             this.Controls.Add(this.metroLabel16);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_clear);
-            this.Controls.Add(this.metroLabel30);
+            this.Controls.Add(this.lbl_receiptNo);
             this.Controls.Add(this.metroLabel29);
             this.Controls.Add(this.txt_balRs);
             this.Controls.Add(this.txt_advRs);
@@ -397,6 +561,10 @@
             this.Controls.Add(this.metroLabel13);
             this.Controls.Add(this.metroLabel9);
             this.Controls.Add(this.metroLabel8);
+            this.Controls.Add(this.cmb_orderStatus);
+            this.Controls.Add(this.metroLabel5);
+            this.Controls.Add(this.cmb_jobType);
+            this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.cmb_testby);
             this.Controls.Add(this.metroLabel7);
             this.Controls.Add(this.txt_orderdate);
@@ -405,6 +573,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.txt_order_no);
             this.Controls.Add(this.metroLabel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frm_contactlenses";
             this.Resizable = false;
@@ -434,6 +603,7 @@
         private MetroFramework.Controls.MetroTextBox txt_advRs;
         private MetroFramework.Controls.MetroTextBox txt_balRs;
         private MetroFramework.Controls.MetroLabel metroLabel30;
+        private MetroFramework.Controls.MetroLabel lbl_receiptNo;
         private MetroFramework.Controls.MetroLabel metroLabel29;
         private MetroFramework.Controls.MetroTile btn_clear;
         private MetroFramework.Controls.MetroTile btn_next;
@@ -441,5 +611,9 @@
         private MetroFramework.Controls.MetroComboBox cmb_pay_method;
         private MetroFramework.Controls.MetroLabel metroLabel17;
         private MetroFramework.Controls.MetroComboBox cmb_pay_plan;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroComboBox cmb_jobType;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroComboBox cmb_orderStatus;
     }
 }

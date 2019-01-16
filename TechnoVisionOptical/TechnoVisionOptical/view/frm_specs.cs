@@ -13,7 +13,6 @@ namespace TechnoVisionOptical.view
 {
     public partial class frm_specs : MetroFramework.Forms.MetroForm
     {
-        private bool newCustomer = false;
         public frm_specs()
         {
             InitializeComponent();
@@ -29,10 +28,30 @@ namespace TechnoVisionOptical.view
             txt_age.Text = _age.ToString();
             newCustomer = exists;*/
         }
+        public void getNewNumbers()
+        {
+            technovisionDataSetTableAdapters.order_summaryTableAdapter t = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
+            string lastID = (t.getLastInsertedId().Value + 1).ToString();
+            if (lastID == "")
+            {
+                lastID = "0";
+            }
 
+            if (lastID.Length < 4)
+            {
+                while (lastID.Length < 4)
+                {
+                    lastID = "0" + lastID;
+                }
+            }
+            string orderNumber = DateTime.Now.ToString("yy") + lastID;
+            string receiptNumber = "R" + orderNumber;
+            txt_order.Text = orderNumber;
+            lbl_receiptNo.Text = receiptNumber;
+        }
         private void frm_specs_Load(object sender, EventArgs e)
         {
-
+            getNewNumbers();
         }
         private void btn_next_Click(object sender, EventArgs e)
         { 
