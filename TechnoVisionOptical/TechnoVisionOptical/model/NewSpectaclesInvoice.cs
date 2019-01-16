@@ -80,6 +80,11 @@ namespace TechnoVisionOptical.model
             Remarks = _Remarks;
         }
 
+        public static void save(MetroFramework.Forms.MetroForm f)
+        {
+
+        }
+
 
     }
 }
