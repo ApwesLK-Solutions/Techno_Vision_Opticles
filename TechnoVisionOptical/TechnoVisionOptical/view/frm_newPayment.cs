@@ -17,10 +17,13 @@ namespace TechnoVisionOptical.view
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void frm_newPayment_Load(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> ba7580a09a0d9ad51f45fa9c14122eeb691d346d
     }
 }

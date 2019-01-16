@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TechnoVisionOptical.controller;
+using TechnoVisionOptical.model;
 namespace TechnoVisionOptical.view
 {
     public partial class frm_customerList : MetroFramework.Forms.MetroForm
@@ -17,44 +18,53 @@ namespace TechnoVisionOptical.view
         {
             InitializeComponent();
         }
+        public void refreshGrid()
+        {
+            this.customersTableAdapter.Fill(this.technovisionDataSet.customers);
+        }
         public frm_customerList(string type)
         {
             InitializeComponent();
-            this.type = type;
         }
-
         private void frm_customerList_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.customers' table. You can move, or remove it, as needed.
             this.customersTableAdapter.Fill(this.technovisionDataSet.customers);
-
         }
 
-        private void metroTile1_Click(object sender, EventArgs e)
+        private void txt_search_TextChanged(object sender, EventArgs e)
         {
-            
+            customersBindingSource.Filter = ("name LIKE '%" + txt_search.Text + "%' OR phone LIKE '%" + txt_search.Text + "%'");
         }
 
-        private void metroTextBox1_TextChanged(object sender, EventArgs e)
+        private void btn_addNewCustomer_Click(object sender, EventArgs e)
         {
-            customersBindingSource.Filter = ("name LIKE '%" + metroTextBox1.Text + "%' OR phone LIKE '%" + metroTextBox1.Text + "%'");
+            new frm_customer().Show();
         }
 
-        private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_select_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void metroTile2_Click(object sender, EventArgs e)
-        {
-            if(type == "L")
+            Customer.id = int.Parse(metroGrid1.SelectedRows[0].Cells[0].ToString());
+            Customer.name = metroGrid1.SelectedRows[0].Cells[1].ToString();
+            Customer.address = metroGrid1.SelectedRows[0].Cells[2].ToString();
+            Customer.profession = metroGrid1.SelectedRows[0].Cells[3].ToString();
+            Customer.age = int.Parse(metroGrid1.SelectedRows[0].Cells[4].ToString());
+            Customer.phone = metroGrid1.SelectedRows[0].Cells[5].ToString();
+            Customer.email = metroGrid1.SelectedRows[0].Cells[6].ToString();
+            if(type == "S")
             {
-                customerController.fillLenseFormDataByCustomerID(int.Parse(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()), this);
+                new frm_specs().Show();
             }
             else
             {
-                customerController.fillSpecFormDataByCustomerID(int.Parse(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()), this);
+                new frm_contactlenses().Show();
             }
         }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            refreshGrid();
+        }
+
+
     }
 }
