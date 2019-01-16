@@ -234,10 +234,10 @@ WHERE  (username = @p6)</CommandText>
               <Mapping SourceColumn="id" DataSetColumn="id" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="technovisionConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getLastInsertedId" Modifier="Public" Name="getLastInsertedId" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getLastInsertedId">
+              <DbSource ConnectionRef="technovisionConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getMaxID" Modifier="Public" Name="getMaxID" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getMaxID">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT last_insert_id() FROM order_summary</CommandText>
+                    <CommandText>SELECT MAX(id) FROM order_summary </CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
