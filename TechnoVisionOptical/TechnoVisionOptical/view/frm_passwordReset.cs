@@ -26,11 +26,11 @@ namespace TechnoVisionOptical.view
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            passwordReset pr = new passwordReset();
-            pr.passwordResetData(txt_userName.Text, txt_new_pw.Text, txt_confirm_pw.Text, txt_nic.Text, txt_phone.Text);
-
-            passwordResetController prc = new passwordResetController();
-            prc.resetPaswordFucntion(pr,this);
+            if(txt_new_pw.Text == txt_confirm_pw.Text)
+            {
+                user u = new user(txt_userName.Text, txt_nic.Text, txt_phone.Text);
+                userController.reset(u,txt_new_pw.Text,this);
+            }
         }
     }
 }
