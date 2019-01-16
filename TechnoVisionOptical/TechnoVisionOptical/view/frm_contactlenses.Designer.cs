@@ -73,10 +73,10 @@
             // 
             // 
             this.txt_order_no.CustomButton.Image = null;
-            this.txt_order_no.CustomButton.Location = new System.Drawing.Point(377, 2);
-            this.txt_order_no.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_order_no.CustomButton.Location = new System.Drawing.Point(283, 2);
+            this.txt_order_no.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_order_no.CustomButton.Name = "";
-            this.txt_order_no.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_order_no.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_order_no.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_order_no.CustomButton.TabIndex = 1;
             this.txt_order_no.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -85,7 +85,7 @@
             this.txt_order_no.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txt_order_no.Lines = new string[0];
             this.txt_order_no.Location = new System.Drawing.Point(164, 94);
-            this.txt_order_no.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_order_no.Margin = new System.Windows.Forms.Padding(4);
             this.txt_order_no.MaxLength = 32767;
             this.txt_order_no.Name = "txt_order_no";
             this.txt_order_no.PasswordChar = '\0';
@@ -125,7 +125,7 @@
             // txt_duedate
             // 
             this.txt_duedate.Location = new System.Drawing.Point(164, 138);
-            this.txt_duedate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_duedate.Margin = new System.Windows.Forms.Padding(4);
             this.txt_duedate.MinimumSize = new System.Drawing.Size(0, 30);
             this.txt_duedate.Name = "txt_duedate";
             this.txt_duedate.Size = new System.Drawing.Size(316, 30);
@@ -134,7 +134,7 @@
             // txt_orderdate
             // 
             this.txt_orderdate.Location = new System.Drawing.Point(164, 181);
-            this.txt_orderdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_orderdate.Margin = new System.Windows.Forms.Padding(4);
             this.txt_orderdate.MinimumSize = new System.Drawing.Size(0, 30);
             this.txt_orderdate.Name = "txt_orderdate";
             this.txt_orderdate.Size = new System.Drawing.Size(316, 30);
@@ -156,7 +156,7 @@
             this.cmb_testby.FormattingEnabled = true;
             this.cmb_testby.ItemHeight = 24;
             this.cmb_testby.Location = new System.Drawing.Point(164, 310);
-            this.cmb_testby.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmb_testby.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_testby.Name = "cmb_testby";
             this.cmb_testby.PromptText = "Select";
             this.cmb_testby.Size = new System.Drawing.Size(316, 30);
@@ -219,10 +219,10 @@
             // 
             // 
             this.txt_lenseRs.CustomButton.Image = null;
-            this.txt_lenseRs.CustomButton.Location = new System.Drawing.Point(168, 2);
-            this.txt_lenseRs.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_lenseRs.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_lenseRs.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_lenseRs.CustomButton.Name = "";
-            this.txt_lenseRs.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_lenseRs.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_lenseRs.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_lenseRs.CustomButton.TabIndex = 1;
             this.txt_lenseRs.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -231,7 +231,7 @@
             this.txt_lenseRs.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txt_lenseRs.Lines = new string[0];
             this.txt_lenseRs.Location = new System.Drawing.Point(607, 138);
-            this.txt_lenseRs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_lenseRs.Margin = new System.Windows.Forms.Padding(4);
             this.txt_lenseRs.MaxLength = 32767;
             this.txt_lenseRs.Name = "txt_lenseRs";
             this.txt_lenseRs.PasswordChar = '\0';
@@ -254,10 +254,10 @@
             // 
             // 
             this.txt_advRs.CustomButton.Image = null;
-            this.txt_advRs.CustomButton.Location = new System.Drawing.Point(168, 2);
-            this.txt_advRs.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_advRs.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_advRs.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_advRs.CustomButton.Name = "";
-            this.txt_advRs.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_advRs.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_advRs.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_advRs.CustomButton.TabIndex = 1;
             this.txt_advRs.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -266,7 +266,7 @@
             this.txt_advRs.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txt_advRs.Lines = new string[0];
             this.txt_advRs.Location = new System.Drawing.Point(607, 181);
-            this.txt_advRs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_advRs.Margin = new System.Windows.Forms.Padding(4);
             this.txt_advRs.MaxLength = 32767;
             this.txt_advRs.Name = "txt_advRs";
             this.txt_advRs.PasswordChar = '\0';
@@ -289,10 +289,10 @@
             // 
             // 
             this.txt_balRs.CustomButton.Image = null;
-            this.txt_balRs.CustomButton.Location = new System.Drawing.Point(168, 2);
-            this.txt_balRs.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_balRs.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_balRs.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_balRs.CustomButton.Name = "";
-            this.txt_balRs.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_balRs.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_balRs.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_balRs.CustomButton.TabIndex = 1;
             this.txt_balRs.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -301,7 +301,7 @@
             this.txt_balRs.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txt_balRs.Lines = new string[0];
             this.txt_balRs.Location = new System.Drawing.Point(607, 224);
-            this.txt_balRs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_balRs.Margin = new System.Windows.Forms.Padding(4);
             this.txt_balRs.MaxLength = 32767;
             this.txt_balRs.Name = "txt_balRs";
             this.txt_balRs.PasswordChar = '\0';
@@ -324,10 +324,10 @@
             // 
             // 
             this.txt_balRef.CustomButton.Image = null;
-            this.txt_balRef.CustomButton.Location = new System.Drawing.Point(168, 2);
-            this.txt_balRef.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_balRef.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_balRef.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_balRef.CustomButton.Name = "";
-            this.txt_balRef.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_balRef.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_balRef.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_balRef.CustomButton.TabIndex = 1;
             this.txt_balRef.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -336,7 +336,7 @@
             this.txt_balRef.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txt_balRef.Lines = new string[0];
             this.txt_balRef.Location = new System.Drawing.Point(775, 224);
-            this.txt_balRef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_balRef.Margin = new System.Windows.Forms.Padding(4);
             this.txt_balRef.MaxLength = 32767;
             this.txt_balRef.Name = "txt_balRef";
             this.txt_balRef.PasswordChar = '\0';
@@ -359,10 +359,10 @@
             // 
             // 
             this.txt_advRef.CustomButton.Image = null;
-            this.txt_advRef.CustomButton.Location = new System.Drawing.Point(168, 2);
-            this.txt_advRef.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_advRef.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_advRef.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_advRef.CustomButton.Name = "";
-            this.txt_advRef.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_advRef.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_advRef.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_advRef.CustomButton.TabIndex = 1;
             this.txt_advRef.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -371,7 +371,7 @@
             this.txt_advRef.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txt_advRef.Lines = new string[0];
             this.txt_advRef.Location = new System.Drawing.Point(775, 181);
-            this.txt_advRef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_advRef.Margin = new System.Windows.Forms.Padding(4);
             this.txt_advRef.MaxLength = 32767;
             this.txt_advRef.Name = "txt_advRef";
             this.txt_advRef.PasswordChar = '\0';
@@ -394,10 +394,10 @@
             // 
             // 
             this.txt_lensRef.CustomButton.Image = null;
-            this.txt_lensRef.CustomButton.Location = new System.Drawing.Point(168, 2);
-            this.txt_lensRef.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_lensRef.CustomButton.Location = new System.Drawing.Point(126, 2);
+            this.txt_lensRef.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_lensRef.CustomButton.Name = "";
-            this.txt_lensRef.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_lensRef.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_lensRef.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_lensRef.CustomButton.TabIndex = 1;
             this.txt_lensRef.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -406,7 +406,7 @@
             this.txt_lensRef.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txt_lensRef.Lines = new string[0];
             this.txt_lensRef.Location = new System.Drawing.Point(775, 138);
-            this.txt_lensRef.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_lensRef.Margin = new System.Windows.Forms.Padding(4);
             this.txt_lensRef.MaxLength = 32767;
             this.txt_lensRef.Name = "txt_lensRef";
             this.txt_lensRef.PasswordChar = '\0';
@@ -447,7 +447,7 @@
             // 
             this.btn_clear.ActiveControl = null;
             this.btn_clear.Location = new System.Drawing.Point(692, 290);
-            this.btn_clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(4);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(113, 55);
             this.btn_clear.Style = MetroFramework.MetroColorStyle.Green;
@@ -462,7 +462,7 @@
             // 
             this.btn_next.ActiveControl = null;
             this.btn_next.Location = new System.Drawing.Point(821, 290);
-            this.btn_next.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_next.Margin = new System.Windows.Forms.Padding(4);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(113, 55);
             this.btn_next.Style = MetroFramework.MetroColorStyle.Green;
@@ -490,11 +490,11 @@
             this.cmb_pay_method.Items.AddRange(new object[] {
             "Cash",
             "Credit Card"});
-            this.cmb_pay_method.Location = new System.Drawing.Point(187, 224);
-            this.cmb_pay_method.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmb_pay_method.Location = new System.Drawing.Point(164, 224);
+            this.cmb_pay_method.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_pay_method.Name = "cmb_pay_method";
             this.cmb_pay_method.PromptText = "Select";
-            this.cmb_pay_method.Size = new System.Drawing.Size(293, 30);
+            this.cmb_pay_method.Size = new System.Drawing.Size(316, 30);
             this.cmb_pay_method.TabIndex = 92;
             this.cmb_pay_method.UseSelectable = true;
             // 
@@ -515,11 +515,11 @@
             this.cmb_pay_plan.Items.AddRange(new object[] {
             "Advance",
             "Installment"});
-            this.cmb_pay_plan.Location = new System.Drawing.Point(187, 267);
-            this.cmb_pay_plan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmb_pay_plan.Location = new System.Drawing.Point(164, 263);
+            this.cmb_pay_plan.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_pay_plan.Name = "cmb_pay_plan";
             this.cmb_pay_plan.PromptText = "Select";
-            this.cmb_pay_plan.Size = new System.Drawing.Size(293, 30);
+            this.cmb_pay_plan.Size = new System.Drawing.Size(316, 30);
             this.cmb_pay_plan.TabIndex = 94;
             this.cmb_pay_plan.UseSelectable = true;
             // 
@@ -555,7 +555,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.txt_order_no);
             this.Controls.Add(this.metroLabel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frm_contactlenses";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);

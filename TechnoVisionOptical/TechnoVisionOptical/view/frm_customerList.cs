@@ -25,6 +25,7 @@ namespace TechnoVisionOptical.view
         public frm_customerList(string type)
         {
             InitializeComponent();
+            this.type = type;
         }
         private void frm_customerList_Load(object sender, EventArgs e)
         {
@@ -43,13 +44,13 @@ namespace TechnoVisionOptical.view
 
         private void btn_select_Click(object sender, EventArgs e)
         {
-            Customer.id = int.Parse(metroGrid1.SelectedRows[0].Cells[0].ToString());
-            Customer.name = metroGrid1.SelectedRows[0].Cells[1].ToString();
-            Customer.address = metroGrid1.SelectedRows[0].Cells[2].ToString();
-            Customer.profession = metroGrid1.SelectedRows[0].Cells[3].ToString();
-            Customer.age = int.Parse(metroGrid1.SelectedRows[0].Cells[4].ToString());
-            Customer.phone = metroGrid1.SelectedRows[0].Cells[5].ToString();
-            Customer.email = metroGrid1.SelectedRows[0].Cells[6].ToString();
+            Customer.id         = int.Parse(metroGrid1.SelectedRows[0].Cells[0].Value.ToString());
+            Customer.name       = metroGrid1.SelectedRows[0].Cells[1].Value.ToString();
+            Customer.address    = metroGrid1.SelectedRows[0].Cells[2].Value.ToString();
+            Customer.profession = metroGrid1.SelectedRows[0].Cells[3].Value.ToString();
+            Customer.age        = int.Parse(metroGrid1.SelectedRows[0].Cells[4].Value.ToString());
+            Customer.phone      = metroGrid1.SelectedRows[0].Cells[5].Value.ToString();
+            Customer.email      = metroGrid1.SelectedRows[0].Cells[6].Value.ToString();
             if(type == "S")
             {
                 new frm_specs().Show();
@@ -64,6 +65,8 @@ namespace TechnoVisionOptical.view
         {
             refreshGrid();
         }
+
+     
 
 
     }
