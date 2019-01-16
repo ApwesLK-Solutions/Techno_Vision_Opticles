@@ -55,6 +55,8 @@
             this.cmb_pay_method = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
             this.cmb_pay_plan = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.cmb_jobType = new MetroFramework.Controls.MetroComboBox();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -523,11 +525,36 @@
             this.cmb_pay_plan.TabIndex = 94;
             this.cmb_pay_plan.UseSelectable = true;
             // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(33, 364);
+            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(64, 20);
+            this.metroLabel4.TabIndex = 20;
+            this.metroLabel4.Text = "Job Type";
+            // 
+            // cmb_jobType
+            // 
+            this.cmb_jobType.FormattingEnabled = true;
+            this.cmb_jobType.ItemHeight = 24;
+            this.cmb_jobType.Items.AddRange(new object[] {
+            "New ",
+            "Replacement"});
+            this.cmb_jobType.Location = new System.Drawing.Point(165, 358);
+            this.cmb_jobType.Margin = new System.Windows.Forms.Padding(4);
+            this.cmb_jobType.Name = "cmb_jobType";
+            this.cmb_jobType.PromptText = "Select";
+            this.cmb_jobType.Size = new System.Drawing.Size(316, 30);
+            this.cmb_jobType.TabIndex = 21;
+            this.cmb_jobType.UseSelectable = true;
+            // 
             // frm_contactlenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 377);
+            this.ClientSize = new System.Drawing.Size(973, 400);
             this.Controls.Add(this.cmb_pay_plan);
             this.Controls.Add(this.metroLabel17);
             this.Controls.Add(this.cmb_pay_method);
@@ -547,6 +574,8 @@
             this.Controls.Add(this.metroLabel13);
             this.Controls.Add(this.metroLabel9);
             this.Controls.Add(this.metroLabel8);
+            this.Controls.Add(this.cmb_jobType);
+            this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.cmb_testby);
             this.Controls.Add(this.metroLabel7);
             this.Controls.Add(this.txt_orderdate);
@@ -597,5 +626,7 @@
         private MetroFramework.Controls.MetroComboBox cmb_pay_method;
         private MetroFramework.Controls.MetroLabel metroLabel17;
         private MetroFramework.Controls.MetroComboBox cmb_pay_plan;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroComboBox cmb_jobType;
     }
 }
