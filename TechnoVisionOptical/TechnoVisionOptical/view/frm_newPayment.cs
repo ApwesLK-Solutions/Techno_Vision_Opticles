@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechnoVisionOptical.model;
 
 namespace TechnoVisionOptical.view
 {
@@ -15,6 +16,11 @@ namespace TechnoVisionOptical.view
         public frm_newPayment()
         {
             InitializeComponent();
+        }
+
+        public frm_newPayment(Customer c) 
+        {
+            InitializeComponent();        
         }
     }
 }

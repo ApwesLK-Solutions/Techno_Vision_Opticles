@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechnoVisionOptical.model;
 
 namespace TechnoVisionOptical.view
 {
@@ -20,6 +21,12 @@ namespace TechnoVisionOptical.view
         private void frm_paymentPlan_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_new_payment_Click(object sender, EventArgs e)
+        {
+            Customer c;
+            //new frm_newPayment(c).Show();
         }
     }
 }
