@@ -82,6 +82,12 @@
       <DependentUpon>lenses.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="reports\Spec_customer1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Spec_customer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="technovisionDataSet.cs">
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -194,6 +200,10 @@
     <EmbeddedResource Include="reports\lenses.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>lenses.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\Spec_customer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Spec_customer1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_contactlenses.resx">
       <DependentUpon>frm_contactlenses.cs</DependentUpon>
