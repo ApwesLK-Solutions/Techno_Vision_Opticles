@@ -67,7 +67,7 @@
             this.cmb_pay_plan.Items.AddRange(new object[] {
             "Advance",
             "Installment"});
-            this.cmb_pay_plan.Location = new System.Drawing.Point(108, 144);
+            this.cmb_pay_plan.Location = new System.Drawing.Point(121, 159);
             this.cmb_pay_plan.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_pay_plan.Name = "cmb_pay_plan";
             this.cmb_pay_plan.PromptText = "Select";
@@ -162,7 +162,7 @@
             // 
             // txt_duedate
             // 
-            this.txt_duedate.Location = new System.Drawing.Point(108, 109);
+            this.txt_duedate.Location = new System.Drawing.Point(121, 126);
             this.txt_duedate.MinimumSize = new System.Drawing.Size(0, 30);
             this.txt_duedate.Name = "txt_duedate";
             this.txt_duedate.Size = new System.Drawing.Size(317, 30);
