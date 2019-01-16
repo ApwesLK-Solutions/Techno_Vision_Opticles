@@ -31,7 +31,7 @@ namespace TechnoVisionOptical.view
         public void getNewNumbers()
         {
             technovisionDataSetTableAdapters.order_summaryTableAdapter t = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
-            string newID = t.getMaxID().ToString();
+            string newID = t.getMaxId().ToString();
             if (newID == "")
             {
                 newID = "0";
@@ -55,7 +55,7 @@ namespace TechnoVisionOptical.view
         }
         private void btn_next_Click(object sender, EventArgs e)
         {                   
-            NewSpectaclesInvoice.FillFormOne(txt_order.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"),txt_eyeWear.Text, txt_lenses.Text, double.Parse(txt_total.Text), cmb_pay_method.Text, cmb_pay_plan.Text, cmb_testedby.Text, double.Parse(txt_advance.Text), double.Parse(txt_discount.Text), double.Parse(txt_balance.Text),cmb_orderStatus.Text,lbl_receiptNo.Text);
+            NewSpectaclesInvoice.FillFormOne(txt_order.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"),double.Parse(txt_eyeWear.Text),double.Parse( txt_lenses.Text), double.Parse(txt_total.Text), cmb_pay_method.Text, cmb_pay_plan.Text, cmb_testedby.Text, double.Parse(txt_advance.Text), double.Parse(txt_discount.Text), double.Parse(txt_balance.Text),cmb_orderStatus.Text,lbl_receiptNo.Text);
             new frm_specs2().Show();
         }
     }

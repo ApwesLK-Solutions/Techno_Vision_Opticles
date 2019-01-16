@@ -41,14 +41,14 @@ namespace TechnoVisionOptical.view
             cmb_orderStatus.SelectedIndex = 0;
             cmb_pay_method.SelectedIndex = 0;
             cmb_pay_plan.SelectedIndex = 0;
-            cmb_testby.SelectedIndex = 0;
+            //cmb_testby.SelectedIndex = 0;
 
         }
 
         public void getNewNumbers()
         {
             technovisionDataSetTableAdapters.order_summaryTableAdapter t = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
-            string newID = t.getMaxID().ToString();
+            string newID = t.getMaxId().ToString();
             if(newID == "")
             {
                 newID = "0";
