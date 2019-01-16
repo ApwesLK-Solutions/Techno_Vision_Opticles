@@ -18,9 +18,9 @@ namespace TechnoVisionOptical.view
             InitializeComponent();
         }
 
-        public frm_newPayment(Customer c) 
+        private void frm_newPayment_Load(object sender, EventArgs e)
         {
-            InitializeComponent();        
+
         }
     }
 }

@@ -20,13 +20,17 @@ namespace TechnoVisionOptical.view
 
         private void frm_paymentPlan_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'technovisionDataSet.customers' table. You can move, or remove it, as needed.
+            this.customersTableAdapter.Fill(this.technovisionDataSet.customers);
 
         }
 
+        private Customer c;
+
         private void btn_new_payment_Click(object sender, EventArgs e)
         {
-            Customer c;
-            //new frm_newPayment(c).Show();
+            
+            new frm_newPayment().Show();
         }
     }
 }
