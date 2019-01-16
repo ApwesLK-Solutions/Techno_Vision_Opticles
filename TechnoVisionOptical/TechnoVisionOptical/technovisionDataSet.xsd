@@ -234,7 +234,7 @@ WHERE  (username = @p6)</CommandText>
               <Mapping SourceColumn="id" DataSetColumn="id" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="technovisionConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getLastInsertedId" Modifier="Public" Name="getLastInsertedId" QueryType="Scalar" ScalarCallRetval="System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getLastInsertedId">
+              <DbSource ConnectionRef="technovisionConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getLastInsertedId" Modifier="Public" Name="getLastInsertedId" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getLastInsertedId">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT last_insert_id() FROM order_summary</CommandText>
@@ -778,7 +778,7 @@ WHERE  (username = @p6)</CommandText>
   <xs:element name="technovisionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="technovisionDataSet" msprop:Generator_UserDSName="technovisionDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="customers" msprop:Generator_TableClassName="customersDataTable" msprop:Generator_TableVarName="tablecustomers" msprop:Generator_RowChangedName="customersRowChanged" msprop:Generator_TablePropName="customers" msprop:Generator_RowDeletingName="customersRowDeleting" msprop:Generator_RowChangingName="customersRowChanging" msprop:Generator_RowEvHandlerName="customersRowChangeEventHandler" msprop:Generator_RowDeletedName="customersRowDeleted" msprop:Generator_RowClassName="customersRow" msprop:Generator_UserTableName="customers" msprop:Generator_RowEvArgName="customersRowChangeEvent">
+        <xs:element name="customers" msprop:Generator_TableClassName="customersDataTable" msprop:Generator_TableVarName="tablecustomers" msprop:Generator_TablePropName="customers" msprop:Generator_RowDeletingName="customersRowDeleting" msprop:Generator_RowChangingName="customersRowChanging" msprop:Generator_RowEvHandlerName="customersRowChangeEventHandler" msprop:Generator_RowDeletedName="customersRowDeleted" msprop:Generator_UserTableName="customers" msprop:Generator_RowChangedName="customersRowChanged" msprop:Generator_RowEvArgName="customersRowChangeEvent" msprop:Generator_RowClassName="customersRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="customerId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncustomerId" msprop:Generator_ColumnPropNameInRow="customerId" msprop:Generator_ColumnPropNameInTable="customerIdColumn" msprop:Generator_UserColumnName="customerId" type="xs:int" />
@@ -821,7 +821,7 @@ WHERE  (username = @p6)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="users" msprop:Generator_TableClassName="usersDataTable" msprop:Generator_TableVarName="tableusers" msprop:Generator_RowChangedName="usersRowChanged" msprop:Generator_TablePropName="users" msprop:Generator_RowDeletingName="usersRowDeleting" msprop:Generator_RowChangingName="usersRowChanging" msprop:Generator_RowEvHandlerName="usersRowChangeEventHandler" msprop:Generator_RowDeletedName="usersRowDeleted" msprop:Generator_RowClassName="usersRow" msprop:Generator_UserTableName="users" msprop:Generator_RowEvArgName="usersRowChangeEvent">
+        <xs:element name="users" msprop:Generator_TableClassName="usersDataTable" msprop:Generator_TableVarName="tableusers" msprop:Generator_TablePropName="users" msprop:Generator_RowDeletingName="usersRowDeleting" msprop:Generator_RowChangingName="usersRowChanging" msprop:Generator_RowEvHandlerName="usersRowChangeEventHandler" msprop:Generator_RowDeletedName="usersRowDeleted" msprop:Generator_UserTableName="users" msprop:Generator_RowChangedName="usersRowChanged" msprop:Generator_RowEvArgName="usersRowChangeEvent" msprop:Generator_RowClassName="usersRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username">
@@ -862,7 +862,7 @@ WHERE  (username = @p6)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="order_summary" msprop:Generator_TableClassName="order_summaryDataTable" msprop:Generator_TableVarName="tableorder_summary" msprop:Generator_TablePropName="order_summary" msprop:Generator_RowDeletingName="order_summaryRowDeleting" msprop:Generator_RowChangingName="order_summaryRowChanging" msprop:Generator_RowEvHandlerName="order_summaryRowChangeEventHandler" msprop:Generator_RowDeletedName="order_summaryRowDeleted" msprop:Generator_UserTableName="order_summary" msprop:Generator_RowChangedName="order_summaryRowChanged" msprop:Generator_RowEvArgName="order_summaryRowChangeEvent" msprop:Generator_RowClassName="order_summaryRow">
+        <xs:element name="order_summary" msprop:Generator_TableClassName="order_summaryDataTable" msprop:Generator_TableVarName="tableorder_summary" msprop:Generator_RowChangedName="order_summaryRowChanged" msprop:Generator_TablePropName="order_summary" msprop:Generator_RowDeletingName="order_summaryRowDeleting" msprop:Generator_RowChangingName="order_summaryRowChanging" msprop:Generator_RowEvHandlerName="order_summaryRowChangeEventHandler" msprop:Generator_RowDeletedName="order_summaryRowDeleted" msprop:Generator_RowClassName="order_summaryRow" msprop:Generator_UserTableName="order_summary" msprop:Generator_RowEvArgName="order_summaryRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="order_number" msprop:Generator_ColumnVarNameInTable="columnorder_number" msprop:Generator_ColumnPropNameInRow="order_number" msprop:Generator_ColumnPropNameInTable="order_numberColumn" msprop:Generator_UserColumnName="order_number">
@@ -891,7 +891,7 @@ WHERE  (username = @p6)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="lense_orders" msprop:Generator_TableClassName="lense_ordersDataTable" msprop:Generator_TableVarName="tablelense_orders" msprop:Generator_TablePropName="lense_orders" msprop:Generator_RowDeletingName="lense_ordersRowDeleting" msprop:Generator_RowChangingName="lense_ordersRowChanging" msprop:Generator_RowEvHandlerName="lense_ordersRowChangeEventHandler" msprop:Generator_RowDeletedName="lense_ordersRowDeleted" msprop:Generator_UserTableName="lense_orders" msprop:Generator_RowChangedName="lense_ordersRowChanged" msprop:Generator_RowEvArgName="lense_ordersRowChangeEvent" msprop:Generator_RowClassName="lense_ordersRow">
+        <xs:element name="lense_orders" msprop:Generator_TableClassName="lense_ordersDataTable" msprop:Generator_TableVarName="tablelense_orders" msprop:Generator_RowChangedName="lense_ordersRowChanged" msprop:Generator_TablePropName="lense_orders" msprop:Generator_RowDeletingName="lense_ordersRowDeleting" msprop:Generator_RowChangingName="lense_ordersRowChanging" msprop:Generator_RowEvHandlerName="lense_ordersRowChangeEventHandler" msprop:Generator_RowDeletedName="lense_ordersRowDeleted" msprop:Generator_RowClassName="lense_ordersRow" msprop:Generator_UserTableName="lense_orders" msprop:Generator_RowEvArgName="lense_ordersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="receipt_number" msprop:Generator_ColumnVarNameInTable="columnreceipt_number" msprop:Generator_ColumnPropNameInRow="receipt_number" msprop:Generator_ColumnPropNameInTable="receipt_numberColumn" msprop:Generator_UserColumnName="receipt_number">
@@ -1146,7 +1146,7 @@ WHERE  (username = @p6)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="specs_orders" msprop:Generator_TableClassName="specs_ordersDataTable" msprop:Generator_TableVarName="tablespecs_orders" msprop:Generator_TablePropName="specs_orders" msprop:Generator_RowDeletingName="specs_ordersRowDeleting" msprop:Generator_RowChangingName="specs_ordersRowChanging" msprop:Generator_RowEvHandlerName="specs_ordersRowChangeEventHandler" msprop:Generator_RowDeletedName="specs_ordersRowDeleted" msprop:Generator_UserTableName="specs_orders" msprop:Generator_RowChangedName="specs_ordersRowChanged" msprop:Generator_RowEvArgName="specs_ordersRowChangeEvent" msprop:Generator_RowClassName="specs_ordersRow">
+        <xs:element name="specs_orders" msprop:Generator_TableClassName="specs_ordersDataTable" msprop:Generator_TableVarName="tablespecs_orders" msprop:Generator_RowChangedName="specs_ordersRowChanged" msprop:Generator_TablePropName="specs_orders" msprop:Generator_RowDeletingName="specs_ordersRowDeleting" msprop:Generator_RowChangingName="specs_ordersRowChanging" msprop:Generator_RowEvHandlerName="specs_ordersRowChangeEventHandler" msprop:Generator_RowDeletedName="specs_ordersRowDeleted" msprop:Generator_RowClassName="specs_ordersRow" msprop:Generator_UserTableName="specs_orders" msprop:Generator_RowEvArgName="specs_ordersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="receipt_number" msprop:Generator_ColumnVarNameInTable="columnreceipt_number" msprop:Generator_ColumnPropNameInRow="receipt_number" msprop:Generator_ColumnPropNameInTable="receipt_numberColumn" msprop:Generator_UserColumnName="receipt_number">

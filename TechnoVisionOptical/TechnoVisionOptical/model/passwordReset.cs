@@ -13,12 +13,12 @@ namespace TechnoVisionOptical.model
         private string nicNum;
         private string PhoneNum;
 
-        public void passwordReset(String passOne, String passTwo, String nic, String phn)
+        /*public void passwordReset(String passOne, String passTwo, String nic, String phn)
         {
             passwordOne = passOne;
             passwordTwo = passTwo;
             nicNum = nic;
             PhoneNum = phn;
-        }
+        }*/
     }
 }

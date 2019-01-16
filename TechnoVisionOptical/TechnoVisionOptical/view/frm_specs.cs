@@ -30,7 +30,7 @@ namespace TechnoVisionOptical.view
         }
         public void getNewNumbers()
         {
-            technovisionDataSetTableAdapters.order_summaryTableAdapter t = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
+            /*technovisionDataSetTableAdapters.order_summaryTableAdapter t = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
             string lastID = (t.getLastInsertedId().Value + 1).ToString();
             if (lastID == "")
             {
@@ -47,7 +47,7 @@ namespace TechnoVisionOptical.view
             string orderNumber = DateTime.Now.ToString("yy") + lastID;
             string receiptNumber = "R" + orderNumber;
             txt_order.Text = orderNumber;
-            lbl_receiptNo.Text = receiptNumber;
+            lbl_receiptNo.Text = receiptNumber;*/
         }
         private void frm_specs_Load(object sender, EventArgs e)
         {

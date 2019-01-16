@@ -6944,7 +6944,7 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<ulong> getLastInsertedId() {
+        public virtual object getLastInsertedId() {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[1];
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6962,10 +6962,10 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             }
             if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
-                return new global::System.Nullable<ulong>();
+                return null;
             }
             else {
-                return new global::System.Nullable<ulong>(((ulong)(returnValue)));
+                return ((object)(returnValue));
             }
         }
     }
