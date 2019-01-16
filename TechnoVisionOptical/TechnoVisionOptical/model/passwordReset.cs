@@ -8,17 +8,19 @@ namespace TechnoVisionOptical.model
 {
     class passwordReset
     {
-        private string passwordOne;
-        private string passwordTwo;
-        private string nicNum;
-        private string PhoneNum;
-
-        /*public void passwordReset(String passOne, String passTwo, String nic, String phn)
+        public string user;
+        public string passwordOne;
+        public string passwordTwo;
+        public string nicNum;
+        public string PhoneNum;
+        
+        public void passwordResetData(String userName, String passOne, String passTwo, String nic, String phn)
         {
             passwordOne = passOne;
             passwordTwo = passTwo;
             nicNum = nic;
             PhoneNum = phn;
-        }*/
+            user = userName;
+        }
     }
 }
