@@ -282,6 +282,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Password Reset";
+            this.Load += new System.EventHandler(this.frm_passwordReset_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

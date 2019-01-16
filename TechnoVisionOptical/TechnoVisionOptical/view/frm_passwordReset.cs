@@ -32,5 +32,10 @@ namespace TechnoVisionOptical.view
                 userController.reset(u,txt_new_pw.Text,this);
             }
         }
+
+        private void frm_passwordReset_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
