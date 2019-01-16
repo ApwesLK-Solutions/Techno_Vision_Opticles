@@ -47,7 +47,7 @@
             this.txt_balRef = new MetroFramework.Controls.MetroTextBox();
             this.txt_advRef = new MetroFramework.Controls.MetroTextBox();
             this.txt_lensRef = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
+            this.lbl_receiptNo = new MetroFramework.Controls.MetroLabel();
             this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
             this.btn_clear = new MetroFramework.Controls.MetroTile();
             this.btn_next = new MetroFramework.Controls.MetroTile();
@@ -423,15 +423,15 @@
             this.txt_lensRef.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_lensRef.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel30
+            // lbl_receiptNo
             // 
-            this.metroLabel30.AutoSize = true;
-            this.metroLabel30.Location = new System.Drawing.Point(764, 36);
-            this.metroLabel30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.metroLabel30.Name = "metroLabel30";
-            this.metroLabel30.Size = new System.Drawing.Size(80, 20);
-            this.metroLabel30.TabIndex = 88;
-            this.metroLabel30.Text = "R+orderNo";
+            this.lbl_receiptNo.AutoSize = true;
+            this.lbl_receiptNo.Location = new System.Drawing.Point(764, 36);
+            this.lbl_receiptNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_receiptNo.Name = "lbl_receiptNo";
+            this.lbl_receiptNo.Size = new System.Drawing.Size(80, 20);
+            this.lbl_receiptNo.TabIndex = 88;
+            this.lbl_receiptNo.Text = "R+orderNo";
             // 
             // metroLabel29
             // 
@@ -534,7 +534,7 @@
             this.Controls.Add(this.metroLabel16);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_clear);
-            this.Controls.Add(this.metroLabel30);
+            this.Controls.Add(this.lbl_receiptNo);
             this.Controls.Add(this.metroLabel29);
             this.Controls.Add(this.txt_balRef);
             this.Controls.Add(this.txt_advRef);
@@ -589,7 +589,7 @@
         private MetroFramework.Controls.MetroTextBox txt_balRef;
         private MetroFramework.Controls.MetroTextBox txt_advRef;
         private MetroFramework.Controls.MetroTextBox txt_lensRef;
-        private MetroFramework.Controls.MetroLabel metroLabel30;
+        private MetroFramework.Controls.MetroLabel lbl_receiptNo;
         private MetroFramework.Controls.MetroLabel metroLabel29;
         private MetroFramework.Controls.MetroTile btn_clear;
         private MetroFramework.Controls.MetroTile btn_next;
