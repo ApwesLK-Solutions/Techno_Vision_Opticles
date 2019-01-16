@@ -30,6 +30,7 @@ namespace TechnoVisionOptical.view
         private void frm_customerList_Load(object sender, EventArgs e)
         {
             this.customersTableAdapter.Fill(this.technovisionDataSet.customers);
+            
         }
 
         private void txt_search_TextChanged(object sender, EventArgs e)

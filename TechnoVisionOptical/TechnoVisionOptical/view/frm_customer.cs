@@ -19,16 +19,29 @@ namespace TechnoVisionOptical.view
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            Customer.name = txt_name.Text;
-            Customer.address = txt_address.Text;
-            Customer.age = int.Parse(txt_age.Text);
-            Customer.email = txt_email.Text;
-            Customer.phone = txt_phone.Text;
-            Customer.profession = txt_proffession.Text;
-            Customer.saveCustomer(this);
-            
-                
-            
+            try
+            {
+                if((txt_name.Text=="")||(txt_email.Text=="")||(txt_age.Text=="")||(txt_phone.Text=="")||(txt_address.Text=="")||(txt_proffession.Text==""))
+                {
+                    MSG.ERROR(this, "Please Enter Required Fields...");
+                }
+                else
+                {
+                    Customer.name = txt_name.Text;
+                    Customer.address = txt_address.Text;
+                    Customer.age = int.Parse(txt_age.Text);
+                    Customer.email = txt_email.Text;
+                    Customer.phone = txt_phone.Text;
+                    Customer.profession = txt_proffession.Text;
+                    Customer.saveCustomer(this);
+                    MSG.SUCCESS(this, "Customer Saved Successfully...Please Refresh the Customer List to Get Updated One");
+
+                }
+            }
+            catch(MySql.Data.MySqlClient.MySqlException)
+            {
+                MSG.ERROR(this, "Can not Save Customer");
+            } 
         }
 
         

@@ -38,6 +38,11 @@ namespace TechnoVisionOptical.view
         {
             getNewNumbers();
             cmb_jobType.SelectedIndex = 0;
+            cmb_orderStatus.SelectedIndex = 0;
+            cmb_pay_method.SelectedIndex = 0;
+            cmb_pay_plan.SelectedIndex = 0;
+            cmb_testby.SelectedIndex = 0;
+
         }
 
         public void getNewNumbers()
