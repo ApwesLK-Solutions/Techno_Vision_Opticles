@@ -33,7 +33,7 @@ namespace TechnoVisionOptical.controller
                 row = UserDataTable.FindByusername(ExisitingUser.username);         
                 if(row == null)
                 {
-                    MSG.ERROR(ui, "User Doesnt Exists in the System");
+                    MSG.ERROR(ui, "User Doesn't Exists in the System");
                     return false;
                 }
                 if((row.username.ToString() == ExisitingUser.username) && (row.password.ToString() == ExisitingUser.password))
@@ -45,7 +45,7 @@ namespace TechnoVisionOptical.controller
                 }
                 else
                 {
-                    MSG.ERROR(ui, "Username and Password Doesnt Match!");
+                    MSG.ERROR(ui, "Username and Password Doesn't Match!");
                     return false;
                 }
             }

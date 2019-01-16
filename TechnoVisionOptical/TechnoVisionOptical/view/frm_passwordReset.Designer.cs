@@ -37,12 +37,14 @@
             this.txt_phone = new MetroFramework.Controls.MetroTextBox();
             this.txt_new_pw = new MetroFramework.Controls.MetroTextBox();
             this.txt_confirm_pw = new MetroFramework.Controls.MetroTextBox();
+            this.txt_userName = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(27, 63);
+            this.metroLabel1.Location = new System.Drawing.Point(27, 100);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(115, 19);
             this.metroLabel1.TabIndex = 0;
@@ -51,7 +53,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(27, 92);
+            this.metroLabel2.Location = new System.Drawing.Point(27, 129);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(130, 19);
             this.metroLabel2.TabIndex = 1;
@@ -60,7 +62,7 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(27, 150);
+            this.metroLabel3.Location = new System.Drawing.Point(27, 187);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(145, 19);
             this.metroLabel3.TabIndex = 2;
@@ -69,7 +71,7 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(27, 121);
+            this.metroLabel4.Location = new System.Drawing.Point(27, 158);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(93, 19);
             this.metroLabel4.TabIndex = 3;
@@ -78,7 +80,7 @@
             // btn_reset_pw
             // 
             this.btn_reset_pw.ActiveControl = null;
-            this.btn_reset_pw.Location = new System.Drawing.Point(131, 179);
+            this.btn_reset_pw.Location = new System.Drawing.Point(131, 224);
             this.btn_reset_pw.Name = "btn_reset_pw";
             this.btn_reset_pw.Size = new System.Drawing.Size(128, 45);
             this.btn_reset_pw.Style = MetroFramework.MetroColorStyle.Green;
@@ -104,7 +106,7 @@
             this.txt_nic.CustomButton.UseSelectable = true;
             this.txt_nic.CustomButton.Visible = false;
             this.txt_nic.Lines = new string[0];
-            this.txt_nic.Location = new System.Drawing.Point(182, 61);
+            this.txt_nic.Location = new System.Drawing.Point(182, 98);
             this.txt_nic.MaxLength = 32767;
             this.txt_nic.Name = "txt_nic";
             this.txt_nic.PasswordChar = '\0';
@@ -137,7 +139,7 @@
             this.txt_phone.CustomButton.UseSelectable = true;
             this.txt_phone.CustomButton.Visible = false;
             this.txt_phone.Lines = new string[0];
-            this.txt_phone.Location = new System.Drawing.Point(182, 90);
+            this.txt_phone.Location = new System.Drawing.Point(182, 127);
             this.txt_phone.MaxLength = 32767;
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.PasswordChar = '\0';
@@ -169,7 +171,7 @@
             this.txt_new_pw.CustomButton.UseSelectable = true;
             this.txt_new_pw.CustomButton.Visible = false;
             this.txt_new_pw.Lines = new string[0];
-            this.txt_new_pw.Location = new System.Drawing.Point(182, 119);
+            this.txt_new_pw.Location = new System.Drawing.Point(182, 156);
             this.txt_new_pw.MaxLength = 32767;
             this.txt_new_pw.Name = "txt_new_pw";
             this.txt_new_pw.PasswordChar = '\0';
@@ -201,7 +203,7 @@
             this.txt_confirm_pw.CustomButton.UseSelectable = true;
             this.txt_confirm_pw.CustomButton.Visible = false;
             this.txt_confirm_pw.Lines = new string[0];
-            this.txt_confirm_pw.Location = new System.Drawing.Point(182, 148);
+            this.txt_confirm_pw.Location = new System.Drawing.Point(182, 185);
             this.txt_confirm_pw.MaxLength = 32767;
             this.txt_confirm_pw.Name = "txt_confirm_pw";
             this.txt_confirm_pw.PasswordChar = '\0';
@@ -218,11 +220,54 @@
             this.txt_confirm_pw.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_confirm_pw.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // txt_userName
+            // 
+            // 
+            // 
+            // 
+            this.txt_userName.CustomButton.Image = null;
+            this.txt_userName.CustomButton.Location = new System.Drawing.Point(163, 1);
+            this.txt_userName.CustomButton.Name = "";
+            this.txt_userName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txt_userName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_userName.CustomButton.TabIndex = 1;
+            this.txt_userName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_userName.CustomButton.UseSelectable = true;
+            this.txt_userName.CustomButton.Visible = false;
+            this.txt_userName.Lines = new string[0];
+            this.txt_userName.Location = new System.Drawing.Point(182, 69);
+            this.txt_userName.MaxLength = 32767;
+            this.txt_userName.Name = "txt_userName";
+            this.txt_userName.PasswordChar = '\0';
+            this.txt_userName.PromptText = "Enter UserName";
+            this.txt_userName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_userName.SelectedText = "";
+            this.txt_userName.SelectionLength = 0;
+            this.txt_userName.SelectionStart = 0;
+            this.txt_userName.ShortcutsEnabled = true;
+            this.txt_userName.Size = new System.Drawing.Size(185, 23);
+            this.txt_userName.TabIndex = 10;
+            this.txt_userName.UseSelectable = true;
+            this.txt_userName.WaterMark = "Enter UserName";
+            this.txt_userName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_userName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(27, 71);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(106, 19);
+            this.metroLabel5.TabIndex = 9;
+            this.metroLabel5.Text = "Your User Name";
+            // 
             // frm_passwordReset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 236);
+            this.ClientSize = new System.Drawing.Size(390, 295);
+            this.Controls.Add(this.txt_userName);
+            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.txt_confirm_pw);
             this.Controls.Add(this.txt_new_pw);
             this.Controls.Add(this.txt_phone);
@@ -237,6 +282,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Password Reset";
+            this.Load += new System.EventHandler(this.frm_passwordReset_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +299,7 @@
         private MetroFramework.Controls.MetroTextBox txt_phone;
         private MetroFramework.Controls.MetroTextBox txt_new_pw;
         private MetroFramework.Controls.MetroTextBox txt_confirm_pw;
+        private MetroFramework.Controls.MetroTextBox txt_userName;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
     }
 }

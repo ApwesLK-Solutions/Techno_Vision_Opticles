@@ -20,14 +20,24 @@ namespace TechnoVisionOptical.view
         
         private void btn_next_Click(object sender, EventArgs e)
         {
-            NewContactLenseInvoice.fillFormOne(txt_order_no.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"), cmb_pay_method.Text, cmb_pay_plan.Text, double.Parse(txt_lenseRs.Text), double.Parse(txt_advRs.Text), double.Parse(txt_balRs.Text), cmb_testby.Text,lbl_receiptNo.Text , cmb_jobType.Text , cmb_orderStatus.Text);
-            new frm_contactlenses2().Show();
+            try
+            {
+                NewContactLenseInvoice.fillFormOne(txt_order_no.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"), cmb_pay_method.Text, cmb_pay_plan.Text, double.Parse(txt_lenseRs.Text), double.Parse(txt_advRs.Text), double.Parse(txt_balRs.Text), cmb_testby.Text,lbl_receiptNo.Text , cmb_jobType.Text , cmb_orderStatus.Text);
+                new frm_contactlenses2().Show();
+                
+            }
+            catch(Exception)
+            {
+                MSG.ERROR(this,"Error Orccured");
+            }
+            
             
         }
 
         private void frm_contactlenses_Load(object sender, EventArgs e)
         {
             getNewNumbers();
+            cmb_jobType.SelectedIndex = 0;
         }
 
         public void getNewNumbers()
@@ -50,32 +60,5 @@ namespace TechnoVisionOptical.view
             txt_order_no.Text = newID;
             lbl_receiptNo.Text = "R" + newID;
         }
-
-        private void txt_lensRef_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_pay_plan_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_orderStatus_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_jobType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmb_testby_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }

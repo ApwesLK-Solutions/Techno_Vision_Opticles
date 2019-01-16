@@ -18,7 +18,7 @@ namespace TechnoVisionOptical
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frm_dashboard());
-            //Application.Run(new frm_paymentPlan());
+            //Application.Run(new frm_login());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
