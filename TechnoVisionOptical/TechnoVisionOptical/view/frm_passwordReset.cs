@@ -32,5 +32,10 @@ namespace TechnoVisionOptical.view
             passwordResetController prc = new passwordResetController();
             prc.resetPaswordFucntion(pr,this);
         }
+
+        private void frm_passwordReset_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
