@@ -17,10 +17,5 @@ namespace TechnoVisionOptical.view
         {
             InitializeComponent();
         }
-
-        public frm_newPayment(Customer c) 
-        {
-            InitializeComponent();        
-        }
     }
 }

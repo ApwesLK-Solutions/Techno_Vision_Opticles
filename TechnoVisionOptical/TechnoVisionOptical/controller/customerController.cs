@@ -20,35 +20,5 @@ namespace TechnoVisionOptical.controller
             CustTable.Insert(Customer.name, Customer.address, Customer.profession, Customer.age, Customer.phone, Customer.email);
             return true;
         }
-
-        public static void fillSpecFormDataByCustomerID(int custID , MetroFramework.Forms.MetroForm ui)
-        {
-            try
-            {
-                row = dtable.FindBycustomerId(custID);
-                new frm_specs(true, row.name, row.address, row.phone, row.email, row.profession, row.age).Show();
-                Customer.id = custID;
-            }
-            catch(MySql.Data.MySqlClient.MySqlException ex)
-            {
-                //show msg (Error Loading Customer Details)
-            }
-            
-        }
-
-        public static void fillLenseFormDataByCustomerID(int custID, MetroFramework.Forms.MetroForm ui)
-        {
-            try
-            {
-                row = dtable.FindBycustomerId(custID);
-                new frm_contactlenses(true , row.name, row.address, row.phone, row.email, row.profession, row.age).Show();
-                Customer.id = custID;
-            }
-            catch (MySql.Data.MySqlClient.MySqlException ex)
-            {
-                //show msg (Error Loading Customer Details)
-            }
-
-        }
     }
 }
