@@ -13,11 +13,11 @@ namespace TechnoVisionOptical.view
 {
     public partial class frm_specs2 : MetroFramework.Forms.MetroForm
     {
-        private bool newCustomer = false;
-        public frm_specs2(bool newCustomer)
+   
+        public frm_specs2()
         {
             InitializeComponent();
-            this.newCustomer = newCustomer;
+          
         }
 
         private void frm_specs2_Load(object sender, EventArgs e)
