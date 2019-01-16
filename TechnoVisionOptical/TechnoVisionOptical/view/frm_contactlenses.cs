@@ -48,6 +48,11 @@ namespace TechnoVisionOptical.view
 
         }
 
+        private void txt_lensRef_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }
