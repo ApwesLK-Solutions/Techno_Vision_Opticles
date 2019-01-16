@@ -88,7 +88,6 @@
             this.txt_order_no.MaxLength = 32767;
             this.txt_order_no.Name = "txt_order_no";
             this.txt_order_no.PasswordChar = '\0';
-            this.txt_order_no.PromptText = "Enter Order Number";
             this.txt_order_no.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_order_no.SelectedText = "";
             this.txt_order_no.SelectionLength = 0;
@@ -253,7 +252,6 @@
             this.txt_advRs.MaxLength = 32767;
             this.txt_advRs.Name = "txt_advRs";
             this.txt_advRs.PasswordChar = '\0';
-            this.txt_advRs.PromptText = "Advance Amount";
             this.txt_advRs.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_advRs.SelectedText = "";
             this.txt_advRs.SelectionLength = 0;

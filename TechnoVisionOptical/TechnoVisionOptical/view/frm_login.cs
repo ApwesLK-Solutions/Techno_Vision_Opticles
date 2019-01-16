@@ -19,8 +19,24 @@ namespace TechnoVisionOptical.view
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            user u = new user(txt_username.Text , txt_password.Text);
-            u.Login(this);
+            try
+            {
+                if((txt_username.Text == "" )|| (txt_password.Text==""))
+                {
+                    MSG.ERROR(this, "Username or Password Empty...");
+                }
+                else
+                {
+                    user u = new user(txt_username.Text, txt_password.Text);
+                    u.Login(this);
+                }
+
+            }
+            catch(MySql.Data.MySqlClient.MySqlException ex)
+            {
+                MSG.ERROR(this, "Can not Login. Please Try Again... "+ex.Message);
+            }
+            
         }
 
         private void frm_login_Load(object sender, EventArgs e)
@@ -30,7 +46,9 @@ namespace TechnoVisionOptical.view
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            new frm_passwordReset().Show();
         }
+
+       
     }
 }
