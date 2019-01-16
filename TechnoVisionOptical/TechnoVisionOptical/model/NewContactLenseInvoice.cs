@@ -18,6 +18,7 @@ namespace TechnoVisionOptical.model
         public static double LenseAdvance;     
         public static double LenseBalance;    
         public static string TestedBy;
+        public static string JobType;
 
 
 
@@ -59,8 +60,9 @@ namespace TechnoVisionOptical.model
         
         
 
-        public static void fillFormOne(string _OrderNumber, string _OrderDate, string _DueDate, string _PaymentMethod, string _PaymentPlan, double _LenseTotal, double _LenseAdvance, double _LenseBalance , string _TestedBy , string _receiptNumber)
+        public static void fillFormOne(string _OrderNumber, string _OrderDate, string _DueDate, string _PaymentMethod, string _PaymentPlan, double _LenseTotal, double _LenseAdvance, double _LenseBalance , string _TestedBy , string _receiptNumber , string _jobType)
         {
+            JobType         = _jobType;
             OrderNumber     = _OrderNumber;
             OrderDate       = _OrderDate;
             DueDate         = _DueDate;
@@ -70,7 +72,7 @@ namespace TechnoVisionOptical.model
             LenseTotal      = _LenseTotal;
             LenseAdvance    = _LenseAdvance;         
             LenseBalance    = _LenseBalance;
-            ReceiptNumber = _receiptNumber;
+            ReceiptNumber   = _receiptNumber;
         }
         
         public static void fillFormTwo(string _OldRightSph,string _OldRightCyl,string _OldRightAxis,string _OldRightAdd,string _OldLeftSph,string _OldLeftCyl,string _OldLeftAxis,string _OldLeftAdd,string _PresentLeftSph,string _PresentLeftCyl,string _PresentLeftAxis,string _PresentLeftAdd,string _PresentRightSph,string _PresentRightCyl,string _PresentRightAxis,string _PresentRightAdd,string _RightBc,string _RightPow,string _RightDia,string _RightDesz,string _LeftBc,string _LeftPow,string _LeftDia,string _LeftDesz,string _TrailLens,string _OverRefract,string _SpecialIns,string _Remarks,string _KReading,string _BlinkTest,string _RBefore,string _LAfter)
