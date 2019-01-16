@@ -56,6 +56,8 @@
             this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
             this.btn_next = new MetroFramework.Controls.MetroTile();
             this.btn_clearall = new MetroFramework.Controls.MetroTile();
+            this.cmb_orderStatus = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // cmb_pay_plan
@@ -65,11 +67,11 @@
             this.cmb_pay_plan.Items.AddRange(new object[] {
             "Advance",
             "Installment"});
-            this.cmb_pay_plan.Location = new System.Drawing.Point(221, 183);
+            this.cmb_pay_plan.Location = new System.Drawing.Point(144, 183);
             this.cmb_pay_plan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_pay_plan.Name = "cmb_pay_plan";
             this.cmb_pay_plan.PromptText = "Select";
-            this.cmb_pay_plan.Size = new System.Drawing.Size(239, 30);
+            this.cmb_pay_plan.Size = new System.Drawing.Size(317, 30);
             this.cmb_pay_plan.TabIndex = 120;
             this.cmb_pay_plan.UseSelectable = true;
             // 
@@ -166,7 +168,7 @@
             this.txt_duedate.Margin = new System.Windows.Forms.Padding(4);
             this.txt_duedate.MinimumSize = new System.Drawing.Size(0, 30);
             this.txt_duedate.Name = "txt_duedate";
-            this.txt_duedate.Size = new System.Drawing.Size(316, 30);
+            this.txt_duedate.Size = new System.Drawing.Size(317, 30);
             this.txt_duedate.TabIndex = 111;
             // 
             // metroLabel3
@@ -515,11 +517,39 @@
             this.btn_clearall.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_clearall.UseSelectable = true;
             // 
+            // cmb_orderStatus
+            // 
+            this.cmb_orderStatus.FormattingEnabled = true;
+            this.cmb_orderStatus.ItemHeight = 24;
+            this.cmb_orderStatus.Items.AddRange(new object[] {
+            "PENDING ",
+            "DELIVERED",
+            "CANCELED"});
+            this.cmb_orderStatus.Location = new System.Drawing.Point(144, 364);
+            this.cmb_orderStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.cmb_orderStatus.Name = "cmb_orderStatus";
+            this.cmb_orderStatus.PromptText = "Select";
+            this.cmb_orderStatus.Size = new System.Drawing.Size(317, 30);
+            this.cmb_orderStatus.TabIndex = 136;
+            this.cmb_orderStatus.UseSelectable = true;
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(29, 368);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(86, 20);
+            this.metroLabel5.TabIndex = 135;
+            this.metroLabel5.Text = "Order Status";
+            // 
             // frm_specs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 431);
+            this.Controls.Add(this.cmb_orderStatus);
+            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.btn_clearall);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.txt_balance);
@@ -589,5 +619,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel18;
         private MetroFramework.Controls.MetroTile btn_next;
         private MetroFramework.Controls.MetroTile btn_clearall;
+        private MetroFramework.Controls.MetroComboBox cmb_orderStatus;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
     }
 }
