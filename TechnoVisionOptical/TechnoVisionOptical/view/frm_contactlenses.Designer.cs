@@ -160,7 +160,7 @@
             this.cmb_testby.Size = new System.Drawing.Size(316, 30);
             this.cmb_testby.TabIndex = 21;
             this.cmb_testby.UseSelectable = true;
-            this.cmb_testby.SelectedIndexChanged += new System.EventHandler(this.cmb_testby_SelectedIndexChanged);
+           
             // 
             // metroLabel8
             // 
@@ -391,7 +391,7 @@
             this.cmb_pay_plan.Size = new System.Drawing.Size(316, 30);
             this.cmb_pay_plan.TabIndex = 94;
             this.cmb_pay_plan.UseSelectable = true;
-            this.cmb_pay_plan.SelectedIndexChanged += new System.EventHandler(this.cmb_pay_plan_SelectedIndexChanged);
+            
             // 
             // metroLabel4
             // 
@@ -417,7 +417,7 @@
             this.cmb_jobType.Size = new System.Drawing.Size(316, 30);
             this.cmb_jobType.TabIndex = 21;
             this.cmb_jobType.UseSelectable = true;
-            this.cmb_jobType.SelectedIndexChanged += new System.EventHandler(this.cmb_jobType_SelectedIndexChanged);
+            
             // 
             // metroLabel5
             // 
@@ -444,7 +444,7 @@
             this.cmb_orderStatus.Size = new System.Drawing.Size(316, 30);
             this.cmb_orderStatus.TabIndex = 21;
             this.cmb_orderStatus.UseSelectable = true;
-            this.cmb_orderStatus.SelectedIndexChanged += new System.EventHandler(this.cmb_orderStatus_SelectedIndexChanged);
+            
             // 
             // lbl_receiptNo
             // 
