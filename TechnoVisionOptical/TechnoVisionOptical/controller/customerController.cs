@@ -14,17 +14,11 @@ namespace TechnoVisionOptical.controller
         private static technovisionDataSetTableAdapters.customersTableAdapter CustTable = new technovisionDataSetTableAdapters.customersTableAdapter();
         private static technovisionDataSet.customersDataTable dtable = CustTable.GetData();
         private static technovisionDataSet.customersRow row;
+
         public static bool register(MetroFramework.Forms.MetroForm ui)
         {
-            try
-            {
-                CustTable.Insert(Customer.name, Customer.address, Customer.profession, Customer.age, Customer.phone, Customer.email);
-                return true;
-            }
-            catch(MySql.Data.MySqlClient.MySqlException ex)
-            {
-                return false;
-            }
+            CustTable.Insert(Customer.name, Customer.address, Customer.profession, Customer.age, Customer.phone, Customer.email);
+            return true;
         }
 
         public static void fillSpecFormDataByCustomerID(int custID , MetroFramework.Forms.MetroForm ui)
@@ -33,6 +27,7 @@ namespace TechnoVisionOptical.controller
             {
                 row = dtable.FindBycustomerId(custID);
                 new frm_specs(true, row.name, row.address, row.phone, row.email, row.profession, row.age).Show();
+                Customer.id = custID;
             }
             catch(MySql.Data.MySqlClient.MySqlException ex)
             {
@@ -47,6 +42,7 @@ namespace TechnoVisionOptical.controller
             {
                 row = dtable.FindBycustomerId(custID);
                 new frm_contactlenses(true , row.name, row.address, row.phone, row.email, row.profession, row.age).Show();
+                Customer.id = custID;
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {

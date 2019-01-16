@@ -11,12 +11,6 @@ namespace TechnoVisionOptical.model
         public static string OrderNumber;
         public static string OrderDate;
         public static string DueDate;
-        public static string Name;
-        public static string Address;
-        public static string PhoneNumber;
-        public static string EmailAddress;
-        public static int    Age;
-        public static string Profesion;
         public static string PaymentMethod;
         public static string PaymentPlan;
         public static double LenseTotal;
@@ -69,17 +63,11 @@ namespace TechnoVisionOptical.model
         
         
 
-        public static void fillFormOne(string _OrderNumber, string _OrderDate, string _DueDate, string _Name, string _Address, string _PhoneNumber, string _EmailAddress, int _Age, string _Profesion, string _PaymentMethod, string _PaymentPlan, double _LenseTotal, double _LenseTotalRef, double _LenseAdvance, string _LenseAdvanceRef, double _LenseBalance, string _LenseBalanceRef)
+        public static void fillFormOne(string _OrderNumber, string _OrderDate, string _DueDate, string _PaymentMethod, string _PaymentPlan, double _LenseTotal, double _LenseTotalRef, double _LenseAdvance, string _LenseAdvanceRef, double _LenseBalance, string _LenseBalanceRef)
         {
             OrderNumber     = _OrderNumber;
             OrderDate       = _OrderDate;
             DueDate         = _DueDate;
-            Name            = _Name;
-            Address         = _Address;
-            PhoneNumber     = _PhoneNumber;
-            EmailAddress    = _EmailAddress;
-            Age             = _Age;
-            Profesion       = _Profesion;
             PaymentMethod   = _PaymentMethod;
             PaymentPlan     = _PaymentPlan;
             LenseTotal      = _LenseTotal;

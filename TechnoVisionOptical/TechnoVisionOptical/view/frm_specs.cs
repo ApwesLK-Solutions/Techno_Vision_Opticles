@@ -35,9 +35,14 @@ namespace TechnoVisionOptical.view
 
         }
         private void btn_next_Click(object sender, EventArgs e)
-        {
-            NewSpectaclesInvoice.FillFormOne(txt_order.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"), txt_phone.Text, txt_name.Text, txt_address.Text, txt_email.Text, int.Parse(txt_age.Text), txt_proffession.Text, txt_eyeWear.Text, txt_lenses.Text, double.Parse(txt_total.Text), cmb_pay_method.Text, cmb_pay_plan.Text, cmb_testedby.Text, double.Parse(txt_advance.Text), double.Parse(txt_discount.Text), double.Parse(txt_balance.Text));
-           //MessageBox.Show(txt_orderdate.Value.ToString("yyyy-MM-dd"));       
+        { 
+            Customer.name = txt_name.Text;
+            Customer.address = txt_address.Text;
+            Customer.email = txt_email.Text;
+            Customer.phone = txt_phone.Text;
+            Customer.profession = txt_proffession.Text;
+            Customer.age = int.Parse(txt_age.Text);          
+            NewSpectaclesInvoice.FillFormOne(txt_order.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"),txt_eyeWear.Text, txt_lenses.Text, double.Parse(txt_total.Text), cmb_pay_method.Text, cmb_pay_plan.Text, cmb_testedby.Text, double.Parse(txt_advance.Text), double.Parse(txt_discount.Text), double.Parse(txt_balance.Text));          
         }
     }
 }
