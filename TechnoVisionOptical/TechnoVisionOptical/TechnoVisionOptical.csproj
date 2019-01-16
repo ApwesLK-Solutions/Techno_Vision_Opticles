@@ -64,10 +64,12 @@
     <Compile Include="controller\contactLenseInvoiceController.cs" />
     <Compile Include="controller\customerController.cs" />
     <Compile Include="controller\specInvoiceController.cs" />
+    <Compile Include="controller\passwordResetController.cs" />
     <Compile Include="controller\userController.cs" />
     <Compile Include="model\Customer.cs" />
     <Compile Include="model\NewContactLenseInvoice.cs" />
     <Compile Include="model\NewSpectaclesInvoice.cs" />
+    <Compile Include="model\passwordReset.cs" />
     <Compile Include="model\user.cs" />
     <Compile Include="MSG.cs" />
     <Compile Include="Program.cs" />

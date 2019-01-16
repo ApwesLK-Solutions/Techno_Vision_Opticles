@@ -50,6 +50,11 @@ namespace TechnoVisionOptical.view
             lbl_receiptNo.Text = receiptNumber;
         }
 
+        private void txt_lensRef_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }

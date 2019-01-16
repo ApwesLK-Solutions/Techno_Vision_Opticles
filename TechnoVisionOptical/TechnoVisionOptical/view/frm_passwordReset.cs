@@ -24,7 +24,7 @@ namespace TechnoVisionOptical.view
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
