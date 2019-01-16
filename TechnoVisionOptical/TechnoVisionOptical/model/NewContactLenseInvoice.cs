@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechnoVisionOptical.controller;
 
 namespace TechnoVisionOptical.model
 {
     class NewContactLenseInvoice
-    {
+    { //32+12+1
+        //49
         public static string OrderNumber;
         public static string ReceiptNumber;
+
         public static string OrderDate;
         public static string DueDate;
         public static string PaymentMethod;
         public static string PaymentPlan;
+
         public static double LenseTotal;        
         public static double LenseAdvance;     
         public static double LenseBalance;    
@@ -53,8 +57,7 @@ namespace TechnoVisionOptical.model
         public static string Remarks;
         public static string KReading;
         public static string BlinkTest;
-        public static string RBefore;
-        public static string LAfter;
+    
 
 
         
@@ -76,7 +79,7 @@ namespace TechnoVisionOptical.model
             OrderStatus = _orderStatus;
         }
         
-        public static void fillFormTwo(string _OldRightSph,string _OldRightCyl,string _OldRightAxis,string _OldRightAdd,string _OldLeftSph,string _OldLeftCyl,string _OldLeftAxis,string _OldLeftAdd,string _PresentLeftSph,string _PresentLeftCyl,string _PresentLeftAxis,string _PresentLeftAdd,string _PresentRightSph,string _PresentRightCyl,string _PresentRightAxis,string _PresentRightAdd,string _RightBc,string _RightPow,string _RightDia,string _RightDesz,string _LeftBc,string _LeftPow,string _LeftDia,string _LeftDesz,string _TrailLens,string _OverRefract,string _SpecialIns,string _Remarks,string _KReading,string _BlinkTest,string _RBefore,string _LAfter)
+        public static void fillFormTwo(string _OldRightSph,string _OldRightCyl,string _OldRightAxis,string _OldRightAdd,string _OldLeftSph,string _OldLeftCyl,string _OldLeftAxis,string _OldLeftAdd,string _PresentLeftSph,string _PresentLeftCyl,string _PresentLeftAxis,string _PresentLeftAdd,string _PresentRightSph,string _PresentRightCyl,string _PresentRightAxis,string _PresentRightAdd,string _RightBc,string _RightPow,string _RightDia,string _RightDesz,string _LeftBc,string _LeftPow,string _LeftDia,string _LeftDesz,string _TrailLens,string _OverRefract,string _SpecialIns,string _Remarks,string _KReading,string _BlinkTest)
         {
              OldRightSph        = _OldRightSph;
              OldRightCyl        = _OldRightCyl;
@@ -108,13 +111,13 @@ namespace TechnoVisionOptical.model
              Remarks            = _Remarks;
              KReading           = _KReading;
              BlinkTest          = _BlinkTest;
-             RBefore            = _RBefore;
-             LAfter             = _LAfter;
+           
         }
 
         public static void save(MetroFramework.Forms.MetroForm ui)
         {
-
+            contactLenseInvoiceController.saveLenseOrder(ui);
+            MSG.SUCCESS(ui, "Saved");
         }
     }
 }

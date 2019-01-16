@@ -30,24 +30,24 @@ namespace TechnoVisionOptical.view
         }
         public void getNewNumbers()
         {
-            /*technovisionDataSetTableAdapters.order_summaryTableAdapter t = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
-            string lastID = (t.getLastInsertedId().Value + 1).ToString();
-            if (lastID == "")
+            technovisionDataSetTableAdapters.order_summaryTableAdapter t = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
+            string newID = t.getMaxID().ToString();
+            if (newID == "")
             {
-                lastID = "0";
+                newID = "0";
             }
-
-            if (lastID.Length < 4)
+            newID = (int.Parse(newID) + 1).ToString();
+            if (newID.Length < 4)
             {
-                while (lastID.Length < 4)
+                while (newID.Length < 4)
                 {
-                    lastID = "0" + lastID;
+                    newID = "0" + newID;
                 }
             }
-            string orderNumber = DateTime.Now.ToString("yy") + lastID;
-            string receiptNumber = "R" + orderNumber;
-            txt_order.Text = orderNumber;
-            lbl_receiptNo.Text = receiptNumber;*/
+            newID = DateTime.Now.ToString("yy") + newID;
+            txt_order.Text = newID;
+            lbl_receiptNo.Text = "R" + newID;
+            
         }
         private void frm_specs_Load(object sender, EventArgs e)
         {
@@ -55,7 +55,8 @@ namespace TechnoVisionOptical.view
         }
         private void btn_next_Click(object sender, EventArgs e)
         {                   
-            NewSpectaclesInvoice.FillFormOne(txt_order.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"),txt_eyeWear.Text, txt_lenses.Text, double.Parse(txt_total.Text), cmb_pay_method.Text, cmb_pay_plan.Text, cmb_testedby.Text, double.Parse(txt_advance.Text), double.Parse(txt_discount.Text), double.Parse(txt_balance.Text),cmb_orderStatus.Text);          
+            NewSpectaclesInvoice.FillFormOne(txt_order.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"),txt_eyeWear.Text, txt_lenses.Text, double.Parse(txt_total.Text), cmb_pay_method.Text, cmb_pay_plan.Text, cmb_testedby.Text, double.Parse(txt_advance.Text), double.Parse(txt_discount.Text), double.Parse(txt_balance.Text),cmb_orderStatus.Text,lbl_receiptNo.Text);
+            new frm_specs2().Show();
         }
     }
 }
