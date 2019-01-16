@@ -57,6 +57,8 @@
             this.cmb_pay_plan = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.cmb_jobType = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.cmb_orderStatus = new MetroFramework.Controls.MetroComboBox();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -550,11 +552,37 @@
             this.cmb_jobType.TabIndex = 21;
             this.cmb_jobType.UseSelectable = true;
             // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(32, 413);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(86, 20);
+            this.metroLabel5.TabIndex = 20;
+            this.metroLabel5.Text = "Order Status";
+            // 
+            // cmb_orderStatus
+            // 
+            this.cmb_orderStatus.FormattingEnabled = true;
+            this.cmb_orderStatus.ItemHeight = 24;
+            this.cmb_orderStatus.Items.AddRange(new object[] {
+            "PENDING ",
+            "DELIVERED",
+            "CANCELED"});
+            this.cmb_orderStatus.Location = new System.Drawing.Point(164, 407);
+            this.cmb_orderStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.cmb_orderStatus.Name = "cmb_orderStatus";
+            this.cmb_orderStatus.PromptText = "Select";
+            this.cmb_orderStatus.Size = new System.Drawing.Size(316, 30);
+            this.cmb_orderStatus.TabIndex = 21;
+            this.cmb_orderStatus.UseSelectable = true;
+            // 
             // frm_contactlenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 400);
+            this.ClientSize = new System.Drawing.Size(973, 465);
             this.Controls.Add(this.cmb_pay_plan);
             this.Controls.Add(this.metroLabel17);
             this.Controls.Add(this.cmb_pay_method);
@@ -574,6 +602,8 @@
             this.Controls.Add(this.metroLabel13);
             this.Controls.Add(this.metroLabel9);
             this.Controls.Add(this.metroLabel8);
+            this.Controls.Add(this.cmb_orderStatus);
+            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.cmb_jobType);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.cmb_testby);
@@ -628,5 +658,7 @@
         private MetroFramework.Controls.MetroComboBox cmb_pay_plan;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroComboBox cmb_jobType;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroComboBox cmb_orderStatus;
     }
 }
