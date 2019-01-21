@@ -145,6 +145,12 @@
     <Compile Include="view\frm_newPayment.Designer.cs">
       <DependentUpon>frm_newPayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\frm_orderComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frm_orderComplete.Designer.cs">
+      <DependentUpon>frm_orderComplete.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\frm_passwordReset.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_newPayment.resx">
       <DependentUpon>frm_newPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\frm_orderComplete.resx">
+      <DependentUpon>frm_orderComplete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_passwordReset.resx">
       <DependentUpon>frm_passwordReset.cs</DependentUpon>
