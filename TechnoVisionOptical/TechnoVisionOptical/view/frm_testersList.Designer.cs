@@ -54,7 +54,7 @@
             this.text_emp_name.MaxLength = 32767;
             this.text_emp_name.Name = "text_emp_name";
             this.text_emp_name.PasswordChar = '\0';
-            this.text_emp_name.PromptText = "Enter Frame ID";
+            this.text_emp_name.WaterMark = "Enter Frame ID";
             this.text_emp_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.text_emp_name.SelectedText = "";
             this.text_emp_name.SelectionLength = 0;

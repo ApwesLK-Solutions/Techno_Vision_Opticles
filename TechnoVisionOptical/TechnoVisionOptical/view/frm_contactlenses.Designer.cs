@@ -215,7 +215,7 @@
             this.txt_lenseRs.MaxLength = 32767;
             this.txt_lenseRs.Name = "txt_lenseRs";
             this.txt_lenseRs.PasswordChar = '\0';
-            this.txt_lenseRs.PromptText = "Total Amount";
+            this.txt_lenseRs.WaterMark = "Total Amount";
             this.txt_lenseRs.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_lenseRs.SelectedText = "";
             this.txt_lenseRs.SelectionLength = 0;
@@ -288,7 +288,7 @@
             this.txt_balRs.MaxLength = 32767;
             this.txt_balRs.Name = "txt_balRs";
             this.txt_balRs.PasswordChar = '\0';
-            this.txt_balRs.PromptText = "Balance";
+            this.txt_balRs.WaterMark = "Balance";
             this.txt_balRs.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_balRs.SelectedText = "";
             this.txt_balRs.SelectionLength = 0;

@@ -62,7 +62,7 @@
             this.txt_username.Multiline = true;
             this.txt_username.Name = "txt_username";
             this.txt_username.PasswordChar = '\0';
-            this.txt_username.PromptText = "Enter Your username";
+            this.txt_username.WaterMark = "Enter Your username";
             this.txt_username.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_username.SelectedText = "";
             this.txt_username.SelectionLength = 0;
@@ -99,7 +99,7 @@
             this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
-            this.txt_password.PromptText = "Enter Your Password";
+            this.txt_password.WaterMark = "Enter Your Password";
             this.txt_password.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_password.SelectedText = "";
             this.txt_password.SelectionLength = 0;

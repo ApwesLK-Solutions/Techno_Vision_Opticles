@@ -164,7 +164,7 @@
             this.txt_order_number_report.MaxLength = 32767;
             this.txt_order_number_report.Name = "txt_order_number_report";
             this.txt_order_number_report.PasswordChar = '\0';
-            this.txt_order_number_report.PromptText = "Enter Order Number";
+            this.txt_order_number_report.WaterMark = "Enter Order Number";
             this.txt_order_number_report.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_order_number_report.SelectedText = "";
             this.txt_order_number_report.SelectionLength = 0;
