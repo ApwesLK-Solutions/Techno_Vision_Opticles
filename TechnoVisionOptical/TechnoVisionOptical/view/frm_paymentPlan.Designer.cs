@@ -136,7 +136,7 @@
             this.txt_order_no.MaxLength = 32767;
             this.txt_order_no.Name = "txt_order_no";
             this.txt_order_no.PasswordChar = '\0';
-            this.txt_order_no.PromptText = "Search Here";
+            this.txt_order_no.WaterMark = "Search Here";
             this.txt_order_no.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_order_no.SelectedText = "";
             this.txt_order_no.SelectionLength = 0;

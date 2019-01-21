@@ -113,7 +113,7 @@
             this.txt_frame_id.MaxLength = 32767;
             this.txt_frame_id.Name = "txt_frame_id";
             this.txt_frame_id.PasswordChar = '\0';
-            this.txt_frame_id.PromptText = "Enter Frame ID";
+            this.txt_frame_id.WaterMark = "Enter Frame ID";
             this.txt_frame_id.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_frame_id.SelectedText = "";
             this.txt_frame_id.SelectionLength = 0;
@@ -145,7 +145,7 @@
             this.txt_model_name.MaxLength = 32767;
             this.txt_model_name.Name = "txt_model_name";
             this.txt_model_name.PasswordChar = '\0';
-            this.txt_model_name.PromptText = "Enter Model Name";
+            this.txt_model_name.WaterMark = "Enter Model Name";
             this.txt_model_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_model_name.SelectedText = "";
             this.txt_model_name.SelectionLength = 0;
