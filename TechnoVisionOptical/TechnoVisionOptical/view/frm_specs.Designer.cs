@@ -66,7 +66,8 @@
             this.cmb_pay_plan.ItemHeight = 23;
             this.cmb_pay_plan.Items.AddRange(new object[] {
             "Advance",
-            "Installment"});
+            "Installment",
+            "Full Amount"});
             this.cmb_pay_plan.Location = new System.Drawing.Point(167, 148);
             this.cmb_pay_plan.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_pay_plan.Name = "cmb_pay_plan";
@@ -154,14 +155,14 @@
             this.txt_orderdate.Location = new System.Drawing.Point(469, 76);
             this.txt_orderdate.MinimumSize = new System.Drawing.Size(0, 29);
             this.txt_orderdate.Name = "txt_orderdate";
-            this.txt_orderdate.Size = new System.Drawing.Size(238, 30);
+            this.txt_orderdate.Size = new System.Drawing.Size(238, 29);
             this.txt_orderdate.TabIndex = 112;
             this.txt_orderdate.Value = new System.DateTime(2019, 1, 13, 16, 24, 37, 0);
             // 
             // txt_duedate
             // 
             this.txt_duedate.Location = new System.Drawing.Point(108, 112);
-            this.txt_duedate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_duedate.Margin = new System.Windows.Forms.Padding(2);
             this.txt_duedate.MinimumSize = new System.Drawing.Size(0, 29);
             this.txt_duedate.Name = "txt_duedate";
             this.txt_duedate.Size = new System.Drawing.Size(239, 29);
@@ -192,10 +193,10 @@
             // 
             // 
             this.txt_order.CustomButton.Image = null;
-            this.txt_order.CustomButton.Location = new System.Drawing.Point(158, 1);
-            this.txt_order.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_order.CustomButton.Location = new System.Drawing.Point(210, 1);
+            this.txt_order.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.txt_order.CustomButton.Name = "";
-            this.txt_order.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_order.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_order.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_order.CustomButton.TabIndex = 1;
             this.txt_order.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -206,7 +207,7 @@
             this.txt_order.MaxLength = 32767;
             this.txt_order.Name = "txt_order";
             this.txt_order.PasswordChar = '\0';
-            this.txt_order.WaterMark = "Enter Oder Number";
+            this.txt_order.PromptText = "Enter Oder Number";
             this.txt_order.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_order.SelectedText = "";
             this.txt_order.SelectionLength = 0;
@@ -261,10 +262,10 @@
             // 
             // 
             this.txt_total.CustomButton.Image = null;
-            this.txt_total.CustomButton.Location = new System.Drawing.Point(158, 1);
+            this.txt_total.CustomButton.Location = new System.Drawing.Point(210, 1);
             this.txt_total.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.txt_total.CustomButton.Name = "";
-            this.txt_total.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_total.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_total.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_total.CustomButton.TabIndex = 1;
             this.txt_total.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -293,10 +294,10 @@
             // 
             // 
             this.txt_lenses.CustomButton.Image = null;
-            this.txt_lenses.CustomButton.Location = new System.Drawing.Point(158, 1);
-            this.txt_lenses.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_lenses.CustomButton.Location = new System.Drawing.Point(210, 1);
+            this.txt_lenses.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.txt_lenses.CustomButton.Name = "";
-            this.txt_lenses.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_lenses.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_lenses.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_lenses.CustomButton.TabIndex = 1;
             this.txt_lenses.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -324,10 +325,10 @@
             // 
             // 
             this.txt_eyeWear.CustomButton.Image = null;
-            this.txt_eyeWear.CustomButton.Location = new System.Drawing.Point(158, 1);
-            this.txt_eyeWear.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_eyeWear.CustomButton.Location = new System.Drawing.Point(210, 1);
+            this.txt_eyeWear.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.txt_eyeWear.CustomButton.Name = "";
-            this.txt_eyeWear.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_eyeWear.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_eyeWear.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_eyeWear.CustomButton.TabIndex = 1;
             this.txt_eyeWear.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -355,10 +356,10 @@
             // 
             // 
             this.txt_balance.CustomButton.Image = null;
-            this.txt_balance.CustomButton.Location = new System.Drawing.Point(158, 1);
-            this.txt_balance.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_balance.CustomButton.Location = new System.Drawing.Point(210, 1);
+            this.txt_balance.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.txt_balance.CustomButton.Name = "";
-            this.txt_balance.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_balance.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_balance.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_balance.CustomButton.TabIndex = 1;
             this.txt_balance.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -386,10 +387,10 @@
             // 
             // 
             this.txt_discount.CustomButton.Image = null;
-            this.txt_discount.CustomButton.Location = new System.Drawing.Point(158, 1);
-            this.txt_discount.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_discount.CustomButton.Location = new System.Drawing.Point(210, 1);
+            this.txt_discount.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.txt_discount.CustomButton.Name = "";
-            this.txt_discount.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_discount.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_discount.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_discount.CustomButton.TabIndex = 1;
             this.txt_discount.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -417,10 +418,10 @@
             // 
             // 
             this.txt_advance.CustomButton.Image = null;
-            this.txt_advance.CustomButton.Location = new System.Drawing.Point(158, 1);
-            this.txt_advance.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_advance.CustomButton.Location = new System.Drawing.Point(210, 1);
+            this.txt_advance.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.txt_advance.CustomButton.Name = "";
-            this.txt_advance.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_advance.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_advance.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_advance.CustomButton.TabIndex = 1;
             this.txt_advance.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;

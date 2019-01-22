@@ -76,11 +76,21 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="reports\dailyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dailyReport.rpt</DependentUpon>
+    </Compile>
     <Compile Include="reports\lenses.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>lenses.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\specCustomer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>specCustomer.rpt</DependentUpon>
     </Compile>
     <Compile Include="reports\Spec_New.cs">
       <DependentUpon>Spec_New.rpt</DependentUpon>
@@ -209,9 +219,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="reports\dailyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>dailyReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="reports\lenses.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>lenses.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\specCustomer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>specCustomer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reports\Spec_New.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
