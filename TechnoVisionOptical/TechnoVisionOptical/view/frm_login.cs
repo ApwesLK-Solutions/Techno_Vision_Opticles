@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TechnoVisionOptical.model;
+using TechnoVisionOptical.controller;
 namespace TechnoVisionOptical.view
 {
     public partial class frm_login : MetroFramework.Forms.MetroForm
@@ -28,7 +29,7 @@ namespace TechnoVisionOptical.view
                 else
                 {
                     user u = new user(txt_username.Text, txt_password.Text);
-                    u.Login(this);
+                    u.Login(this); 
                 }
 
             }

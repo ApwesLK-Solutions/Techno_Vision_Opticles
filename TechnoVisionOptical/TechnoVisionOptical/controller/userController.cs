@@ -3,6 +3,7 @@ using MetroFramework.Forms;
 using System.Windows.Forms;
 using TechnoVisionOptical;
 using TechnoVisionOptical.view;
+
 namespace TechnoVisionOptical.controller
 {
     class userController
@@ -40,7 +41,9 @@ namespace TechnoVisionOptical.controller
                 {
                     MSG.SUCCESS(ui,"Login Success.!");
                     ui.Hide();
-                    new frm_dashboard().Show();
+                    frm_dashboard n = new frm_dashboard();
+                    n.ShowDialog();
+                    ui.Close();
                     return true;
                 }
                 else
@@ -62,14 +65,33 @@ namespace TechnoVisionOptical.controller
                 row = UserDataTable.FindByusername(ExisitingUser.username);
                 if (row == null)
                 {
-                    MSG.ERROR(ui, "Invalid Username!");
+                    MSG.ERROR(ui, "Invalid Username...!");
                     return false;
                 }
-                if (row.username == ExisitingUser.username && row.nic == ExisitingUser.nic && row.contactNumber == ExisitingUser.nic)
+                
+                else if(row.nic != ExisitingUser.nic)
                 {
-                    UserTable.UpdatePasswordByUsername(ExisitingUser.username, NewPassword);
+                    MSG.ERROR(ui, "Invalid NIC...!");
+                    return false;
+                }
+                else if (row.contactNumber != ExisitingUser.contactNumber)
+                {
+                    MSG.ERROR(ui, "Invalid Contact Number...!");
+                    return false;
+                }
+                else if (NewPassword == "")
+                {
+                    MSG.ERROR(ui, "Password Can not be empty......!");
+                    return false;
+                }
+                else if (row.username == ExisitingUser.username && row.nic == ExisitingUser.nic && row.contactNumber == ExisitingUser.contactNumber)
+                {
+                    UserTable.UpdatePasswordByUsername(NewPassword, ExisitingUser.username);
                     MSG.SUCCESS(ui, "Password Reset Success.!");
+                    UserDataTable.Clear();
+                    UserDataTable = UserTable.GetData();
                     return true;
+
                 }
                 else
                 {
@@ -79,7 +101,7 @@ namespace TechnoVisionOptical.controller
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
-                MSG.ERROR(ui, "Password Reset Error.!, " + ex.Message);
+                MSG.ERROR(ui, "Password Reset Error.Please Try again..." + ex.Message);
                 return false;
             }
         }

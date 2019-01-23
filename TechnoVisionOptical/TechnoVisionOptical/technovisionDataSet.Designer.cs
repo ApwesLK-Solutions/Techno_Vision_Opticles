@@ -13878,24 +13878,24 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "UPDATE `users` SET `password` = @p2,  WHERE `username` = @p6";
+            this._commandCollection[1].CommandText = "UPDATE `users` SET `password` = @NewPassword  WHERE (`username` = @username)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p6";
+            param.ParameterName = "@NewPassword";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "password";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@username";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.Size = 20;
             param.IsNullable = true;
             param.SourceColumn = "username";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._commandCollection[1].Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p2";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
-            param.Size = 20;
-            param.IsNullable = true;
-            param.SourceColumn = "password";
             this._commandCollection[1].Parameters.Add(param);
         }
         
@@ -14147,19 +14147,19 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int UpdatePasswordByUsername(string p6, string p2) {
+        public virtual int UpdatePasswordByUsername(string NewPassword, string username) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[1];
-            if ((p6 == null)) {
-                throw new global::System.ArgumentNullException("p6");
+            if ((NewPassword == null)) {
+                throw new global::System.ArgumentNullException("NewPassword");
             }
             else {
-                command.Parameters[0].Value = ((string)(p6));
+                command.Parameters[0].Value = ((string)(NewPassword));
             }
-            if ((p2 == null)) {
-                throw new global::System.ArgumentNullException("p2");
+            if ((username == null)) {
+                throw new global::System.ArgumentNullException("username");
             }
             else {
-                command.Parameters[1].Value = ((string)(p2));
+                command.Parameters[1].Value = ((string)(username));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

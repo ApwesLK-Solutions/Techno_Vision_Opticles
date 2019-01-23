@@ -26,11 +26,17 @@ namespace TechnoVisionOptical.view
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            if(txt_new_pw.Text == txt_confirm_pw.Text)
+            if (txt_new_pw.Text == txt_confirm_pw.Text)
             {
                 user u = new user(txt_userName.Text, txt_nic.Text, txt_phone.Text);
-                userController.reset(u,txt_new_pw.Text,this);
+                userController.reset(u, txt_new_pw.Text, this);
             }
+            else
+            {
+                MSG.ERROR(this, "Confirmation Password is not matching...");
+            }
+                
+            
         }
 
         private void frm_passwordReset_Load(object sender, EventArgs e)

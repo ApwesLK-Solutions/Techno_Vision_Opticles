@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TechnoVisionOptical.controller;
 using MetroFramework.Forms;
+
 namespace TechnoVisionOptical.model
 {
     class user
@@ -47,7 +48,7 @@ namespace TechnoVisionOptical.model
 
         public void ResetPassword(MetroForm ui)
         {
-            userController.reset(this, "new",ui);
+            userController.reset(this, "new" ,ui);
         }
     }
 }
