@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechnoVisionOptical.controller;
 
 namespace TechnoVisionOptical.model
 {
@@ -84,7 +85,7 @@ namespace TechnoVisionOptical.model
 
         public static void save(MetroFramework.Forms.MetroForm f)
         {
-
+            specInvoiceController.saveLenseOrder(f);
         }
 
 

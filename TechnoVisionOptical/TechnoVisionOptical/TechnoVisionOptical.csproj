@@ -35,6 +35,8 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
       <Private>True</Private>
@@ -54,6 +56,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -94,10 +98,10 @@
       <DependentUpon>lenses.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="reports\specCustomer.cs">
+    <Compile Include="reports\spec_Company.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>specCustomer.rpt</DependentUpon>
+      <DependentUpon>spec_Company.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="reports\Spec_New.cs">
@@ -223,6 +227,12 @@
     <Compile Include="view\orderList.Designer.cs">
       <DependentUpon>orderList.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\reportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\reportViewer.Designer.cs">
+      <DependentUpon>reportViewer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -239,9 +249,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>lenses.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="reports\specCustomer.rpt">
+    <EmbeddedResource Include="reports\spec_Company.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>specCustomer.cs</LastGenOutput>
+      <LastGenOutput>spec_Company.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reports\Spec_New.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -301,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\orderList.resx">
       <DependentUpon>orderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\reportViewer.resx">
+      <DependentUpon>reportViewer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />

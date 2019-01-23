@@ -6,5 +6,8 @@
 }
 
 namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
-  
+
+    partial class frameTableAdapter
+    {
+    }
 }

@@ -42,7 +42,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(303, 243);
+            this.metroLabel1.Location = new System.Drawing.Point(291, 240);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(197, 19);
             this.metroLabel1.TabIndex = 0;
@@ -95,6 +95,7 @@
             this.btn_viewCompany.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_viewCompany.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_viewCompany.UseSelectable = true;
+            this.btn_viewCompany.Click += new System.EventHandler(this.btn_viewCompany_Click);
             // 
             // btn_viewCustomer
             // 
@@ -109,6 +110,7 @@
             this.btn_viewCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_viewCustomer.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_viewCustomer.UseSelectable = true;
+            this.btn_viewCustomer.Click += new System.EventHandler(this.btn_viewCustomer_Click);
             // 
             // btn_printBoth
             // 
@@ -137,6 +139,7 @@
             this.btn_printCompany.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_printCompany.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_printCompany.UseSelectable = true;
+            this.btn_printCompany.Click += new System.EventHandler(this.btn_printCompany_Click);
             // 
             // btn_PrintCustomer
             // 
@@ -151,6 +154,7 @@
             this.btn_PrintCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_PrintCustomer.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_PrintCustomer.UseSelectable = true;
+            this.btn_PrintCustomer.Click += new System.EventHandler(this.btn_PrintCustomer_Click);
             // 
             // frm_orderComplete
             // 
@@ -163,6 +167,7 @@
             this.Name = "frm_orderComplete";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Load += new System.EventHandler(this.frm_orderComplete_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

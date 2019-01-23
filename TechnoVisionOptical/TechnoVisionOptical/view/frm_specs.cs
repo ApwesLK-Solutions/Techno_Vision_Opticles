@@ -17,17 +17,6 @@ namespace TechnoVisionOptical.view
         {
             InitializeComponent();
         }
-        public frm_specs(bool exists, string _name, string _address, string _phone, string _email, string _profession, int _age)
-        {
-            /*InitializeComponent();
-            txt_address.Text = _address;
-            txt_name.Text = _name;
-            txt_phone.Text = _phone;
-            txt_email.Text = _email;
-            txt_proffession.Text = _profession;
-            txt_age.Text = _age.ToString();
-            newCustomer = exists;*/
-        }
         public void getNewNumbers()
         {
             technovisionDataSetTableAdapters.order_summaryTableAdapter t = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
