@@ -35,12 +35,12 @@
             this.btn_OrderCLense = new MetroFramework.Controls.MetroTile();
             this.btn_OrderSpecs = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.btn_OrderContactLense.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -115,12 +115,13 @@
             // btn_OrderCLense
             // 
             this.btn_OrderCLense.ActiveControl = null;
+            this.btn_OrderCLense.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_OrderCLense.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_OrderCLense.Location = new System.Drawing.Point(3, 3);
             this.btn_OrderCLense.Name = "btn_OrderCLense";
             this.btn_OrderCLense.Size = new System.Drawing.Size(242, 157);
             this.btn_OrderCLense.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_OrderCLense.TabIndex = 3;
+            this.btn_OrderCLense.TabIndex = 1;
             this.btn_OrderCLense.Text = "New Contact Lense Order";
             this.btn_OrderCLense.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.btn_OrderCLense.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -155,7 +156,50 @@
             this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTile3.Location = new System.Drawing.Point(3, 166);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(242, 157);
+            this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile3.TabIndex = 6;
+            this.metroTile3.Text = "Manage Frame List";
+            this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTile2.Location = new System.Drawing.Point(251, 166);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(242, 157);
+            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile2.TabIndex = 5;
+            this.metroTile2.Text = "Manage Customers";
+            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTile5.Location = new System.Drawing.Point(499, 166);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(242, 157);
+            this.metroTile5.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile5.TabIndex = 7;
+            this.metroTile5.Text = "Manage Testers";
+            this.metroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile5.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile5.UseSelectable = true;
             // 
             // tableLayoutPanel3
             // 
@@ -201,51 +245,6 @@
             this.metroTile4.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile4.UseSelectable = true;
             this.metroTile4.UseTileImage = true;
-            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile2.Location = new System.Drawing.Point(251, 166);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(242, 157);
-            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 5;
-            this.metroTile2.Text = "Manage Customers";
-            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile2.UseSelectable = true;
-            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile3.Location = new System.Drawing.Point(3, 166);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(242, 157);
-            this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 6;
-            this.metroTile3.Text = "Manage Frame List";
-            this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile3.UseSelectable = true;
-            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
-            // 
-            // metroTile5
-            // 
-            this.metroTile5.ActiveControl = null;
-            this.metroTile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile5.Location = new System.Drawing.Point(499, 166);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(242, 157);
-            this.metroTile5.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile5.TabIndex = 7;
-            this.metroTile5.Text = "Manage Testers";
-            this.metroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile5.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile5.UseSelectable = true;
             // 
             // frm_dashboard
             // 

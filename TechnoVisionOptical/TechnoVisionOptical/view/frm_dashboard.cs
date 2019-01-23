@@ -32,16 +32,6 @@ namespace TechnoVisionOptical.view
 
         }
 
-        private void metroTile1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTile4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroTile2_Click(object sender, EventArgs e)
         {
             new frm_paymentPlan().Show();

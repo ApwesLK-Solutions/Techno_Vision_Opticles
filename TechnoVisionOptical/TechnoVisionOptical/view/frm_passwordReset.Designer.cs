@@ -84,12 +84,13 @@
             this.btn_reset_pw.Name = "btn_reset_pw";
             this.btn_reset_pw.Size = new System.Drawing.Size(128, 45);
             this.btn_reset_pw.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_reset_pw.TabIndex = 4;
+            this.btn_reset_pw.TabIndex = 6;
             this.btn_reset_pw.Text = "Reset Password";
             this.btn_reset_pw.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_reset_pw.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_reset_pw.UseSelectable = true;
             this.btn_reset_pw.Click += new System.EventHandler(this.metroTile1_Click);
+            
             // 
             // txt_nic
             // 
@@ -110,14 +111,14 @@
             this.txt_nic.MaxLength = 32767;
             this.txt_nic.Name = "txt_nic";
             this.txt_nic.PasswordChar = '\0';
-            this.txt_nic.WaterMark = "Enter NIC";
+            this.txt_nic.PromptText = "Enter NIC";
             this.txt_nic.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_nic.SelectedText = "";
             this.txt_nic.SelectionLength = 0;
             this.txt_nic.SelectionStart = 0;
             this.txt_nic.ShortcutsEnabled = true;
             this.txt_nic.Size = new System.Drawing.Size(185, 23);
-            this.txt_nic.TabIndex = 5;
+            this.txt_nic.TabIndex = 2;
             this.txt_nic.UseSelectable = true;
             this.txt_nic.WaterMark = "Enter NIC";
             this.txt_nic.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -143,14 +144,14 @@
             this.txt_phone.MaxLength = 32767;
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.PasswordChar = '\0';
-            this.txt_phone.WaterMark = "Enter Phone Number";
+            this.txt_phone.PromptText = "Enter Phone Number";
             this.txt_phone.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_phone.SelectedText = "";
             this.txt_phone.SelectionLength = 0;
             this.txt_phone.SelectionStart = 0;
             this.txt_phone.ShortcutsEnabled = true;
             this.txt_phone.Size = new System.Drawing.Size(185, 23);
-            this.txt_phone.TabIndex = 6;
+            this.txt_phone.TabIndex = 3;
             this.txt_phone.UseSelectable = true;
             this.txt_phone.WaterMark = "Enter Phone Number";
             this.txt_phone.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -175,14 +176,14 @@
             this.txt_new_pw.MaxLength = 32767;
             this.txt_new_pw.Name = "txt_new_pw";
             this.txt_new_pw.PasswordChar = '\0';
-            this.txt_new_pw.WaterMark = "Enter New Password";
+            this.txt_new_pw.PromptText = "Enter New Password";
             this.txt_new_pw.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_new_pw.SelectedText = "";
             this.txt_new_pw.SelectionLength = 0;
             this.txt_new_pw.SelectionStart = 0;
             this.txt_new_pw.ShortcutsEnabled = true;
             this.txt_new_pw.Size = new System.Drawing.Size(185, 23);
-            this.txt_new_pw.TabIndex = 7;
+            this.txt_new_pw.TabIndex = 4;
             this.txt_new_pw.UseSelectable = true;
             this.txt_new_pw.WaterMark = "Enter New Password";
             this.txt_new_pw.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -207,14 +208,14 @@
             this.txt_confirm_pw.MaxLength = 32767;
             this.txt_confirm_pw.Name = "txt_confirm_pw";
             this.txt_confirm_pw.PasswordChar = '\0';
-            this.txt_confirm_pw.WaterMark = "Re-enter Password";
+            this.txt_confirm_pw.PromptText = "Re-enter Password";
             this.txt_confirm_pw.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_confirm_pw.SelectedText = "";
             this.txt_confirm_pw.SelectionLength = 0;
             this.txt_confirm_pw.SelectionStart = 0;
             this.txt_confirm_pw.ShortcutsEnabled = true;
             this.txt_confirm_pw.Size = new System.Drawing.Size(185, 23);
-            this.txt_confirm_pw.TabIndex = 8;
+            this.txt_confirm_pw.TabIndex = 5;
             this.txt_confirm_pw.UseSelectable = true;
             this.txt_confirm_pw.WaterMark = "Re-enter Password";
             this.txt_confirm_pw.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -239,14 +240,14 @@
             this.txt_userName.MaxLength = 32767;
             this.txt_userName.Name = "txt_userName";
             this.txt_userName.PasswordChar = '\0';
-            this.txt_userName.WaterMark = "Enter UserName";
+            this.txt_userName.PromptText = "Enter UserName";
             this.txt_userName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_userName.SelectedText = "";
             this.txt_userName.SelectionLength = 0;
             this.txt_userName.SelectionStart = 0;
             this.txt_userName.ShortcutsEnabled = true;
             this.txt_userName.Size = new System.Drawing.Size(185, 23);
-            this.txt_userName.TabIndex = 10;
+            this.txt_userName.TabIndex = 1;
             this.txt_userName.UseSelectable = true;
             this.txt_userName.WaterMark = "Enter UserName";
             this.txt_userName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
