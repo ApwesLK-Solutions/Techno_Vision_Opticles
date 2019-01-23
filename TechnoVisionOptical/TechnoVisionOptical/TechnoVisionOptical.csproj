@@ -91,6 +91,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>specCustomer.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="reports\Spec_New.cs">
       <DependentUpon>Spec_New.rpt</DependentUpon>
