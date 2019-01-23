@@ -42,6 +42,16 @@ namespace TechnoVisionOptical.view
 
         }
 
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            new frm_paymentPlan().Show();
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            new frm_productlist().Show();
+        }
+
        
     }
 }
