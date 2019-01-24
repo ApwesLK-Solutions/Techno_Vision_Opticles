@@ -72,7 +72,6 @@
             this.txt_search.MaxLength = 32767;
             this.txt_search.Name = "txt_search";
             this.txt_search.PasswordChar = '\0';
-            this.txt_search.WaterMark = "Search Here";
             this.txt_search.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_search.SelectedText = "";
             this.txt_search.SelectionLength = 0;
@@ -107,7 +106,7 @@
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(85, 45);
             this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 6;
+            this.metroTile3.TabIndex = 3;
             this.metroTile3.Text = "Refresh";
             this.metroTile3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -170,8 +169,8 @@
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(41, 71);
-            this.metroGrid1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroGrid1.Location = new System.Drawing.Point(40, 62);
+            this.metroGrid1.Margin = new System.Windows.Forms.Padding(2);
             this.metroGrid1.MultiSelect = false;
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.ReadOnly = true;
@@ -192,7 +191,7 @@
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(660, 266);
             this.metroGrid1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroGrid1.TabIndex = 7;         
+            this.metroGrid1.TabIndex = 2;
             // 
             // customerIdDataGridViewTextBoxColumn
             // 
@@ -257,7 +256,7 @@
             this.btn_addNewCustomer.Name = "btn_addNewCustomer";
             this.btn_addNewCustomer.Size = new System.Drawing.Size(152, 45);
             this.btn_addNewCustomer.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_addNewCustomer.TabIndex = 8;
+            this.btn_addNewCustomer.TabIndex = 4;
             this.btn_addNewCustomer.Text = "Add New Customer";
             this.btn_addNewCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_addNewCustomer.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -274,7 +273,9 @@
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.btn_select);
             this.Controls.Add(this.txt_search);
+            this.MaximizeBox = false;
             this.Name = "frm_customerList";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Customer List";
             this.Load += new System.EventHandler(this.frm_customerList_Load);

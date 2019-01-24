@@ -18,12 +18,6 @@ namespace TechnoVisionOptical.view
         {
             InitializeComponent();
         }
-
-        private void metroTextBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroTile1_Click(object sender, EventArgs e)
         {
             if (txt_new_pw.Text == txt_confirm_pw.Text)
@@ -35,14 +29,6 @@ namespace TechnoVisionOptical.view
             {
                 MSG.ERROR(this, "Confirmation Password is not matching...");
             }
-                
-            
         }
-
-        private void frm_passwordReset_Load(object sender, EventArgs e)
-        {
-
-        }
- 
     }
 }

@@ -111,7 +111,6 @@
             this.txt_nic.MaxLength = 32767;
             this.txt_nic.Name = "txt_nic";
             this.txt_nic.PasswordChar = '\0';
-            this.txt_nic.PromptText = "Enter NIC";
             this.txt_nic.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_nic.SelectedText = "";
             this.txt_nic.SelectionLength = 0;
@@ -123,7 +122,7 @@
             this.txt_nic.WaterMark = "Enter NIC";
             this.txt_nic.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_nic.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_nic.Click += new System.EventHandler(this.metroTextBox1_Click);
+            
             // 
             // txt_phone
             // 
@@ -144,7 +143,6 @@
             this.txt_phone.MaxLength = 32767;
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.PasswordChar = '\0';
-            this.txt_phone.PromptText = "Enter Phone Number";
             this.txt_phone.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_phone.SelectedText = "";
             this.txt_phone.SelectionLength = 0;
@@ -176,7 +174,6 @@
             this.txt_new_pw.MaxLength = 32767;
             this.txt_new_pw.Name = "txt_new_pw";
             this.txt_new_pw.PasswordChar = '\0';
-            this.txt_new_pw.PromptText = "Enter New Password";
             this.txt_new_pw.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_new_pw.SelectedText = "";
             this.txt_new_pw.SelectionLength = 0;
@@ -208,7 +205,6 @@
             this.txt_confirm_pw.MaxLength = 32767;
             this.txt_confirm_pw.Name = "txt_confirm_pw";
             this.txt_confirm_pw.PasswordChar = '\0';
-            this.txt_confirm_pw.PromptText = "Re-enter Password";
             this.txt_confirm_pw.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_confirm_pw.SelectedText = "";
             this.txt_confirm_pw.SelectionLength = 0;
@@ -240,7 +236,6 @@
             this.txt_userName.MaxLength = 32767;
             this.txt_userName.Name = "txt_userName";
             this.txt_userName.PasswordChar = '\0';
-            this.txt_userName.PromptText = "Enter UserName";
             this.txt_userName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_userName.SelectedText = "";
             this.txt_userName.SelectionLength = 0;
@@ -283,7 +278,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Password Reset";
-            this.Load += new System.EventHandler(this.frm_passwordReset_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -20,7 +20,7 @@ namespace TechnoVisionOptical.controller
                 MSG.SUCCESS(ui, "New User Registration Success!");
                 return true;     
             }
-            catch(MySql.Data.MySqlClient.MySqlException ex)
+            catch(MySql.Data.MySqlClient.MySqlException)
             {
                 MSG.ERROR(ui, "New User Registration Failed!");
                 return false;

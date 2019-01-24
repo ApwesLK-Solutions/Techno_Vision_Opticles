@@ -207,7 +207,6 @@
             this.txt_order.MaxLength = 32767;
             this.txt_order.Name = "txt_order";
             this.txt_order.PasswordChar = '\0';
-            this.txt_order.PromptText = "Enter Oder Number";
             this.txt_order.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_order.SelectedText = "";
             this.txt_order.SelectionLength = 0;

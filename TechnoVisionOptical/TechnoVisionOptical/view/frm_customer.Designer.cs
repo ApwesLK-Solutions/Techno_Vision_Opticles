@@ -50,9 +50,9 @@
             // 
             // 
             this.txt_proffession.CustomButton.Image = null;
-            this.txt_proffession.CustomButton.Location = new System.Drawing.Point(158, 1);
+            this.txt_proffession.CustomButton.Location = new System.Drawing.Point(210, 1);
             this.txt_proffession.CustomButton.Name = "";
-            this.txt_proffession.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_proffession.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_proffession.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_proffession.CustomButton.TabIndex = 1;
             this.txt_proffession.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -64,14 +64,13 @@
             this.txt_proffession.MaxLength = 32767;
             this.txt_proffession.Name = "txt_proffession";
             this.txt_proffession.PasswordChar = '\0';
-            this.txt_proffession.WaterMark = "Enter Profession";
             this.txt_proffession.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_proffession.SelectedText = "";
             this.txt_proffession.SelectionLength = 0;
             this.txt_proffession.SelectionStart = 0;
             this.txt_proffession.ShortcutsEnabled = true;
             this.txt_proffession.Size = new System.Drawing.Size(238, 29);
-            this.txt_proffession.TabIndex = 27;
+            this.txt_proffession.TabIndex = 6;
             this.txt_proffession.UseSelectable = true;
             this.txt_proffession.WaterMark = "Enter Profession";
             this.txt_proffession.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -83,9 +82,9 @@
             // 
             // 
             this.txt_age.CustomButton.Image = null;
-            this.txt_age.CustomButton.Location = new System.Drawing.Point(158, 1);
+            this.txt_age.CustomButton.Location = new System.Drawing.Point(210, 1);
             this.txt_age.CustomButton.Name = "";
-            this.txt_age.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_age.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_age.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_age.CustomButton.TabIndex = 1;
             this.txt_age.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -97,14 +96,13 @@
             this.txt_age.MaxLength = 32767;
             this.txt_age.Name = "txt_age";
             this.txt_age.PasswordChar = '\0';
-            this.txt_age.WaterMark = "Enter Age";
             this.txt_age.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_age.SelectedText = "";
             this.txt_age.SelectionLength = 0;
             this.txt_age.SelectionStart = 0;
             this.txt_age.ShortcutsEnabled = true;
             this.txt_age.Size = new System.Drawing.Size(238, 29);
-            this.txt_age.TabIndex = 26;
+            this.txt_age.TabIndex = 4;
             this.txt_age.UseSelectable = true;
             this.txt_age.WaterMark = "Enter Age";
             this.txt_age.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -116,9 +114,9 @@
             // 
             // 
             this.txt_email.CustomButton.Image = null;
-            this.txt_email.CustomButton.Location = new System.Drawing.Point(158, 1);
+            this.txt_email.CustomButton.Location = new System.Drawing.Point(210, 1);
             this.txt_email.CustomButton.Name = "";
-            this.txt_email.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_email.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_email.CustomButton.TabIndex = 1;
             this.txt_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -130,14 +128,13 @@
             this.txt_email.MaxLength = 32767;
             this.txt_email.Name = "txt_email";
             this.txt_email.PasswordChar = '\0';
-            this.txt_email.WaterMark = "Enter Email";
             this.txt_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_email.SelectedText = "";
             this.txt_email.SelectionLength = 0;
             this.txt_email.SelectionStart = 0;
             this.txt_email.ShortcutsEnabled = true;
             this.txt_email.Size = new System.Drawing.Size(238, 29);
-            this.txt_email.TabIndex = 25;
+            this.txt_email.TabIndex = 3;
             this.txt_email.UseSelectable = true;
             this.txt_email.WaterMark = "Enter Email";
             this.txt_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -149,9 +146,9 @@
             // 
             // 
             this.txt_address.CustomButton.Image = null;
-            this.txt_address.CustomButton.Location = new System.Drawing.Point(405, 2);
+            this.txt_address.CustomButton.Location = new System.Drawing.Point(540, 2);
             this.txt_address.CustomButton.Name = "";
-            this.txt_address.CustomButton.Size = new System.Drawing.Size(41, 45);
+            this.txt_address.CustomButton.Size = new System.Drawing.Size(55, 55);
             this.txt_address.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_address.CustomButton.TabIndex = 1;
             this.txt_address.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -164,14 +161,13 @@
             this.txt_address.Multiline = true;
             this.txt_address.Name = "txt_address";
             this.txt_address.PasswordChar = '\0';
-            this.txt_address.WaterMark = "Enter Address";
             this.txt_address.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_address.SelectedText = "";
             this.txt_address.SelectionLength = 0;
             this.txt_address.SelectionStart = 0;
             this.txt_address.ShortcutsEnabled = true;
             this.txt_address.Size = new System.Drawing.Size(598, 60);
-            this.txt_address.TabIndex = 24;
+            this.txt_address.TabIndex = 2;
             this.txt_address.UseSelectable = true;
             this.txt_address.WaterMark = "Enter Address";
             this.txt_address.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -183,9 +179,9 @@
             // 
             // 
             this.txt_name.CustomButton.Image = null;
-            this.txt_name.CustomButton.Location = new System.Drawing.Point(428, 1);
+            this.txt_name.CustomButton.Location = new System.Drawing.Point(570, 1);
             this.txt_name.CustomButton.Name = "";
-            this.txt_name.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_name.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_name.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_name.CustomButton.TabIndex = 1;
             this.txt_name.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -197,14 +193,13 @@
             this.txt_name.MaxLength = 32767;
             this.txt_name.Name = "txt_name";
             this.txt_name.PasswordChar = '\0';
-            this.txt_name.WaterMark = "Enter Name";
             this.txt_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_name.SelectedText = "";
             this.txt_name.SelectionLength = 0;
             this.txt_name.SelectionStart = 0;
             this.txt_name.ShortcutsEnabled = true;
             this.txt_name.Size = new System.Drawing.Size(598, 29);
-            this.txt_name.TabIndex = 23;
+            this.txt_name.TabIndex = 0;
             this.txt_name.UseSelectable = true;
             this.txt_name.WaterMark = "Enter Name";
             this.txt_name.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -213,7 +208,7 @@
             // metroLabel10
             // 
             this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(378, 211);
+            this.metroLabel10.Location = new System.Drawing.Point(365, 211);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(69, 19);
             this.metroLabel10.TabIndex = 22;
@@ -261,9 +256,9 @@
             // 
             // 
             this.txt_phone.CustomButton.Image = null;
-            this.txt_phone.CustomButton.Location = new System.Drawing.Point(158, 1);
+            this.txt_phone.CustomButton.Location = new System.Drawing.Point(210, 1);
             this.txt_phone.CustomButton.Name = "";
-            this.txt_phone.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_phone.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_phone.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_phone.CustomButton.TabIndex = 1;
             this.txt_phone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -275,14 +270,13 @@
             this.txt_phone.MaxLength = 32767;
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.PasswordChar = '\0';
-            this.txt_phone.WaterMark = "Enter Phone Number";
             this.txt_phone.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_phone.SelectedText = "";
             this.txt_phone.SelectionLength = 0;
             this.txt_phone.SelectionStart = 0;
             this.txt_phone.ShortcutsEnabled = true;
             this.txt_phone.Size = new System.Drawing.Size(238, 29);
-            this.txt_phone.TabIndex = 29;
+            this.txt_phone.TabIndex = 5;
             this.txt_phone.UseSelectable = true;
             this.txt_phone.WaterMark = "Enter Phone Number";
             this.txt_phone.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -304,7 +298,7 @@
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(85, 45);
             this.btn_save.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_save.TabIndex = 30;
+            this.btn_save.TabIndex = 8;
             this.btn_save.Text = "Add";
             this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_save.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -318,7 +312,7 @@
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(85, 45);
             this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 31;
+            this.metroTile2.TabIndex = 7;
             this.metroTile2.Text = "Clear All";
             this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -345,6 +339,7 @@
             this.Controls.Add(this.metroLabel6);
             this.MaximizeBox = false;
             this.Name = "frm_customer";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Add New Customer";
             this.ResumeLayout(false);

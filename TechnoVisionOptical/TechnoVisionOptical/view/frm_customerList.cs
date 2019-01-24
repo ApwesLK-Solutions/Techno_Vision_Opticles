@@ -45,21 +45,36 @@ namespace TechnoVisionOptical.view
 
         private void btn_select_Click(object sender, EventArgs e)
         {
-            Customer.id         = int.Parse(metroGrid1.SelectedRows[0].Cells[0].Value.ToString());
-            Customer.name       = metroGrid1.SelectedRows[0].Cells[1].Value.ToString();
-            Customer.address    = metroGrid1.SelectedRows[0].Cells[2].Value.ToString();
-            Customer.profession = metroGrid1.SelectedRows[0].Cells[3].Value.ToString();
-            Customer.age        = int.Parse(metroGrid1.SelectedRows[0].Cells[4].Value.ToString());
-            Customer.phone      = metroGrid1.SelectedRows[0].Cells[5].Value.ToString();
-            Customer.email      = metroGrid1.SelectedRows[0].Cells[6].Value.ToString();
-            if(type == "S")
+            try
             {
-                new frm_specs().Show();
+                Customer.id = int.Parse(metroGrid1.SelectedRows[0].Cells[0].Value.ToString());
+                Customer.name = metroGrid1.SelectedRows[0].Cells[1].Value.ToString();
+                Customer.address = metroGrid1.SelectedRows[0].Cells[2].Value.ToString();
+                Customer.profession = metroGrid1.SelectedRows[0].Cells[3].Value.ToString();
+                Customer.age = int.Parse(metroGrid1.SelectedRows[0].Cells[4].Value.ToString());
+                Customer.phone = metroGrid1.SelectedRows[0].Cells[5].Value.ToString();
+                Customer.email = metroGrid1.SelectedRows[0].Cells[6].Value.ToString();
+                if (type == "S")
+                {
+                    this.Hide();
+                    frm_specs n = new frm_specs();
+                    n.ShowDialog();
+                    this.Close();
+                    
+                }
+                else
+                {
+                    this.Hide();
+                    frm_contactlenses n = new frm_contactlenses();
+                    n.ShowDialog();
+                    this.Close();
+                }
             }
-            else
+            catch(Exception)
             {
-                new frm_contactlenses().Show();
+                MSG.ERROR(this, "No Customers in the System. Please add a customer to continue...");
             }
+            
         }
 
         private void metroTile3_Click(object sender, EventArgs e)
