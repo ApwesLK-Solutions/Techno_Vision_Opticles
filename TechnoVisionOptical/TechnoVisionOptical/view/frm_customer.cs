@@ -44,6 +44,16 @@ namespace TechnoVisionOptical.view
             } 
         }
 
+        private void txt_age_TextChanged(object sender, EventArgs e)
+        {
+            decimal m;
+
+            if (!decimal.TryParse(txt_age.Text, out m)) 
+            {
+                MSG.ERROR(this, "Age should be a Whole Number");
+            }
+        }
+
         
     }
 }

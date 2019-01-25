@@ -117,7 +117,7 @@ namespace TechnoVisionOptical.model
         public static void save(MetroFramework.Forms.MetroForm ui)
         {
             contactLenseInvoiceController.saveLenseOrder(ui);
-            MSG.SUCCESS(ui, "Saved");
+            MSG.SUCCESS(ui, "Data Saved Successfully...");
         }
     }
 }

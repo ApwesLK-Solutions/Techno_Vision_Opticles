@@ -64,6 +64,7 @@
             this.txt_proffession.MaxLength = 32767;
             this.txt_proffession.Name = "txt_proffession";
             this.txt_proffession.PasswordChar = '\0';
+            this.txt_proffession.PromptText = "Enter Profession";
             this.txt_proffession.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_proffession.SelectedText = "";
             this.txt_proffession.SelectionLength = 0;
@@ -96,6 +97,7 @@
             this.txt_age.MaxLength = 32767;
             this.txt_age.Name = "txt_age";
             this.txt_age.PasswordChar = '\0';
+            this.txt_age.PromptText = "Enter Age";
             this.txt_age.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_age.SelectedText = "";
             this.txt_age.SelectionLength = 0;
@@ -107,6 +109,7 @@
             this.txt_age.WaterMark = "Enter Age";
             this.txt_age.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_age.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_age.TextChanged += new System.EventHandler(this.txt_age_TextChanged);
             // 
             // txt_email
             // 
@@ -128,6 +131,7 @@
             this.txt_email.MaxLength = 32767;
             this.txt_email.Name = "txt_email";
             this.txt_email.PasswordChar = '\0';
+            this.txt_email.PromptText = "Enter Email";
             this.txt_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_email.SelectedText = "";
             this.txt_email.SelectionLength = 0;
@@ -161,6 +165,7 @@
             this.txt_address.Multiline = true;
             this.txt_address.Name = "txt_address";
             this.txt_address.PasswordChar = '\0';
+            this.txt_address.PromptText = "Enter Address";
             this.txt_address.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_address.SelectedText = "";
             this.txt_address.SelectionLength = 0;
@@ -193,6 +198,7 @@
             this.txt_name.MaxLength = 32767;
             this.txt_name.Name = "txt_name";
             this.txt_name.PasswordChar = '\0';
+            this.txt_name.PromptText = "Enter Name";
             this.txt_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_name.SelectedText = "";
             this.txt_name.SelectionLength = 0;
@@ -270,6 +276,7 @@
             this.txt_phone.MaxLength = 32767;
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.PasswordChar = '\0';
+            this.txt_phone.PromptText = "Enter Phone Number";
             this.txt_phone.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_phone.SelectedText = "";
             this.txt_phone.SelectionLength = 0;

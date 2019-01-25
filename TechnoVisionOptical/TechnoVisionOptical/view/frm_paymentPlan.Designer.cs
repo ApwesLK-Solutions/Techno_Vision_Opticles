@@ -29,60 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_new_payment = new MetroFramework.Controls.MetroTile();
             this.btn_close = new MetroFramework.Controls.MetroTile();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.txt_order_no = new MetroFramework.Controls.MetroTextBox();
-            this.grid_paySummary = new MetroFramework.Controls.MetroGrid();
-            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
             this.customersTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.customersTableAdapter();
-            this.customerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_paySummary)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.ordersummaryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.order_summaryTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.order_summaryTableAdapter();
+            this.lenseordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lense_ordersTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.lense_ordersTableAdapter();
+            this.ordernumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.receiptnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lenses_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.advance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersummaryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lenseordersBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(446, 111);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(34, 19);
-            this.metroLabel2.TabIndex = 1;
-            this.metroLabel2.Text = "Paid";
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(510, 111);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(83, 19);
-            this.metroLabel3.TabIndex = 2;
-            this.metroLabel3.Text = "Due Amount";
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(623, 111);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(63, 19);
-            this.metroLabel4.TabIndex = 3;
-            this.metroLabel4.Text = "Due Date";
             // 
             // btn_new_payment
             // 
             this.btn_new_payment.ActiveControl = null;
-            this.btn_new_payment.Location = new System.Drawing.Point(510, 433);
+            this.btn_new_payment.Location = new System.Drawing.Point(500, 406);
             this.btn_new_payment.Name = "btn_new_payment";
             this.btn_new_payment.Size = new System.Drawing.Size(116, 45);
             this.btn_new_payment.Style = MetroFramework.MetroColorStyle.Green;
@@ -96,7 +72,7 @@
             // btn_close
             // 
             this.btn_close.ActiveControl = null;
-            this.btn_close.Location = new System.Drawing.Point(632, 433);
+            this.btn_close.Location = new System.Drawing.Point(622, 406);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(85, 45);
             this.btn_close.Style = MetroFramework.MetroColorStyle.Green;
@@ -107,23 +83,13 @@
             this.btn_close.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_close.UseSelectable = true;
             // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(366, 111);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(56, 19);
-            this.metroLabel5.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroLabel5.TabIndex = 6;
-            this.metroLabel5.Text = "Amount";
-            // 
             // txt_order_no
             // 
             // 
             // 
             // 
             this.txt_order_no.CustomButton.Image = null;
-            this.txt_order_no.CustomButton.Location = new System.Drawing.Point(84, 1);
+            this.txt_order_no.CustomButton.Location = new System.Drawing.Point(103, 1);
             this.txt_order_no.CustomButton.Name = "";
             this.txt_order_no.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txt_order_no.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -132,155 +98,178 @@
             this.txt_order_no.CustomButton.UseSelectable = true;
             this.txt_order_no.CustomButton.Visible = false;
             this.txt_order_no.Lines = new string[0];
-            this.txt_order_no.Location = new System.Drawing.Point(306, 29);
+            this.txt_order_no.Location = new System.Drawing.Point(466, 29);
             this.txt_order_no.MaxLength = 32767;
             this.txt_order_no.Name = "txt_order_no";
             this.txt_order_no.PasswordChar = '\0';
-            this.txt_order_no.WaterMark = "Search Here";
+            this.txt_order_no.PromptText = "Search Here";
             this.txt_order_no.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_order_no.SelectedText = "";
             this.txt_order_no.SelectionLength = 0;
             this.txt_order_no.SelectionStart = 0;
             this.txt_order_no.ShortcutsEnabled = true;
-            this.txt_order_no.Size = new System.Drawing.Size(106, 23);
+            this.txt_order_no.Size = new System.Drawing.Size(125, 23);
             this.txt_order_no.TabIndex = 8;
             this.txt_order_no.UseSelectable = true;
             this.txt_order_no.WaterMark = "Search Here";
             this.txt_order_no.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_order_no.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // grid_paySummary
+            // customersBindingSource
             // 
-            this.grid_paySummary.AllowUserToResizeRows = false;
-            this.grid_paySummary.AutoGenerateColumns = false;
-            this.grid_paySummary.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grid_paySummary.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.grid_paySummary.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.grid_paySummary.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid_paySummary.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.grid_paySummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_paySummary.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.customerIdDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.phoneDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn});
-            this.grid_paySummary.DataSource = this.customersBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid_paySummary.DefaultCellStyle = dataGridViewCellStyle11;
-            this.grid_paySummary.EnableHeadersVisualStyles = false;
-            this.grid_paySummary.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.grid_paySummary.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grid_paySummary.Location = new System.Drawing.Point(49, 157);
-            this.grid_paySummary.Name = "grid_paySummary";
-            this.grid_paySummary.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid_paySummary.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.grid_paySummary.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.grid_paySummary.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid_paySummary.Size = new System.Drawing.Size(637, 150);
-            this.grid_paySummary.Style = MetroFramework.MetroColorStyle.Green;
-            this.grid_paySummary.TabIndex = 12;
+            this.customersBindingSource.DataMember = "customers";
+            this.customersBindingSource.DataSource = this.technovisionDataSet;
             // 
             // technovisionDataSet
             // 
             this.technovisionDataSet.DataSetName = "technovisionDataSet";
             this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "customers";
-            this.customersBindingSource.DataSource = this.technovisionDataSet;
-            // 
             // customersTableAdapter
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
             // 
-            // customerIdDataGridViewTextBoxColumn
+            // metroGrid1
             // 
-            this.customerIdDataGridViewTextBoxColumn.DataPropertyName = "customerId";
-            this.customerIdDataGridViewTextBoxColumn.HeaderText = "customerId";
-            this.customerIdDataGridViewTextBoxColumn.Name = "customerIdDataGridViewTextBoxColumn";
+            this.metroGrid1.AllowUserToResizeRows = false;
+            this.metroGrid1.AutoGenerateColumns = false;
+            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ordernumberDataGridViewTextBoxColumn,
+            this.receiptnumberDataGridViewTextBoxColumn,
+            this.lenses_total,
+            this.advance,
+            this.balance});
+            this.metroGrid1.DataSource = this.lenseordersBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.metroGrid1.EnableHeadersVisualStyles = false;
+            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid1.Location = new System.Drawing.Point(23, 82);
+            this.metroGrid1.Name = "metroGrid1";
+            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.metroGrid1.Size = new System.Drawing.Size(684, 300);
+            this.metroGrid1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroGrid1.TabIndex = 9;
             // 
-            // nameDataGridViewTextBoxColumn
+            // ordersummaryBindingSource
             // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.ordersummaryBindingSource.DataMember = "order_summary";
+            this.ordersummaryBindingSource.DataSource = this.technovisionDataSet;
             // 
-            // phoneDataGridViewTextBoxColumn
+            // order_summaryTableAdapter
             // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            this.order_summaryTableAdapter.ClearBeforeFill = true;
             // 
-            // emailDataGridViewTextBoxColumn
+            // lenseordersBindingSource
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.lenseordersBindingSource.DataMember = "lense_orders";
+            this.lenseordersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // lense_ordersTableAdapter
+            // 
+            this.lense_ordersTableAdapter.ClearBeforeFill = true;
+            // 
+            // ordernumberDataGridViewTextBoxColumn
+            // 
+            this.ordernumberDataGridViewTextBoxColumn.DataPropertyName = "order_number";
+            this.ordernumberDataGridViewTextBoxColumn.HeaderText = "Order Number";
+            this.ordernumberDataGridViewTextBoxColumn.Name = "ordernumberDataGridViewTextBoxColumn";
+            // 
+            // receiptnumberDataGridViewTextBoxColumn
+            // 
+            this.receiptnumberDataGridViewTextBoxColumn.DataPropertyName = "receipt_number";
+            this.receiptnumberDataGridViewTextBoxColumn.HeaderText = "Receipt Number";
+            this.receiptnumberDataGridViewTextBoxColumn.Name = "receiptnumberDataGridViewTextBoxColumn";
+            // 
+            // lenses_total
+            // 
+            this.lenses_total.DataPropertyName = "lenses_total";
+            this.lenses_total.HeaderText = "Total Amount";
+            this.lenses_total.Name = "lenses_total";
+            // 
+            // advance
+            // 
+            this.advance.DataPropertyName = "advance";
+            this.advance.HeaderText = "Advance";
+            this.advance.Name = "advance";
+            // 
+            // balance
+            // 
+            this.balance.DataPropertyName = "balance";
+            this.balance.HeaderText = "Balance";
+            this.balance.Name = "balance";
             // 
             // frm_paymentPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 515);
-            this.Controls.Add(this.grid_paySummary);
+            this.ClientSize = new System.Drawing.Size(730, 462);
+            this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.txt_order_no);
-            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_new_payment);
-            this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.metroLabel3);
-            this.Controls.Add(this.metroLabel2);
             this.MaximizeBox = false;
             this.Name = "frm_paymentPlan";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Payment Plan Manager";
+            this.Text = "Payment Plan Manager - Contact Lenses";
             this.Load += new System.EventHandler(this.frm_paymentPlan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grid_paySummary)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersummaryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lenseordersBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroTile btn_new_payment;
         private MetroFramework.Controls.MetroTile btn_close;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroTextBox txt_order_no;
-        private MetroFramework.Controls.MetroGrid grid_paySummary;
         private technovisionDataSet technovisionDataSet;
         private System.Windows.Forms.BindingSource customersBindingSource;
         private technovisionDataSetTableAdapters.customersTableAdapter customersTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private MetroFramework.Controls.MetroGrid metroGrid1;
+        private System.Windows.Forms.BindingSource ordersummaryBindingSource;
+        private technovisionDataSetTableAdapters.order_summaryTableAdapter order_summaryTableAdapter;
+        private System.Windows.Forms.BindingSource lenseordersBindingSource;
+        private technovisionDataSetTableAdapters.lense_ordersTableAdapter lense_ordersTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ordernumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn receiptnumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lenses_total;
+        private System.Windows.Forms.DataGridViewTextBoxColumn advance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn balance;
     }
 }

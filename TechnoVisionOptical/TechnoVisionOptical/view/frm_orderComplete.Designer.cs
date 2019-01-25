@@ -36,13 +36,15 @@
             this.btn_printBoth = new MetroFramework.Controls.MetroTile();
             this.btn_printCompany = new MetroFramework.Controls.MetroTile();
             this.btn_PrintCustomer = new MetroFramework.Controls.MetroTile();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(291, 240);
+            this.metroLabel1.Location = new System.Drawing.Point(297, 240);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(197, 19);
             this.metroLabel1.TabIndex = 0;
@@ -74,7 +76,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btn_printBoth, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_printCompany, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_PrintCustomer, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(119, 296);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(113, 296);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -156,11 +158,22 @@
             this.btn_PrintCustomer.UseSelectable = true;
             this.btn_PrintCustomer.Click += new System.EventHandler(this.btn_PrintCustomer_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TechnoVisionOptical.Properties.Resources.Untitled_1;
+            this.pictureBox1.Location = new System.Drawing.Point(323, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(145, 146);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_orderComplete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.metroLabel1);
             this.MaximizeBox = false;
@@ -169,6 +182,7 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Load += new System.EventHandler(this.frm_orderComplete_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +198,6 @@
         private MetroFramework.Controls.MetroTile btn_PrintCustomer;
         private MetroFramework.Controls.MetroTile btn_viewCustomer;
         private MetroFramework.Controls.MetroTile btn_viewCompany;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

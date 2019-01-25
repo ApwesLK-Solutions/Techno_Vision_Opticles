@@ -20,29 +20,38 @@ namespace TechnoVisionOptical.view
         
         private void btn_next_Click(object sender, EventArgs e)
         {
-            try
+            if (txt_advRs.Text == "" || txt_balRs.Text == "" || txt_duedate.Text == "" || txt_lenseRs.Text == "" || txt_order_no.Text == "" || txt_orderdate.Text == "")
             {
-                
-                NewContactLenseInvoice.fillFormOne(txt_order_no.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"), cmb_pay_method.Text, cmb_pay_plan.Text, double.Parse(txt_lenseRs.Text), double.Parse(txt_advRs.Text), double.Parse(txt_balRs.Text), cmb_testby.Text,lbl_receiptNo.Text , cmb_jobType.Text , cmb_orderStatus.Text);
-                new frm_contactlenses2().Show();
-                
+                MSG.ERROR(this, "Fields cannot be Empty...");
             }
-            catch(Exception)
+            else 
             {
-                MSG.ERROR(this,"Error Orccured");
-            }
-            
+                try
+                {
+                    NewContactLenseInvoice.fillFormOne(txt_order_no.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"), cmb_pay_method.Text, cmb_pay_plan.Text, double.Parse(txt_lenseRs.Text), double.Parse(txt_advRs.Text), double.Parse(txt_balRs.Text), cmb_testby.Text, lbl_receiptNo.Text, cmb_jobType.Text, cmb_orderStatus.Text);
+                    new frm_contactlenses2(this).Show();
+                    this.Hide();
+                }
+                catch (Exception)
+                {
+                    MSG.ERROR(this, "Error Orccured");
+                }          
+            }          
             
         }
 
         private void frm_contactlenses_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
+            this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+            // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
+           
             getNewNumbers();
             cmb_jobType.SelectedIndex = 0;
             cmb_orderStatus.SelectedIndex = 0;
             cmb_pay_method.SelectedIndex = 0;
             cmb_pay_plan.SelectedIndex = 0;
-            //cmb_testby.SelectedIndex = 0;
+            cmb_testby.SelectedIndex = 0;
 
         }
 
@@ -80,6 +89,33 @@ namespace TechnoVisionOptical.view
 
             double balance = double.Parse(txt_lenseRs.Text) - double.Parse(txt_advRs.Text);
             txt_balRs.Text = balance.ToString();
+        }
+
+        private void txt_lenseRs_TextChanged(object sender, EventArgs e)
+        {
+            double m;
+            if (!double.TryParse(txt_lenseRs.Text, out m))
+            {
+                MSG.ERROR(this, "Total Amount must be in numbers");
+                txt_lenseRs.Text = "0";
+            }
+        }
+
+        private void txt_advRs_TextChanged(object sender, EventArgs e)
+        {
+            double m;
+            if (!double.TryParse(txt_advRs.Text, out m))
+            {
+                MSG.ERROR(this, "Advance Amount must be in numbers");
+                txt_advRs.Text = "0";
+            }
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            txt_advRs.Text = "0";
+            txt_lenseRs.Text = "0";
+            txt_balRs.Text = "0";
         }
     }
 }

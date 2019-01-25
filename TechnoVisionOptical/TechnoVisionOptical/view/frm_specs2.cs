@@ -32,9 +32,49 @@ namespace TechnoVisionOptical.view
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            NewSpectaclesInvoice.FillFormTwo(txt_dist_sph_right.Text, txt_dist_cyl_right.Text, txt_dist_axis_right.Text, txt_dist_sph_left.Text, txt_dist_cyl_left.Text, txt_dist_axis_left.Text, txt_add_sph_right.Text, txt_add_cyl_right.Text, txt_add_axis_right.Text, txt_add_sph_left.Text, txt_add_cyl_left.Text, txt_add_axis_left.Text, txt_lense_type.Text, cmb_frame.Text, txt_PD.Text, txt_seg_height.Text, txt_specialInc.Text, txt_remarks.Text);
-            NewSpectaclesInvoice.save(this);
-            new frm_orderComplete(Customer.id,NewSpectaclesInvoice.OrderNumber,"SPEC").Show();
+            try
+            {
+                if(txt_dist_sph_right.Text=="" || txt_dist_cyl_right.Text=="" || txt_dist_axis_right.Text=="" || txt_dist_sph_left.Text=="" || txt_dist_cyl_left.Text=="" || txt_dist_axis_left.Text=="" || txt_add_sph_right.Text=="" || txt_add_cyl_right.Text=="" || txt_add_axis_right.Text=="" || txt_add_sph_left.Text=="" || txt_add_cyl_left.Text=="" || txt_add_axis_left.Text=="" || txt_lense_type.Text=="" || txt_PD.Text=="" || txt_seg_height.Text=="" || txt_specialInc.Text=="" || txt_remarks.Text=="")
+                {
+                    MSG.ERROR(this, "Fields can no be empty.If you want to leave a empty field please put (-) into text fields");
+                }
+                else
+                {
+                    NewSpectaclesInvoice.FillFormTwo(txt_dist_sph_right.Text, txt_dist_cyl_right.Text, txt_dist_axis_right.Text, txt_dist_sph_left.Text, txt_dist_cyl_left.Text, txt_dist_axis_left.Text, txt_add_sph_right.Text, txt_add_cyl_right.Text, txt_add_axis_right.Text, txt_add_sph_left.Text, txt_add_cyl_left.Text, txt_add_axis_left.Text, txt_lense_type.Text, cmb_frame.Text, txt_PD.Text, txt_seg_height.Text, txt_specialInc.Text, txt_remarks.Text);
+                    NewSpectaclesInvoice.save(this);
+                    new frm_orderComplete(Customer.id,NewSpectaclesInvoice.OrderNumber,"SPEC").Show();
+                }
+
+            }
+            catch(Exception)
+            {
+                MSG.ERROR(this, "Can not Save Please try again...");
+            }
+            
         }
+
+        private void btn_clearAll_Click(object sender, EventArgs e)
+        {
+            txt_dist_sph_right.Text="";
+            txt_dist_cyl_right.Text="";
+            txt_dist_axis_right.Text=""; 
+            txt_dist_sph_left.Text="";
+            txt_dist_cyl_left.Text="";
+            txt_dist_axis_left.Text="";
+            txt_add_sph_right.Text="";
+            txt_add_cyl_right.Text="";
+            txt_add_axis_right.Text="";
+            txt_add_sph_left.Text="";
+            txt_add_cyl_left.Text="";
+            txt_add_axis_left.Text="";
+            txt_lense_type.Text="";
+            cmb_frame.Text=""; 
+            txt_PD.Text="";
+            txt_seg_height.Text="";
+            txt_specialInc.Text="";
+            txt_remarks.Text="";
+        }
+
+       
     }
 }

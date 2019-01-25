@@ -26,6 +26,7 @@ namespace TechnoVisionOptical.view
         {
             // TODO: This line of code loads data into the 'technovisionDataSet.frame' table. You can move, or remove it, as needed.
             this.frameTableAdapter.Fill(this.technovisionDataSet.frame);
+            
            
 
         }

@@ -29,7 +29,7 @@ namespace TechnoVisionOptical.view
 
         private void btn_ViewReports_Click(object sender, EventArgs e)
         {
-
+            new frm_reports().Show();
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
@@ -40,6 +40,16 @@ namespace TechnoVisionOptical.view
         private void metroTile3_Click(object sender, EventArgs e)
         {
             new frm_productlist().Show();
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            new frm_paymentPlan().Show();
+        }
+
+        private void metroTile5_Click(object sender, EventArgs e)
+        {
+            new frm_testersList().Show();
         }
 
        

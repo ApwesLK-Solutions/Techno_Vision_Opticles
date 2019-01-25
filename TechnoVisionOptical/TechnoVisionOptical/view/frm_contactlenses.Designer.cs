@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.txt_order_no = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
@@ -36,6 +37,8 @@
             this.txt_orderdate = new MetroFramework.Controls.MetroDateTime();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.cmb_testby = new MetroFramework.Controls.MetroComboBox();
+            this.testersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
@@ -55,6 +58,11 @@
             this.cmb_orderStatus = new MetroFramework.Controls.MetroComboBox();
             this.lbl_receiptNo = new MetroFramework.Controls.MetroLabel();
             this.btn_cal = new MetroFramework.Controls.MetroTile();
+            this.testersTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.testersTableAdapter();
+            this.testersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -124,7 +132,7 @@
             this.txt_duedate.MinimumSize = new System.Drawing.Size(0, 29);
             this.txt_duedate.Name = "txt_duedate";
             this.txt_duedate.Size = new System.Drawing.Size(238, 29);
-            this.txt_duedate.TabIndex = 18;
+            this.txt_duedate.TabIndex = 2;
             this.txt_duedate.Value = new System.DateTime(2019, 1, 24, 11, 4, 5, 0);
             // 
             // txt_orderdate
@@ -133,7 +141,7 @@
             this.txt_orderdate.MinimumSize = new System.Drawing.Size(0, 29);
             this.txt_orderdate.Name = "txt_orderdate";
             this.txt_orderdate.Size = new System.Drawing.Size(238, 29);
-            this.txt_orderdate.TabIndex = 19;
+            this.txt_orderdate.TabIndex = 3;
             this.txt_orderdate.Value = new System.DateTime(2019, 1, 24, 0, 0, 0, 0);
             // 
             // metroLabel7
@@ -147,14 +155,27 @@
             // 
             // cmb_testby
             // 
+            this.cmb_testby.DataSource = this.testersBindingSource;
+            this.cmb_testby.DisplayMember = "name";
             this.cmb_testby.FormattingEnabled = true;
             this.cmb_testby.ItemHeight = 23;
             this.cmb_testby.Location = new System.Drawing.Point(105, 181);
             this.cmb_testby.Name = "cmb_testby";
             this.cmb_testby.PromptText = "Select";
             this.cmb_testby.Size = new System.Drawing.Size(238, 29);
-            this.cmb_testby.TabIndex = 21;
+            this.cmb_testby.TabIndex = 4;
             this.cmb_testby.UseSelectable = true;
+            this.cmb_testby.ValueMember = "name";
+            // 
+            // testersBindingSource
+            // 
+            this.testersBindingSource.DataMember = "testers";
+            this.testersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // metroLabel8
             // 
@@ -211,12 +232,13 @@
             this.txt_lenseRs.SelectionStart = 0;
             this.txt_lenseRs.ShortcutsEnabled = true;
             this.txt_lenseRs.Size = new System.Drawing.Size(238, 29);
-            this.txt_lenseRs.TabIndex = 27;
+            this.txt_lenseRs.TabIndex = 7;
             this.txt_lenseRs.Text = "0";
             this.txt_lenseRs.UseSelectable = true;
             this.txt_lenseRs.WaterMark = "Total Amount";
             this.txt_lenseRs.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_lenseRs.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_lenseRs.TextChanged += new System.EventHandler(this.txt_lenseRs_TextChanged);
             // 
             // txt_advRs
             // 
@@ -246,12 +268,13 @@
             this.txt_advRs.SelectionStart = 0;
             this.txt_advRs.ShortcutsEnabled = true;
             this.txt_advRs.Size = new System.Drawing.Size(238, 29);
-            this.txt_advRs.TabIndex = 28;
+            this.txt_advRs.TabIndex = 8;
             this.txt_advRs.Text = "0";
             this.txt_advRs.UseSelectable = true;
             this.txt_advRs.WaterMark = "Advance Amount";
             this.txt_advRs.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_advRs.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_advRs.TextChanged += new System.EventHandler(this.txt_advRs_TextChanged);
             // 
             // txt_balRs
             // 
@@ -275,6 +298,7 @@
             this.txt_balRs.Name = "txt_balRs";
             this.txt_balRs.PasswordChar = '\0';
             this.txt_balRs.PromptText = "Balance";
+            this.txt_balRs.ReadOnly = true;
             this.txt_balRs.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_balRs.SelectedText = "";
             this.txt_balRs.SelectionLength = 0;
@@ -304,12 +328,13 @@
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(85, 45);
             this.btn_clear.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_clear.TabIndex = 89;
+            this.btn_clear.TabIndex = 13;
             this.btn_clear.Text = "Clear All";
             this.btn_clear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_clear.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_clear.UseSelectable = true;
             this.btn_clear.UseStyleColors = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_next
             // 
@@ -318,7 +343,7 @@
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(85, 45);
             this.btn_next.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_next.TabIndex = 90;
+            this.btn_next.TabIndex = 12;
             this.btn_next.Text = "Next";
             this.btn_next.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_next.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -345,7 +370,7 @@
             this.cmb_pay_method.Name = "cmb_pay_method";
             this.cmb_pay_method.PromptText = "Select";
             this.cmb_pay_method.Size = new System.Drawing.Size(238, 29);
-            this.cmb_pay_method.TabIndex = 92;
+            this.cmb_pay_method.TabIndex = 10;
             this.cmb_pay_method.UseSelectable = true;
             // 
             // metroLabel17
@@ -362,13 +387,14 @@
             this.cmb_pay_plan.FormattingEnabled = true;
             this.cmb_pay_plan.ItemHeight = 23;
             this.cmb_pay_plan.Items.AddRange(new object[] {
+            "Full Payment",
             "Advance",
             "Installment"});
             this.cmb_pay_plan.Location = new System.Drawing.Point(464, 217);
             this.cmb_pay_plan.Name = "cmb_pay_plan";
             this.cmb_pay_plan.PromptText = "Select";
             this.cmb_pay_plan.Size = new System.Drawing.Size(238, 29);
-            this.cmb_pay_plan.TabIndex = 94;
+            this.cmb_pay_plan.TabIndex = 11;
             this.cmb_pay_plan.UseSelectable = true;
             // 
             // metroLabel4
@@ -393,7 +419,7 @@
             this.cmb_jobType.Name = "cmb_jobType";
             this.cmb_jobType.PromptText = "Select";
             this.cmb_jobType.Size = new System.Drawing.Size(238, 29);
-            this.cmb_jobType.TabIndex = 21;
+            this.cmb_jobType.TabIndex = 5;
             this.cmb_jobType.UseSelectable = true;
             // 
             // metroLabel5
@@ -419,7 +445,7 @@
             this.cmb_orderStatus.Name = "cmb_orderStatus";
             this.cmb_orderStatus.PromptText = "Select";
             this.cmb_orderStatus.Size = new System.Drawing.Size(238, 29);
-            this.cmb_orderStatus.TabIndex = 21;
+            this.cmb_orderStatus.TabIndex = 6;
             this.cmb_orderStatus.UseSelectable = true;
             // 
             // lbl_receiptNo
@@ -438,12 +464,21 @@
             this.btn_cal.Name = "btn_cal";
             this.btn_cal.Size = new System.Drawing.Size(30, 33);
             this.btn_cal.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_cal.TabIndex = 95;
+            this.btn_cal.TabIndex = 9;
             this.btn_cal.TileImage = global::TechnoVisionOptical.Properties.Resources.Webp_net_resizeimage__1_;
             this.btn_cal.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cal.UseSelectable = true;
             this.btn_cal.UseTileImage = true;
             this.btn_cal.Click += new System.EventHandler(this.btn_cal_Click);
+            // 
+            // testersTableAdapter
+            // 
+            this.testersTableAdapter.ClearBeforeFill = true;
+            // 
+            // testersBindingSource1
+            // 
+            this.testersBindingSource1.DataMember = "testers";
+            this.testersBindingSource1.DataSource = this.technovisionDataSet;
             // 
             // frm_contactlenses
             // 
@@ -484,6 +519,9 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Contact Lenses";
             this.Load += new System.EventHandler(this.frm_contactlenses_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -519,5 +557,9 @@
         private MetroFramework.Controls.MetroComboBox cmb_orderStatus;
         private MetroFramework.Controls.MetroLabel lbl_receiptNo;
         private MetroFramework.Controls.MetroTile btn_cal;
+        private technovisionDataSet technovisionDataSet;
+        private System.Windows.Forms.BindingSource testersBindingSource;
+        private technovisionDataSetTableAdapters.testersTableAdapter testersTableAdapter;
+        private System.Windows.Forms.BindingSource testersBindingSource1;
     }
 }

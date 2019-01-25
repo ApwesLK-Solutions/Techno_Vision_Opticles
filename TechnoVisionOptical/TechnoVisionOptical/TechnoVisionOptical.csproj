@@ -102,17 +102,17 @@
       <DependentUpon>lenses.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="reports\lensesCustomer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lensesCustomer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="reports\spec_Company.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>spec_Company.rpt</DependentUpon>
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="reports\Spec_New.cs">
-      <DependentUpon>Spec_New.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="reports\Spec_customer1.cs">
       <AutoGen>True</AutoGen>
@@ -254,13 +254,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>lenses.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="reports\lensesCustomer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lensesCustomer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="reports\spec_Company.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>spec_Company.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reports\Spec_New.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Spec_New.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reports\Spec_customer.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -363,6 +363,7 @@
     <Content Include="Resources\back.ico" />
     <Content Include="Resources\back.png" />
     <Content Include="Resources\backup_KjJ_icon.ico" />
+    <None Include="Resources\Untitled-1.png" />
     <None Include="Resources\Webp.net-resizeimage %281%29.png" />
     <None Include="Resources\Webp.net-resizeimage.png" />
     <None Include="Resources\cal_GUh_icon.ico" />
