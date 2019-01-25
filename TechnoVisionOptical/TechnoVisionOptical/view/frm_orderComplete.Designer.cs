@@ -63,6 +63,7 @@
             this.btn_customerData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_customerData.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_customerData.UseSelectable = true;
+            this.btn_customerData.Click += new System.EventHandler(this.btn_customerData_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -180,6 +181,7 @@
             this.Name = "frm_orderComplete";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_orderComplete_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

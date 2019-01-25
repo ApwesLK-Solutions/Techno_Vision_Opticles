@@ -219,6 +219,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Frame List";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_productlist_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_frame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.frameBindingSource)).EndInit();

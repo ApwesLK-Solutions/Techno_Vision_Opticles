@@ -821,6 +821,7 @@
             this.Name = "frm_specs2";
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "   Spectacles - Diagnosis";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_specs2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

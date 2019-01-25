@@ -1541,6 +1541,7 @@
             this.Name = "frm_contactlenses2";
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "   Contact Lenses - Diagnosis";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_contactlenses2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

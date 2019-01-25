@@ -39,20 +39,20 @@
             this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
             this.customersTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.customersTableAdapter();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.ordersummaryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.order_summaryTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.order_summaryTableAdapter();
-            this.lenseordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lense_ordersTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.lense_ordersTableAdapter();
             this.ordernumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.receiptnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lenses_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lenseordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersummaryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.order_summaryTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.order_summaryTableAdapter();
+            this.lense_ordersTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.lense_ordersTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersummaryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lenseordersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersummaryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_new_payment
@@ -181,24 +181,6 @@
             this.metroGrid1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroGrid1.TabIndex = 9;
             // 
-            // ordersummaryBindingSource
-            // 
-            this.ordersummaryBindingSource.DataMember = "order_summary";
-            this.ordersummaryBindingSource.DataSource = this.technovisionDataSet;
-            // 
-            // order_summaryTableAdapter
-            // 
-            this.order_summaryTableAdapter.ClearBeforeFill = true;
-            // 
-            // lenseordersBindingSource
-            // 
-            this.lenseordersBindingSource.DataMember = "lense_orders";
-            this.lenseordersBindingSource.DataSource = this.technovisionDataSet;
-            // 
-            // lense_ordersTableAdapter
-            // 
-            this.lense_ordersTableAdapter.ClearBeforeFill = true;
-            // 
             // ordernumberDataGridViewTextBoxColumn
             // 
             this.ordernumberDataGridViewTextBoxColumn.DataPropertyName = "order_number";
@@ -229,6 +211,24 @@
             this.balance.HeaderText = "Balance";
             this.balance.Name = "balance";
             // 
+            // lenseordersBindingSource
+            // 
+            this.lenseordersBindingSource.DataMember = "lense_orders";
+            this.lenseordersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // ordersummaryBindingSource
+            // 
+            this.ordersummaryBindingSource.DataMember = "order_summary";
+            this.ordersummaryBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // order_summaryTableAdapter
+            // 
+            this.order_summaryTableAdapter.ClearBeforeFill = true;
+            // 
+            // lense_ordersTableAdapter
+            // 
+            this.lense_ordersTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_paymentPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,12 +243,13 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Payment Plan Manager - Contact Lenses";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_paymentPlan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersummaryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lenseordersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersummaryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

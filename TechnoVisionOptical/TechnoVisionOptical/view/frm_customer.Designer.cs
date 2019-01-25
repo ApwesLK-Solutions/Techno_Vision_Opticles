@@ -349,6 +349,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Add New Customer";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

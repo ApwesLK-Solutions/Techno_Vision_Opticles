@@ -71,6 +71,7 @@
             this.Controls.Add(this.btn_new_customer);
             this.Name = "frm_selectCustomer";
             this.Style = MetroFramework.MetroColorStyle.Green;
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_selectCustomer_Load);
             this.ResumeLayout(false);
 

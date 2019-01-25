@@ -39,7 +39,9 @@ namespace TechnoVisionOptical.view
             }
             if (orderType == "LENSE")
             {
-
+                lensesCustomer rpt = new lensesCustomer();
+                rpt.RecordSelectionFormula ="{lense_orders1.order_number} = "+ "\"" + NewContactLenseInvoice.OrderNumber + "\"";
+                new reportViewer(rpt).Show();
             }
         }
 
@@ -53,7 +55,9 @@ namespace TechnoVisionOptical.view
             }
             if(orderType == "LENSE")
             {
-
+                lensesCompany rpt = new lensesCompany();
+                rpt.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + NewContactLenseInvoice.OrderNumber + "\"";
+                new reportViewer(rpt).Show();
             }
         }
 
@@ -65,6 +69,13 @@ namespace TechnoVisionOptical.view
                 rpt.RecordSelectionFormula = "{specs_orders1.order_number} = " + "\"" + NewSpectaclesInvoice.OrderNumber + "\"";
                 rpt.PrintToPrinter(1, false, 1, 1);
             }
+            if(orderType =="LENSE")
+            {
+                lensesCustomer rpt = new lensesCustomer();
+                rpt.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + NewContactLenseInvoice.OrderNumber + "\"";
+                rpt.PrintToPrinter(1, false, 1, 1);
+            }
+
         }
 
         private void btn_printCompany_Click(object sender, EventArgs e)
@@ -75,6 +86,17 @@ namespace TechnoVisionOptical.view
                 rpt.RecordSelectionFormula = "{specs_orders1.order_number} = " + "\"" + NewSpectaclesInvoice.OrderNumber + "\"";
                 rpt.PrintToPrinter(1, false, 1, 1);
             }
+            if(orderType =="LENSE")
+            {
+                lensesCompany rpt = new lensesCompany();
+                rpt.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + NewContactLenseInvoice.OrderNumber + "\"";
+                rpt.PrintToPrinter(1, false, 1, 1);
+            }
+        }
+
+        private void btn_customerData_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

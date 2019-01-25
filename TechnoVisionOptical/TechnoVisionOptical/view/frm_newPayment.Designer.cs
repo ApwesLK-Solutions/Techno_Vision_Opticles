@@ -164,7 +164,7 @@
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.WaterMark = "Enter Amount to Pay";
+            this.metroTextBox1.PromptText = "Enter Amount to Pay";
             this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox1.SelectedText = "";
             this.metroTextBox1.SelectionLength = 0;
@@ -410,6 +410,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "New Payment";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_newPayment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

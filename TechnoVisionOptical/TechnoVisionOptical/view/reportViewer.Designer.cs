@@ -54,6 +54,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "reportViewer";
             this.Text = "reportViewer";
+            this.TopMost = true;
             this.ResumeLayout(false);
 
         }

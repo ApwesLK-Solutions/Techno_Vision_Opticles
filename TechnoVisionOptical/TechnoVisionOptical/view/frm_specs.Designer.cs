@@ -648,6 +648,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Spectacles";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_specs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
