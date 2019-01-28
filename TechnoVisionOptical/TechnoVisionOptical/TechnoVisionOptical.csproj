@@ -11,6 +11,7 @@
     <AssemblyName>TechnoVisionOptical</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>D:\Projects\Project Technovision\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -21,9 +22,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -105,13 +105,12 @@
     <Compile Include="model\NewSpectaclesInvoice.cs" />
     <Compile Include="model\user.cs" />
     <Compile Include="MSG.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs" />
     <Compile Include="reports\dailyReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -271,6 +270,25 @@
     <Compile Include="view\reportViewer.Designer.cs">
       <DependentUpon>reportViewer.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_contactlenses.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_contactlenses2.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_customer.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_customerList.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_dashboard.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_login.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_newPayment.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_orderComplete.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_passwordReset.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_paymentPlan.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_productlist.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_reports.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_selectCustomer.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_specs.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_specs2.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_testersList.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.orderList.resources" />
+    <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.reportViewer.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -360,8 +378,7 @@
     </EmbeddedResource>
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\TechnoVisionOptical.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\TechnoVisionOptical.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\TechnoVisionOptical.csproj.GenerateResource.Cache" />
     <None Include="obj\Release\TechnoVisionOptical.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -398,7 +415,19 @@
     <Folder Include="Resources\frm_login\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="obj\Debug\TechnoVisionOptical.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TechnoVisionOptical.exe" />
+    <Content Include="obj\Debug\TechnoVisionOptical.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\reports.dailyReport.cs.dll" />
+    <Content Include="obj\Debug\TempPE\reports.dailySpecReport.cs.dll" />
+    <Content Include="obj\Debug\TempPE\reports.lenses.cs.dll" />
+    <Content Include="obj\Debug\TempPE\reports.lensesCompany.cs.dll" />
+    <Content Include="obj\Debug\TempPE\reports.lensesCustomer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\reports.spec_Company.cs.dll" />
+    <Content Include="obj\Debug\TempPE\reports.Spec_customer1.cs.dll" />
+    <Content Include="obj\Debug\TempPE\reports.Spec_New.cs.dll" />
+    <Content Include="obj\Debug\TempPE\technovisionDataSet.Designer.cs.dll" />
     <Content Include="Resources\back.ico" />
     <Content Include="Resources\back.png" />
     <Content Include="Resources\backup_KjJ_icon.ico" />
