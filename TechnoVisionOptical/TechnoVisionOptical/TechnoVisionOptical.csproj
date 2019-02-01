@@ -123,12 +123,6 @@
       <DependentUpon>dailySpecReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="reports\lenses.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>lenses.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="reports\lensesCompany.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -302,10 +296,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>dailySpecReport.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="reports\lenses.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>lenses.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="reports\lensesCompany.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>lensesCompany.cs</LastGenOutput>
@@ -416,7 +406,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\app.publish\TechnoVisionOptical.exe" />
-    <Content Include="bin\Debug\TechnoVisionOptical.exe" />
     <Content Include="bin\Debug\TechnoVisionOptical.vshost.exe" />
     <Content Include="obj\Debug\TechnoVisionOptical.exe" />
     <Content Include="obj\Debug\TechnoVisionOptical.pdb" />
