@@ -410,7 +410,6 @@
     <Content Include="obj\Debug\TechnoVisionOptical.exe" />
     <Content Include="obj\Debug\TechnoVisionOptical.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
-    <Content Include="obj\Debug\TempPE\reports.dailyReport.cs.dll" />
     <Content Include="obj\Debug\TempPE\reports.dailySpecReport.cs.dll" />
     <Content Include="obj\Debug\TempPE\reports.lenses.cs.dll" />
     <Content Include="obj\Debug\TempPE\reports.lensesCompany.cs.dll" />
