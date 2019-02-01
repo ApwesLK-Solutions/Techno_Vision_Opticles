@@ -100,9 +100,9 @@
             this.tableLayoutPanel2.Controls.Add(this.btn_OrderSpecs, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btn_ViewReports, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.metroTile1, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.metroTile3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.metroTile2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.metroTile5, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.metroTile3, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.metroTile2, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 137);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -162,11 +162,11 @@
             // 
             this.metroTile3.ActiveControl = null;
             this.metroTile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile3.Location = new System.Drawing.Point(3, 166);
+            this.metroTile3.Location = new System.Drawing.Point(251, 166);
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(242, 157);
             this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 5;
+            this.metroTile3.TabIndex = 6;
             this.metroTile3.Text = "Manage Frame List";
             this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -177,11 +177,11 @@
             // 
             this.metroTile2.ActiveControl = null;
             this.metroTile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile2.Location = new System.Drawing.Point(251, 166);
+            this.metroTile2.Location = new System.Drawing.Point(3, 166);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(242, 157);
             this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 6;
+            this.metroTile2.TabIndex = 5;
             this.metroTile2.Text = "Manage Customers";
             this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;

@@ -39,8 +39,15 @@ namespace TechnoVisionOptical.view
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            frameTableAdapter.DeleteByID(int.Parse(grid_frame.SelectedRows[0].Cells[0].Value.ToString()));
-            this.frameTableAdapter.Fill(this.technovisionDataSet.frame);
+            try
+            {
+                frameTableAdapter.DeleteByID(int.Parse(grid_frame.SelectedRows[0].Cells[0].Value.ToString()));
+                this.frameTableAdapter.Fill(this.technovisionDataSet.frame);
+            }
+            catch(Exception exep)
+            {
+                MSG.ERROR(this, exep.Message.ToString());
+            }
 
         }
     }

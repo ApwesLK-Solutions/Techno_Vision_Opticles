@@ -98,5 +98,10 @@ namespace TechnoVisionOptical.view
         {
 
         }
+
+        private void btn_printBoth_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

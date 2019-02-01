@@ -16,14 +16,14 @@ namespace TechnoVisionOptical.reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class dailyReport : ReportClass {
+    public class dailyLenseReport : ReportClass {
         
-        public dailyReport() {
+        public dailyLenseReport() {
         }
         
         public override string ResourceName {
             get {
-                return "dailyReport.rpt";
+                return "dailyLenseReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace TechnoVisionOptical.reports {
         
         public override string FullResourceName {
             get {
-                return "TechnoVisionOptical.reports.dailyReport.rpt";
+                return "TechnoVisionOptical.reports.dailyLenseReport.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace TechnoVisionOptical.reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CacheddailyReport : Component, ICachedReport {
+    public class CacheddailyLenseReport : Component, ICachedReport {
         
-        public CacheddailyReport() {
+        public CacheddailyLenseReport() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace TechnoVisionOptical.reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            dailyReport rpt = new dailyReport();
+            dailyLenseReport rpt = new dailyLenseReport();
             rpt.Site = this.Site;
             return rpt;
         }

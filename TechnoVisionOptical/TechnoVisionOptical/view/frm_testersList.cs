@@ -32,7 +32,15 @@ namespace TechnoVisionOptical.view
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            //testersTableAdapter.dele
+            try
+            {
+                testersTableAdapter.DeleteById(int.Parse(grid_testers.SelectedRows[0].Cells[0].Value.ToString()));
+                this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+            }
+            catch (Exception exep) 
+            {
+                MSG.ERROR(this, exep.Message.ToString());
+            }
         }
     }
 }

@@ -111,10 +111,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
-    <Compile Include="reports\dailyReport.cs">
+    <Compile Include="reports\dailyLenseReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dailyReport.rpt</DependentUpon>
+      <DependentUpon>dailyLenseReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="reports\dailySpecReport.cs">
@@ -288,9 +288,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="reports\dailyReport.rpt">
+    <EmbeddedResource Include="reports\dailyLenseReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>dailyReport.cs</LastGenOutput>
+      <LastGenOutput>dailyLenseReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reports\dailySpecReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
