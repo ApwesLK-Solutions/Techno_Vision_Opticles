@@ -32,7 +32,7 @@ namespace TechnoVisionOptical.view
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            //testersTableAdapter.
+            //testersTableAdapter.dele
         }
     }
 }
