@@ -52,6 +52,9 @@ namespace TechnoVisionOptical.view
             new frm_testersList().Show();
         }
 
-       
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            MSG.ERROR(this, "Backup will be enabled in the next Build");
+        }       
     }
 }

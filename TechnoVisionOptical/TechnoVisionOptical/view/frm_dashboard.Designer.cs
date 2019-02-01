@@ -67,7 +67,7 @@
             this.btn_ViewReports.Name = "btn_ViewReports";
             this.btn_ViewReports.Size = new System.Drawing.Size(242, 157);
             this.btn_ViewReports.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_ViewReports.TabIndex = 1;
+            this.btn_ViewReports.TabIndex = 3;
             this.btn_ViewReports.Text = "Reports";
             this.btn_ViewReports.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.btn_ViewReports.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -166,7 +166,7 @@
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(242, 157);
             this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 6;
+            this.metroTile3.TabIndex = 5;
             this.metroTile3.Text = "Manage Frame List";
             this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -181,7 +181,7 @@
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(242, 157);
             this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 5;
+            this.metroTile2.TabIndex = 6;
             this.metroTile2.Text = "Manage Customers";
             this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -240,13 +240,14 @@
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(40, 41);
             this.metroTile4.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile4.TabIndex = 4;
+            this.metroTile4.TabIndex = 8;
             this.metroTile4.TileImage = global::TechnoVisionOptical.Properties.Resources.backup_KjJ_icon;
             this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile4.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile4.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile4.UseSelectable = true;
             this.metroTile4.UseTileImage = true;
+            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
             // 
             // frm_dashboard
             // 

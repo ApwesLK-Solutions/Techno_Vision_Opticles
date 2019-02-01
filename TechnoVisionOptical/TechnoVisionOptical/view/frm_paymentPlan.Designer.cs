@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_new_payment = new MetroFramework.Controls.MetroTile();
-            this.btn_close = new MetroFramework.Controls.MetroTile();
             this.txt_order_no = new MetroFramework.Controls.MetroTextBox();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
@@ -58,7 +57,7 @@
             // btn_new_payment
             // 
             this.btn_new_payment.ActiveControl = null;
-            this.btn_new_payment.Location = new System.Drawing.Point(500, 406);
+            this.btn_new_payment.Location = new System.Drawing.Point(591, 404);
             this.btn_new_payment.Name = "btn_new_payment";
             this.btn_new_payment.Size = new System.Drawing.Size(116, 45);
             this.btn_new_payment.Style = MetroFramework.MetroColorStyle.Green;
@@ -68,20 +67,6 @@
             this.btn_new_payment.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_new_payment.UseSelectable = true;
             this.btn_new_payment.Click += new System.EventHandler(this.btn_new_payment_Click);
-            // 
-            // btn_close
-            // 
-            this.btn_close.ActiveControl = null;
-            this.btn_close.Location = new System.Drawing.Point(622, 406);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(85, 45);
-            this.btn_close.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_close.TabIndex = 5;
-            this.btn_close.Text = "Close";
-            this.btn_close.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_close.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_close.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.btn_close.UseSelectable = true;
             // 
             // txt_order_no
             // 
@@ -98,7 +83,7 @@
             this.txt_order_no.CustomButton.UseSelectable = true;
             this.txt_order_no.CustomButton.Visible = false;
             this.txt_order_no.Lines = new string[0];
-            this.txt_order_no.Location = new System.Drawing.Point(466, 29);
+            this.txt_order_no.Location = new System.Drawing.Point(295, 29);
             this.txt_order_no.MaxLength = 32767;
             this.txt_order_no.Name = "txt_order_no";
             this.txt_order_no.PasswordChar = '\0';
@@ -236,13 +221,12 @@
             this.ClientSize = new System.Drawing.Size(730, 462);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.txt_order_no);
-            this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_new_payment);
             this.MaximizeBox = false;
             this.Name = "frm_paymentPlan";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Payment Plan Manager - Contact Lenses";
+            this.Text = "Payment Plan Manager";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_paymentPlan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
@@ -257,7 +241,6 @@
         #endregion
 
         private MetroFramework.Controls.MetroTile btn_new_payment;
-        private MetroFramework.Controls.MetroTile btn_close;
         private MetroFramework.Controls.MetroTextBox txt_order_no;
         private technovisionDataSet technovisionDataSet;
         private System.Windows.Forms.BindingSource customersBindingSource;

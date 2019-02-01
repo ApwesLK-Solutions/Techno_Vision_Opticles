@@ -376,10 +376,10 @@
     <EmbeddedResource Include="view\reportViewer.resx">
       <DependentUpon>reportViewer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\TechnoVisionOptical.vshost.exe.config" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\TechnoVisionOptical.csproj.GenerateResource.Cache" />
-    <None Include="obj\Release\TechnoVisionOptical.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -410,12 +410,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Debug\" />
     <Folder Include="bin\Release\" />
+    <Folder Include="obj\Release\" />
     <Folder Include="Resources\frm_login\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="obj\Debug\TechnoVisionOptical.csproj.FileListAbsolute.txt" />
+    <Content Include="bin\Debug\app.publish\TechnoVisionOptical.exe" />
+    <Content Include="bin\Debug\TechnoVisionOptical.exe" />
+    <Content Include="bin\Debug\TechnoVisionOptical.vshost.exe" />
     <Content Include="obj\Debug\TechnoVisionOptical.exe" />
     <Content Include="obj\Debug\TechnoVisionOptical.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
