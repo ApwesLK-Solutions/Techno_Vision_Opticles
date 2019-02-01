@@ -25,8 +25,8 @@ namespace TechnoVisionOptical.view
 
         private void btn_generate_date_report_Click(object sender, EventArgs e)
         {
-            dailyLenseReport lense = new dailyLenseReport();
-
+           /* dailyLenseReport lense = new dailyLenseReport();
+            lense.RecordSelectionFormula = "{lense_orders1.ordernumber} =" + */
         }
     }
 }
