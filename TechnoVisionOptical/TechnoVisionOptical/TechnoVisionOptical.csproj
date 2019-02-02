@@ -164,10 +164,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Resources\frm_contactlenses.cs">
+    <Compile Include="view\frm_contactlenses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resources\frm_contactlenses.Designer.cs">
+    <Compile Include="view\frm_contactlenses.Designer.cs">
       <DependentUpon>frm_contactlenses.cs</DependentUpon>
     </Compile>
     <Compile Include="view\frm_contactlenses2.cs">
@@ -320,7 +320,7 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Spec_customer1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\frm_contactlenses.resx">
+    <EmbeddedResource Include="view\frm_contactlenses.resx">
       <DependentUpon>frm_contactlenses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_contactlenses2.resx">
