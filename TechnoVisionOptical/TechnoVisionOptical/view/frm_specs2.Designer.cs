@@ -65,12 +65,12 @@
             this.btn_save = new MetroFramework.Controls.MetroTile();
             this.btn_clearAll = new MetroFramework.Controls.MetroTile();
             this.cmb_frame = new MetroFramework.Controls.MetroComboBox();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
             this.frameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.frameTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.frameTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.frameBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_add_sph_right
@@ -79,10 +79,10 @@
             // 
             // 
             this.txt_add_sph_right.CustomButton.Image = null;
-            this.txt_add_sph_right.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_add_sph_right.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_sph_right.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_add_sph_right.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_sph_right.CustomButton.Name = "";
-            this.txt_add_sph_right.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_add_sph_right.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_add_sph_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_sph_right.CustomButton.TabIndex = 1;
             this.txt_add_sph_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -90,7 +90,7 @@
             this.txt_add_sph_right.CustomButton.Visible = false;
             this.txt_add_sph_right.Lines = new string[0];
             this.txt_add_sph_right.Location = new System.Drawing.Point(89, 176);
-            this.txt_add_sph_right.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_sph_right.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_sph_right.MaxLength = 32767;
             this.txt_add_sph_right.Name = "txt_add_sph_right";
             this.txt_add_sph_right.PasswordChar = '\0';
@@ -111,10 +111,10 @@
             // 
             // 
             this.txt_dist_sph_right.CustomButton.Image = null;
-            this.txt_dist_sph_right.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_dist_sph_right.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_sph_right.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_dist_sph_right.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_sph_right.CustomButton.Name = "";
-            this.txt_dist_sph_right.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_dist_sph_right.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_dist_sph_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_sph_right.CustomButton.TabIndex = 1;
             this.txt_dist_sph_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -122,7 +122,7 @@
             this.txt_dist_sph_right.CustomButton.Visible = false;
             this.txt_dist_sph_right.Lines = new string[0];
             this.txt_dist_sph_right.Location = new System.Drawing.Point(89, 137);
-            this.txt_dist_sph_right.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_sph_right.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_sph_right.MaxLength = 32767;
             this.txt_dist_sph_right.Name = "txt_dist_sph_right";
             this.txt_dist_sph_right.PasswordChar = '\0';
@@ -193,10 +193,10 @@
             // 
             // 
             this.txt_add_axis_right.CustomButton.Image = null;
-            this.txt_add_axis_right.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_add_axis_right.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_axis_right.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_add_axis_right.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_axis_right.CustomButton.Name = "";
-            this.txt_add_axis_right.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_add_axis_right.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_add_axis_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_axis_right.CustomButton.TabIndex = 1;
             this.txt_add_axis_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -204,7 +204,7 @@
             this.txt_add_axis_right.CustomButton.Visible = false;
             this.txt_add_axis_right.Lines = new string[0];
             this.txt_add_axis_right.Location = new System.Drawing.Point(241, 176);
-            this.txt_add_axis_right.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_axis_right.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_axis_right.MaxLength = 32767;
             this.txt_add_axis_right.Name = "txt_add_axis_right";
             this.txt_add_axis_right.PasswordChar = '\0';
@@ -225,10 +225,10 @@
             // 
             // 
             this.txt_dist_axis_right.CustomButton.Image = null;
-            this.txt_dist_axis_right.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_dist_axis_right.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_axis_right.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_dist_axis_right.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_axis_right.CustomButton.Name = "";
-            this.txt_dist_axis_right.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_dist_axis_right.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_dist_axis_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_axis_right.CustomButton.TabIndex = 1;
             this.txt_dist_axis_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -236,7 +236,7 @@
             this.txt_dist_axis_right.CustomButton.Visible = false;
             this.txt_dist_axis_right.Lines = new string[0];
             this.txt_dist_axis_right.Location = new System.Drawing.Point(241, 137);
-            this.txt_dist_axis_right.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_axis_right.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_axis_right.MaxLength = 32767;
             this.txt_dist_axis_right.Name = "txt_dist_axis_right";
             this.txt_dist_axis_right.PasswordChar = '\0';
@@ -257,10 +257,10 @@
             // 
             // 
             this.txt_add_cyl_right.CustomButton.Image = null;
-            this.txt_add_cyl_right.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_add_cyl_right.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_cyl_right.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_add_cyl_right.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_cyl_right.CustomButton.Name = "";
-            this.txt_add_cyl_right.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_add_cyl_right.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_add_cyl_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_cyl_right.CustomButton.TabIndex = 1;
             this.txt_add_cyl_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -268,7 +268,7 @@
             this.txt_add_cyl_right.CustomButton.Visible = false;
             this.txt_add_cyl_right.Lines = new string[0];
             this.txt_add_cyl_right.Location = new System.Drawing.Point(165, 176);
-            this.txt_add_cyl_right.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_cyl_right.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_cyl_right.MaxLength = 32767;
             this.txt_add_cyl_right.Name = "txt_add_cyl_right";
             this.txt_add_cyl_right.PasswordChar = '\0';
@@ -289,10 +289,10 @@
             // 
             // 
             this.txt_dist_cyl_right.CustomButton.Image = null;
-            this.txt_dist_cyl_right.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_dist_cyl_right.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_cyl_right.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_dist_cyl_right.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_cyl_right.CustomButton.Name = "";
-            this.txt_dist_cyl_right.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_dist_cyl_right.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_dist_cyl_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_cyl_right.CustomButton.TabIndex = 1;
             this.txt_dist_cyl_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -300,7 +300,7 @@
             this.txt_dist_cyl_right.CustomButton.Visible = false;
             this.txt_dist_cyl_right.Lines = new string[0];
             this.txt_dist_cyl_right.Location = new System.Drawing.Point(165, 137);
-            this.txt_dist_cyl_right.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_cyl_right.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_cyl_right.MaxLength = 32767;
             this.txt_dist_cyl_right.Name = "txt_dist_cyl_right";
             this.txt_dist_cyl_right.PasswordChar = '\0';
@@ -321,10 +321,10 @@
             // 
             // 
             this.txt_add_cyl_left.CustomButton.Image = null;
-            this.txt_add_cyl_left.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_add_cyl_left.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_cyl_left.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_add_cyl_left.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_cyl_left.CustomButton.Name = "";
-            this.txt_add_cyl_left.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_add_cyl_left.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_add_cyl_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_cyl_left.CustomButton.TabIndex = 1;
             this.txt_add_cyl_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -332,7 +332,7 @@
             this.txt_add_cyl_left.CustomButton.Visible = false;
             this.txt_add_cyl_left.Lines = new string[0];
             this.txt_add_cyl_left.Location = new System.Drawing.Point(400, 176);
-            this.txt_add_cyl_left.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_cyl_left.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_cyl_left.MaxLength = 32767;
             this.txt_add_cyl_left.Name = "txt_add_cyl_left";
             this.txt_add_cyl_left.PasswordChar = '\0';
@@ -353,10 +353,10 @@
             // 
             // 
             this.txt_dist_cyl_left.CustomButton.Image = null;
-            this.txt_dist_cyl_left.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_dist_cyl_left.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_cyl_left.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_dist_cyl_left.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_cyl_left.CustomButton.Name = "";
-            this.txt_dist_cyl_left.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_dist_cyl_left.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_dist_cyl_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_cyl_left.CustomButton.TabIndex = 1;
             this.txt_dist_cyl_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -364,7 +364,7 @@
             this.txt_dist_cyl_left.CustomButton.Visible = false;
             this.txt_dist_cyl_left.Lines = new string[0];
             this.txt_dist_cyl_left.Location = new System.Drawing.Point(400, 137);
-            this.txt_dist_cyl_left.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_cyl_left.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_cyl_left.MaxLength = 32767;
             this.txt_dist_cyl_left.Name = "txt_dist_cyl_left";
             this.txt_dist_cyl_left.PasswordChar = '\0';
@@ -385,10 +385,10 @@
             // 
             // 
             this.txt_add_axis_left.CustomButton.Image = null;
-            this.txt_add_axis_left.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_add_axis_left.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_axis_left.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_add_axis_left.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_axis_left.CustomButton.Name = "";
-            this.txt_add_axis_left.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_add_axis_left.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_add_axis_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_axis_left.CustomButton.TabIndex = 1;
             this.txt_add_axis_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -396,7 +396,7 @@
             this.txt_add_axis_left.CustomButton.Visible = false;
             this.txt_add_axis_left.Lines = new string[0];
             this.txt_add_axis_left.Location = new System.Drawing.Point(476, 176);
-            this.txt_add_axis_left.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_axis_left.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_axis_left.MaxLength = 32767;
             this.txt_add_axis_left.Name = "txt_add_axis_left";
             this.txt_add_axis_left.PasswordChar = '\0';
@@ -418,10 +418,10 @@
             // 
             // 
             this.txt_dist_axis_left.CustomButton.Image = null;
-            this.txt_dist_axis_left.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_dist_axis_left.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_axis_left.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_dist_axis_left.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_axis_left.CustomButton.Name = "";
-            this.txt_dist_axis_left.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_dist_axis_left.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_dist_axis_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_axis_left.CustomButton.TabIndex = 1;
             this.txt_dist_axis_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -429,7 +429,7 @@
             this.txt_dist_axis_left.CustomButton.Visible = false;
             this.txt_dist_axis_left.Lines = new string[0];
             this.txt_dist_axis_left.Location = new System.Drawing.Point(476, 137);
-            this.txt_dist_axis_left.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_axis_left.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_axis_left.MaxLength = 32767;
             this.txt_dist_axis_left.Name = "txt_dist_axis_left";
             this.txt_dist_axis_left.PasswordChar = '\0';
@@ -450,10 +450,10 @@
             // 
             // 
             this.txt_add_sph_left.CustomButton.Image = null;
-            this.txt_add_sph_left.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_add_sph_left.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_sph_left.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_add_sph_left.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_sph_left.CustomButton.Name = "";
-            this.txt_add_sph_left.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_add_sph_left.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_add_sph_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_sph_left.CustomButton.TabIndex = 1;
             this.txt_add_sph_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -461,7 +461,7 @@
             this.txt_add_sph_left.CustomButton.Visible = false;
             this.txt_add_sph_left.Lines = new string[0];
             this.txt_add_sph_left.Location = new System.Drawing.Point(324, 176);
-            this.txt_add_sph_left.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_add_sph_left.Margin = new System.Windows.Forms.Padding(4);
             this.txt_add_sph_left.MaxLength = 32767;
             this.txt_add_sph_left.Name = "txt_add_sph_left";
             this.txt_add_sph_left.PasswordChar = '\0';
@@ -482,10 +482,10 @@
             // 
             // 
             this.txt_dist_sph_left.CustomButton.Image = null;
-            this.txt_dist_sph_left.CustomButton.Location = new System.Drawing.Point(55, 2);
-            this.txt_dist_sph_left.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_sph_left.CustomButton.Location = new System.Drawing.Point(41, 2);
+            this.txt_dist_sph_left.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_sph_left.CustomButton.Name = "";
-            this.txt_dist_sph_left.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_dist_sph_left.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_dist_sph_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_sph_left.CustomButton.TabIndex = 1;
             this.txt_dist_sph_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -493,7 +493,7 @@
             this.txt_dist_sph_left.CustomButton.Visible = false;
             this.txt_dist_sph_left.Lines = new string[0];
             this.txt_dist_sph_left.Location = new System.Drawing.Point(324, 137);
-            this.txt_dist_sph_left.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_dist_sph_left.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dist_sph_left.MaxLength = 32767;
             this.txt_dist_sph_left.Name = "txt_dist_sph_left";
             this.txt_dist_sph_left.PasswordChar = '\0';
@@ -624,10 +624,10 @@
             // 
             // 
             this.txt_lense_type.CustomButton.Image = null;
-            this.txt_lense_type.CustomButton.Location = new System.Drawing.Point(275, 2);
-            this.txt_lense_type.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_lense_type.CustomButton.Location = new System.Drawing.Point(206, 2);
+            this.txt_lense_type.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_lense_type.CustomButton.Name = "";
-            this.txt_lense_type.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_lense_type.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_lense_type.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_lense_type.CustomButton.TabIndex = 1;
             this.txt_lense_type.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -635,7 +635,7 @@
             this.txt_lense_type.CustomButton.Visible = false;
             this.txt_lense_type.Lines = new string[0];
             this.txt_lense_type.Location = new System.Drawing.Point(703, 79);
-            this.txt_lense_type.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_lense_type.Margin = new System.Windows.Forms.Padding(4);
             this.txt_lense_type.MaxLength = 32767;
             this.txt_lense_type.Name = "txt_lense_type";
             this.txt_lense_type.PasswordChar = '\0';
@@ -656,10 +656,10 @@
             // 
             // 
             this.txt_PD.CustomButton.Image = null;
-            this.txt_PD.CustomButton.Location = new System.Drawing.Point(275, 2);
-            this.txt_PD.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_PD.CustomButton.Location = new System.Drawing.Point(206, 2);
+            this.txt_PD.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_PD.CustomButton.Name = "";
-            this.txt_PD.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_PD.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_PD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_PD.CustomButton.TabIndex = 1;
             this.txt_PD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -667,7 +667,7 @@
             this.txt_PD.CustomButton.Visible = false;
             this.txt_PD.Lines = new string[0];
             this.txt_PD.Location = new System.Drawing.Point(703, 167);
-            this.txt_PD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_PD.Margin = new System.Windows.Forms.Padding(4);
             this.txt_PD.MaxLength = 32767;
             this.txt_PD.Name = "txt_PD";
             this.txt_PD.PasswordChar = '\0';
@@ -688,10 +688,10 @@
             // 
             // 
             this.txt_seg_height.CustomButton.Image = null;
-            this.txt_seg_height.CustomButton.Location = new System.Drawing.Point(275, 2);
-            this.txt_seg_height.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_seg_height.CustomButton.Location = new System.Drawing.Point(206, 2);
+            this.txt_seg_height.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_seg_height.CustomButton.Name = "";
-            this.txt_seg_height.CustomButton.Size = new System.Drawing.Size(41, 38);
+            this.txt_seg_height.CustomButton.Size = new System.Drawing.Size(31, 31);
             this.txt_seg_height.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_seg_height.CustomButton.TabIndex = 1;
             this.txt_seg_height.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -699,7 +699,7 @@
             this.txt_seg_height.CustomButton.Visible = false;
             this.txt_seg_height.Lines = new string[0];
             this.txt_seg_height.Location = new System.Drawing.Point(703, 212);
-            this.txt_seg_height.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_seg_height.Margin = new System.Windows.Forms.Padding(4);
             this.txt_seg_height.MaxLength = 32767;
             this.txt_seg_height.Name = "txt_seg_height";
             this.txt_seg_height.PasswordChar = '\0';
@@ -720,10 +720,10 @@
             // 
             // 
             this.txt_specialInc.CustomButton.Image = null;
-            this.txt_specialInc.CustomButton.Location = new System.Drawing.Point(967, 2);
-            this.txt_specialInc.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_specialInc.CustomButton.Location = new System.Drawing.Point(725, 2);
+            this.txt_specialInc.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_specialInc.CustomButton.Name = "";
-            this.txt_specialInc.CustomButton.Size = new System.Drawing.Size(92, 85);
+            this.txt_specialInc.CustomButton.Size = new System.Drawing.Size(69, 69);
             this.txt_specialInc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_specialInc.CustomButton.TabIndex = 1;
             this.txt_specialInc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -731,7 +731,7 @@
             this.txt_specialInc.CustomButton.Visible = false;
             this.txt_specialInc.Lines = new string[0];
             this.txt_specialInc.Location = new System.Drawing.Point(145, 256);
-            this.txt_specialInc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_specialInc.Margin = new System.Windows.Forms.Padding(4);
             this.txt_specialInc.MaxLength = 32767;
             this.txt_specialInc.Multiline = true;
             this.txt_specialInc.Name = "txt_specialInc";
@@ -753,10 +753,10 @@
             // 
             // 
             this.txt_remarks.CustomButton.Image = null;
-            this.txt_remarks.CustomButton.Location = new System.Drawing.Point(967, 2);
-            this.txt_remarks.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_remarks.CustomButton.Location = new System.Drawing.Point(725, 2);
+            this.txt_remarks.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_remarks.CustomButton.Name = "";
-            this.txt_remarks.CustomButton.Size = new System.Drawing.Size(92, 85);
+            this.txt_remarks.CustomButton.Size = new System.Drawing.Size(69, 69);
             this.txt_remarks.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_remarks.CustomButton.TabIndex = 1;
             this.txt_remarks.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -764,7 +764,7 @@
             this.txt_remarks.CustomButton.Visible = false;
             this.txt_remarks.Lines = new string[0];
             this.txt_remarks.Location = new System.Drawing.Point(145, 338);
-            this.txt_remarks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_remarks.Margin = new System.Windows.Forms.Padding(4);
             this.txt_remarks.MaxLength = 32767;
             this.txt_remarks.Multiline = true;
             this.txt_remarks.Name = "txt_remarks";
@@ -784,7 +784,7 @@
             // 
             this.btn_save.ActiveControl = null;
             this.btn_save.Location = new System.Drawing.Point(829, 436);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(113, 55);
             this.btn_save.Style = MetroFramework.MetroColorStyle.Green;
@@ -799,7 +799,7 @@
             // 
             this.btn_clearAll.ActiveControl = null;
             this.btn_clearAll.Location = new System.Drawing.Point(703, 436);
-            this.btn_clearAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_clearAll.Margin = new System.Windows.Forms.Padding(4);
             this.btn_clearAll.Name = "btn_clearAll";
             this.btn_clearAll.Size = new System.Drawing.Size(117, 55);
             this.btn_clearAll.Style = MetroFramework.MetroColorStyle.Green;
@@ -818,18 +818,28 @@
             this.cmb_frame.FormattingEnabled = true;
             this.cmb_frame.ItemHeight = 24;
             this.cmb_frame.Location = new System.Drawing.Point(703, 122);
-            this.cmb_frame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmb_frame.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_frame.Name = "cmb_frame";
             this.cmb_frame.Size = new System.Drawing.Size(239, 30);
             this.cmb_frame.TabIndex = 14;
             this.cmb_frame.UseSelectable = true;
             this.cmb_frame.ValueMember = "frame_model";
             // 
+            // frameBindingSource
+            // 
+            this.frameBindingSource.DataMember = "frame";
+            this.frameBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(0, 31);
-            this.metroTile1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTile1.Location = new System.Drawing.Point(0, 25);
+            this.metroTile1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(47, 31);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
@@ -839,16 +849,7 @@
             this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Small;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // frameBindingSource
-            // 
-            this.frameBindingSource.DataMember = "frame";
-            this.frameBindingSource.DataSource = this.technovisionDataSet;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // frameTableAdapter
             // 
@@ -896,15 +897,15 @@
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.metroLabel5);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_specs2";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "   Spectacles - Diagnosis";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_specs2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.frameBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

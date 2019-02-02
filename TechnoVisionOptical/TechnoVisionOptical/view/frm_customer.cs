@@ -54,6 +54,16 @@ namespace TechnoVisionOptical.view
             }
         }
 
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            txt_name.Text = "";
+            txt_address.Text="";
+            txt_age.Text="";
+            txt_email.Text="";
+            txt_phone.Text="";
+            txt_proffession.Text="";
+        }
+
         
     }
 }

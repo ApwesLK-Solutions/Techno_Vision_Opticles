@@ -13,6 +13,7 @@ namespace TechnoVisionOptical.view
 {
     public partial class frm_specs2 : MetroFramework.Forms.MetroForm
     {
+         
    
         public frm_specs2()
         {
@@ -75,6 +76,11 @@ namespace TechnoVisionOptical.view
             txt_seg_height.Text="";
             txt_specialInc.Text="";
             txt_remarks.Text="";
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            
         }
 
        

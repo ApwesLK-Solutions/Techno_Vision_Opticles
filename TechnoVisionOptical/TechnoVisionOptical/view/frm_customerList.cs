@@ -47,6 +47,7 @@ namespace TechnoVisionOptical.view
         private void btn_addNewCustomer_Click(object sender, EventArgs e)
         {
             new frm_customer().Show();
+            frm_customer.ActiveForm.Activate();
         }
 
         private void btn_select_Click(object sender, EventArgs e)
