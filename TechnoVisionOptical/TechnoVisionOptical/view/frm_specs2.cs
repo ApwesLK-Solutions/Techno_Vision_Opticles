@@ -45,7 +45,7 @@ namespace TechnoVisionOptical.view
                 {
                     NewSpectaclesInvoice.FillFormTwo(txt_dist_sph_right.Text, txt_dist_cyl_right.Text, txt_dist_axis_right.Text, txt_dist_sph_left.Text, txt_dist_cyl_left.Text, txt_dist_axis_left.Text, txt_add_sph_right.Text, txt_add_cyl_right.Text, txt_add_axis_right.Text, txt_add_sph_left.Text, txt_add_cyl_left.Text, txt_add_axis_left.Text, txt_lense_type.Text, cmb_frame.Text, txt_PD.Text, txt_seg_height.Text, txt_specialInc.Text, txt_remarks.Text);
                     NewSpectaclesInvoice.save(this);
-                    new frm_orderComplete(Customer.id,NewSpectaclesInvoice.OrderNumber,"SPEC").Show();
+                    new frm_orderComplete(Customer.id, NewSpectaclesInvoice.OrderNumber, "SPEC").ShowDialog();
                     back.Close();
                     this.Close();
                 }
@@ -82,7 +82,7 @@ namespace TechnoVisionOptical.view
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            back.Show();
+            back.ShowDialog();
             this.Close();
         }
 

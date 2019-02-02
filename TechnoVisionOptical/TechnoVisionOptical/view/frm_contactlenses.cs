@@ -29,7 +29,7 @@ namespace TechnoVisionOptical.view
                 try
                 {
                     NewContactLenseInvoice.fillFormOne(txt_order_no.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"), cmb_pay_method.Text, cmb_pay_plan.Text, double.Parse(txt_lenseRs.Text), double.Parse(txt_advRs.Text), double.Parse(txt_balRs.Text), cmb_testby.Text, lbl_receiptNo.Text, cmb_jobType.Text, cmb_orderStatus.Text);
-                    new frm_contactlenses2(this).Show();
+                    new frm_contactlenses2(this).ShowDialog();
                     this.Hide();
                 }
                 catch (Exception)

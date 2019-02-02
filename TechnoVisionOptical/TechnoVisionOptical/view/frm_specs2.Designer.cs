@@ -79,9 +79,9 @@
             // 
             // 
             this.txt_add_sph_right.CustomButton.Image = null;
-            this.txt_add_sph_right.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_add_sph_right.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_add_sph_right.CustomButton.Name = "";
-            this.txt_add_sph_right.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_add_sph_right.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_add_sph_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_sph_right.CustomButton.TabIndex = 1;
             this.txt_add_sph_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -110,9 +110,9 @@
             // 
             // 
             this.txt_dist_sph_right.CustomButton.Image = null;
-            this.txt_dist_sph_right.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_dist_sph_right.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_dist_sph_right.CustomButton.Name = "";
-            this.txt_dist_sph_right.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_dist_sph_right.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_dist_sph_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_sph_right.CustomButton.TabIndex = 1;
             this.txt_dist_sph_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -186,9 +186,9 @@
             // 
             // 
             this.txt_add_axis_right.CustomButton.Image = null;
-            this.txt_add_axis_right.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_add_axis_right.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_add_axis_right.CustomButton.Name = "";
-            this.txt_add_axis_right.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_add_axis_right.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_add_axis_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_axis_right.CustomButton.TabIndex = 1;
             this.txt_add_axis_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -217,9 +217,9 @@
             // 
             // 
             this.txt_dist_axis_right.CustomButton.Image = null;
-            this.txt_dist_axis_right.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_dist_axis_right.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_dist_axis_right.CustomButton.Name = "";
-            this.txt_dist_axis_right.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_dist_axis_right.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_dist_axis_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_axis_right.CustomButton.TabIndex = 1;
             this.txt_dist_axis_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -248,9 +248,9 @@
             // 
             // 
             this.txt_add_cyl_right.CustomButton.Image = null;
-            this.txt_add_cyl_right.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_add_cyl_right.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_add_cyl_right.CustomButton.Name = "";
-            this.txt_add_cyl_right.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_add_cyl_right.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_add_cyl_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_cyl_right.CustomButton.TabIndex = 1;
             this.txt_add_cyl_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -279,9 +279,9 @@
             // 
             // 
             this.txt_dist_cyl_right.CustomButton.Image = null;
-            this.txt_dist_cyl_right.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_dist_cyl_right.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_dist_cyl_right.CustomButton.Name = "";
-            this.txt_dist_cyl_right.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_dist_cyl_right.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_dist_cyl_right.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_cyl_right.CustomButton.TabIndex = 1;
             this.txt_dist_cyl_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -310,9 +310,9 @@
             // 
             // 
             this.txt_add_cyl_left.CustomButton.Image = null;
-            this.txt_add_cyl_left.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_add_cyl_left.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_add_cyl_left.CustomButton.Name = "";
-            this.txt_add_cyl_left.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_add_cyl_left.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_add_cyl_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_cyl_left.CustomButton.TabIndex = 1;
             this.txt_add_cyl_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -341,9 +341,9 @@
             // 
             // 
             this.txt_dist_cyl_left.CustomButton.Image = null;
-            this.txt_dist_cyl_left.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_dist_cyl_left.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_dist_cyl_left.CustomButton.Name = "";
-            this.txt_dist_cyl_left.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_dist_cyl_left.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_dist_cyl_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_cyl_left.CustomButton.TabIndex = 1;
             this.txt_dist_cyl_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -372,9 +372,9 @@
             // 
             // 
             this.txt_add_axis_left.CustomButton.Image = null;
-            this.txt_add_axis_left.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_add_axis_left.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_add_axis_left.CustomButton.Name = "";
-            this.txt_add_axis_left.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_add_axis_left.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_add_axis_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_axis_left.CustomButton.TabIndex = 1;
             this.txt_add_axis_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -404,9 +404,9 @@
             // 
             // 
             this.txt_dist_axis_left.CustomButton.Image = null;
-            this.txt_dist_axis_left.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_dist_axis_left.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_dist_axis_left.CustomButton.Name = "";
-            this.txt_dist_axis_left.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_dist_axis_left.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_dist_axis_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_axis_left.CustomButton.TabIndex = 1;
             this.txt_dist_axis_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -435,9 +435,9 @@
             // 
             // 
             this.txt_add_sph_left.CustomButton.Image = null;
-            this.txt_add_sph_left.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_add_sph_left.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_add_sph_left.CustomButton.Name = "";
-            this.txt_add_sph_left.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_add_sph_left.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_add_sph_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_add_sph_left.CustomButton.TabIndex = 1;
             this.txt_add_sph_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -466,9 +466,9 @@
             // 
             // 
             this.txt_dist_sph_left.CustomButton.Image = null;
-            this.txt_dist_sph_left.CustomButton.Location = new System.Drawing.Point(21, 1);
+            this.txt_dist_sph_left.CustomButton.Location = new System.Drawing.Point(28, 1);
             this.txt_dist_sph_left.CustomButton.Name = "";
-            this.txt_dist_sph_left.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_dist_sph_left.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_dist_sph_left.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_dist_sph_left.CustomButton.TabIndex = 1;
             this.txt_dist_sph_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -596,9 +596,9 @@
             // 
             // 
             this.txt_lense_type.CustomButton.Image = null;
-            this.txt_lense_type.CustomButton.Location = new System.Drawing.Point(114, 1);
+            this.txt_lense_type.CustomButton.Location = new System.Drawing.Point(152, 1);
             this.txt_lense_type.CustomButton.Name = "";
-            this.txt_lense_type.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_lense_type.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_lense_type.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_lense_type.CustomButton.TabIndex = 1;
             this.txt_lense_type.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -627,9 +627,9 @@
             // 
             // 
             this.txt_PD.CustomButton.Image = null;
-            this.txt_PD.CustomButton.Location = new System.Drawing.Point(114, 1);
+            this.txt_PD.CustomButton.Location = new System.Drawing.Point(152, 1);
             this.txt_PD.CustomButton.Name = "";
-            this.txt_PD.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_PD.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_PD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_PD.CustomButton.TabIndex = 1;
             this.txt_PD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -658,9 +658,9 @@
             // 
             // 
             this.txt_seg_height.CustomButton.Image = null;
-            this.txt_seg_height.CustomButton.Location = new System.Drawing.Point(114, 1);
+            this.txt_seg_height.CustomButton.Location = new System.Drawing.Point(152, 1);
             this.txt_seg_height.CustomButton.Name = "";
-            this.txt_seg_height.CustomButton.Size = new System.Drawing.Size(20, 22);
+            this.txt_seg_height.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txt_seg_height.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_seg_height.CustomButton.TabIndex = 1;
             this.txt_seg_height.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -689,9 +689,9 @@
             // 
             // 
             this.txt_specialInc.CustomButton.Image = null;
-            this.txt_specialInc.CustomButton.Location = new System.Drawing.Point(405, 2);
+            this.txt_specialInc.CustomButton.Location = new System.Drawing.Point(540, 2);
             this.txt_specialInc.CustomButton.Name = "";
-            this.txt_specialInc.CustomButton.Size = new System.Drawing.Size(41, 45);
+            this.txt_specialInc.CustomButton.Size = new System.Drawing.Size(55, 55);
             this.txt_specialInc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_specialInc.CustomButton.TabIndex = 1;
             this.txt_specialInc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -721,9 +721,9 @@
             // 
             // 
             this.txt_remarks.CustomButton.Image = null;
-            this.txt_remarks.CustomButton.Location = new System.Drawing.Point(405, 2);
+            this.txt_remarks.CustomButton.Location = new System.Drawing.Point(540, 2);
             this.txt_remarks.CustomButton.Name = "";
-            this.txt_remarks.CustomButton.Size = new System.Drawing.Size(41, 45);
+            this.txt_remarks.CustomButton.Size = new System.Drawing.Size(55, 55);
             this.txt_remarks.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_remarks.CustomButton.TabIndex = 1;
             this.txt_remarks.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -861,6 +861,7 @@
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.metroLabel5);
+            this.Movable = false;
             this.Name = "frm_specs2";
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "   Spectacles - Diagnosis";

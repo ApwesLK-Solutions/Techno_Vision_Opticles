@@ -68,7 +68,7 @@ namespace TechnoVisionOptical.view
             else
             {
                 NewSpectaclesInvoice.FillFormOne(txt_order.Text, txt_orderdate.Value.ToString("yyyy-MM-dd"), txt_duedate.Value.ToString("yyyy-MM-dd"), double.Parse(txt_eyeWear.Text), double.Parse(txt_lenses.Text), double.Parse(txt_total.Text), cmb_pay_method.Text, cmb_pay_plan.Text, cmb_testedby.Text, double.Parse(txt_advance.Text), double.Parse(txt_discount.Text), double.Parse(txt_balance.Text), cmb_orderStatus.Text, lbl_receiptNo.Text);
-                new frm_specs2(this).Show();
+                new frm_specs2(this).ShowDialog();
                 this.Hide();
             }
             

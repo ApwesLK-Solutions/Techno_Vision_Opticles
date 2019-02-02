@@ -55,10 +55,9 @@
             // btn_print
             // 
             this.btn_print.ActiveControl = null;
-            this.btn_print.Location = new System.Drawing.Point(902, 481);
-            this.btn_print.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_print.Location = new System.Drawing.Point(676, 385);
             this.btn_print.Name = "btn_print";
-            this.btn_print.Size = new System.Drawing.Size(135, 36);
+            this.btn_print.Size = new System.Drawing.Size(101, 44);
             this.btn_print.Style = MetroFramework.MetroColorStyle.Green;
             this.btn_print.TabIndex = 6;
             this.btn_print.Text = "Print";
@@ -67,17 +66,17 @@
             this.btn_print.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_print.UseSelectable = true;
             this.btn_print.UseTileImage = true;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
             // btn_cancel
             // 
             this.btn_cancel.ActiveControl = null;
-            this.btn_cancel.Location = new System.Drawing.Point(759, 481);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_cancel.Location = new System.Drawing.Point(569, 385);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(135, 36);
+            this.btn_cancel.Size = new System.Drawing.Size(101, 44);
             this.btn_cancel.Style = MetroFramework.MetroColorStyle.Green;
             this.btn_cancel.TabIndex = 7;
-            this.btn_cancel.Text = "SET";
+            this.btn_cancel.Text = "Set";
             this.btn_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cancel.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.btn_cancel.UseSelectable = true;
@@ -120,8 +119,7 @@
             this.grid_order_list.EnableHeadersVisualStyles = false;
             this.grid_order_list.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grid_order_list.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grid_order_list.Location = new System.Drawing.Point(31, 89);
-            this.grid_order_list.Margin = new System.Windows.Forms.Padding(4);
+            this.grid_order_list.Location = new System.Drawing.Point(23, 72);
             this.grid_order_list.Name = "grid_order_list";
             this.grid_order_list.ReadOnly = true;
             this.grid_order_list.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -135,7 +133,7 @@
             this.grid_order_list.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.grid_order_list.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grid_order_list.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid_order_list.Size = new System.Drawing.Size(1005, 361);
+            this.grid_order_list.Size = new System.Drawing.Size(754, 293);
             this.grid_order_list.Style = MetroFramework.MetroColorStyle.Green;
             this.grid_order_list.TabIndex = 8;
             this.grid_order_list.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_order_list_CellContentClick);
@@ -194,39 +192,39 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(427, 487);
+            this.metroLabel1.Location = new System.Drawing.Point(320, 395);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(127, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(123, 25);
             this.metroLabel1.TabIndex = 9;
             this.metroLabel1.Text = "Mark Order As";
             // 
             // cmb_mark_as
             // 
             this.cmb_mark_as.FormattingEnabled = true;
-            this.cmb_mark_as.ItemHeight = 24;
+            this.cmb_mark_as.ItemHeight = 23;
             this.cmb_mark_as.Items.AddRange(new object[] {
             "DELEVERED",
             "CANCELED"});
-            this.cmb_mark_as.Location = new System.Drawing.Point(560, 484);
+            this.cmb_mark_as.Location = new System.Drawing.Point(420, 393);
+            this.cmb_mark_as.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmb_mark_as.Name = "cmb_mark_as";
-            this.cmb_mark_as.Size = new System.Drawing.Size(192, 30);
+            this.cmb_mark_as.Size = new System.Drawing.Size(145, 29);
             this.cmb_mark_as.TabIndex = 10;
             this.cmb_mark_as.UseSelectable = true;
             // 
             // orderList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.cmb_mark_as);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.grid_order_list);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_print);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "orderList";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Orders List";
