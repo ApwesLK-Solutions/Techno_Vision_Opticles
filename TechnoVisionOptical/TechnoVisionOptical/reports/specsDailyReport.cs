@@ -16,14 +16,14 @@ namespace TechnoVisionOptical.reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class dailySpecReport : ReportClass {
+    public class specsDailyReport : ReportClass {
         
-        public dailySpecReport() {
+        public specsDailyReport() {
         }
         
         public override string ResourceName {
             get {
-                return "dailySpecReport.rpt";
+                return "specsDailyReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace TechnoVisionOptical.reports {
         
         public override string FullResourceName {
             get {
-                return "TechnoVisionOptical.reports.dailySpecReport.rpt";
+                return "TechnoVisionOptical.reports.specsDailyReport.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace TechnoVisionOptical.reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CacheddailySpecReport : Component, ICachedReport {
+    public class CachedspecsDailyReport : Component, ICachedReport {
         
-        public CacheddailySpecReport() {
+        public CachedspecsDailyReport() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace TechnoVisionOptical.reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            dailySpecReport rpt = new dailySpecReport();
+            specsDailyReport rpt = new specsDailyReport();
             rpt.Site = this.Site;
             return rpt;
         }
