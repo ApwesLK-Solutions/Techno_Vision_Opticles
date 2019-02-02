@@ -88,6 +88,7 @@
             this.txt_add_sph_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_add_sph_right.CustomButton.UseSelectable = true;
             this.txt_add_sph_right.CustomButton.Visible = false;
+            this.txt_add_sph_right.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_add_sph_right.Lines = new string[0];
             this.txt_add_sph_right.Location = new System.Drawing.Point(89, 176);
             this.txt_add_sph_right.Margin = new System.Windows.Forms.Padding(4);
@@ -120,6 +121,7 @@
             this.txt_dist_sph_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_dist_sph_right.CustomButton.UseSelectable = true;
             this.txt_dist_sph_right.CustomButton.Visible = false;
+            this.txt_dist_sph_right.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_dist_sph_right.Lines = new string[0];
             this.txt_dist_sph_right.Location = new System.Drawing.Point(89, 137);
             this.txt_dist_sph_right.Margin = new System.Windows.Forms.Padding(4);
@@ -202,6 +204,7 @@
             this.txt_add_axis_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_add_axis_right.CustomButton.UseSelectable = true;
             this.txt_add_axis_right.CustomButton.Visible = false;
+            this.txt_add_axis_right.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_add_axis_right.Lines = new string[0];
             this.txt_add_axis_right.Location = new System.Drawing.Point(241, 176);
             this.txt_add_axis_right.Margin = new System.Windows.Forms.Padding(4);
@@ -234,6 +237,7 @@
             this.txt_dist_axis_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_dist_axis_right.CustomButton.UseSelectable = true;
             this.txt_dist_axis_right.CustomButton.Visible = false;
+            this.txt_dist_axis_right.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_dist_axis_right.Lines = new string[0];
             this.txt_dist_axis_right.Location = new System.Drawing.Point(241, 137);
             this.txt_dist_axis_right.Margin = new System.Windows.Forms.Padding(4);
@@ -266,6 +270,7 @@
             this.txt_add_cyl_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_add_cyl_right.CustomButton.UseSelectable = true;
             this.txt_add_cyl_right.CustomButton.Visible = false;
+            this.txt_add_cyl_right.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_add_cyl_right.Lines = new string[0];
             this.txt_add_cyl_right.Location = new System.Drawing.Point(165, 176);
             this.txt_add_cyl_right.Margin = new System.Windows.Forms.Padding(4);
@@ -298,6 +303,7 @@
             this.txt_dist_cyl_right.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_dist_cyl_right.CustomButton.UseSelectable = true;
             this.txt_dist_cyl_right.CustomButton.Visible = false;
+            this.txt_dist_cyl_right.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_dist_cyl_right.Lines = new string[0];
             this.txt_dist_cyl_right.Location = new System.Drawing.Point(165, 137);
             this.txt_dist_cyl_right.Margin = new System.Windows.Forms.Padding(4);
@@ -330,6 +336,7 @@
             this.txt_add_cyl_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_add_cyl_left.CustomButton.UseSelectable = true;
             this.txt_add_cyl_left.CustomButton.Visible = false;
+            this.txt_add_cyl_left.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_add_cyl_left.Lines = new string[0];
             this.txt_add_cyl_left.Location = new System.Drawing.Point(400, 176);
             this.txt_add_cyl_left.Margin = new System.Windows.Forms.Padding(4);
@@ -362,6 +369,7 @@
             this.txt_dist_cyl_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_dist_cyl_left.CustomButton.UseSelectable = true;
             this.txt_dist_cyl_left.CustomButton.Visible = false;
+            this.txt_dist_cyl_left.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_dist_cyl_left.Lines = new string[0];
             this.txt_dist_cyl_left.Location = new System.Drawing.Point(400, 137);
             this.txt_dist_cyl_left.Margin = new System.Windows.Forms.Padding(4);
@@ -394,6 +402,7 @@
             this.txt_add_axis_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_add_axis_left.CustomButton.UseSelectable = true;
             this.txt_add_axis_left.CustomButton.Visible = false;
+            this.txt_add_axis_left.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_add_axis_left.Lines = new string[0];
             this.txt_add_axis_left.Location = new System.Drawing.Point(476, 176);
             this.txt_add_axis_left.Margin = new System.Windows.Forms.Padding(4);
@@ -427,6 +436,7 @@
             this.txt_dist_axis_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_dist_axis_left.CustomButton.UseSelectable = true;
             this.txt_dist_axis_left.CustomButton.Visible = false;
+            this.txt_dist_axis_left.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_dist_axis_left.Lines = new string[0];
             this.txt_dist_axis_left.Location = new System.Drawing.Point(476, 137);
             this.txt_dist_axis_left.Margin = new System.Windows.Forms.Padding(4);
@@ -459,6 +469,7 @@
             this.txt_add_sph_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_add_sph_left.CustomButton.UseSelectable = true;
             this.txt_add_sph_left.CustomButton.Visible = false;
+            this.txt_add_sph_left.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_add_sph_left.Lines = new string[0];
             this.txt_add_sph_left.Location = new System.Drawing.Point(324, 176);
             this.txt_add_sph_left.Margin = new System.Windows.Forms.Padding(4);
@@ -491,6 +502,7 @@
             this.txt_dist_sph_left.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_dist_sph_left.CustomButton.UseSelectable = true;
             this.txt_dist_sph_left.CustomButton.Visible = false;
+            this.txt_dist_sph_left.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_dist_sph_left.Lines = new string[0];
             this.txt_dist_sph_left.Location = new System.Drawing.Point(324, 137);
             this.txt_dist_sph_left.Margin = new System.Windows.Forms.Padding(4);
@@ -633,6 +645,7 @@
             this.txt_lense_type.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_lense_type.CustomButton.UseSelectable = true;
             this.txt_lense_type.CustomButton.Visible = false;
+            this.txt_lense_type.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_lense_type.Lines = new string[0];
             this.txt_lense_type.Location = new System.Drawing.Point(703, 79);
             this.txt_lense_type.Margin = new System.Windows.Forms.Padding(4);
@@ -665,6 +678,7 @@
             this.txt_PD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_PD.CustomButton.UseSelectable = true;
             this.txt_PD.CustomButton.Visible = false;
+            this.txt_PD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_PD.Lines = new string[0];
             this.txt_PD.Location = new System.Drawing.Point(703, 167);
             this.txt_PD.Margin = new System.Windows.Forms.Padding(4);
@@ -697,6 +711,7 @@
             this.txt_seg_height.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_seg_height.CustomButton.UseSelectable = true;
             this.txt_seg_height.CustomButton.Visible = false;
+            this.txt_seg_height.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_seg_height.Lines = new string[0];
             this.txt_seg_height.Location = new System.Drawing.Point(703, 212);
             this.txt_seg_height.Margin = new System.Windows.Forms.Padding(4);
@@ -729,6 +744,7 @@
             this.txt_specialInc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_specialInc.CustomButton.UseSelectable = true;
             this.txt_specialInc.CustomButton.Visible = false;
+            this.txt_specialInc.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_specialInc.Lines = new string[0];
             this.txt_specialInc.Location = new System.Drawing.Point(145, 256);
             this.txt_specialInc.Margin = new System.Windows.Forms.Padding(4);
@@ -762,6 +778,7 @@
             this.txt_remarks.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_remarks.CustomButton.UseSelectable = true;
             this.txt_remarks.CustomButton.Visible = false;
+            this.txt_remarks.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_remarks.Lines = new string[0];
             this.txt_remarks.Location = new System.Drawing.Point(145, 338);
             this.txt_remarks.Margin = new System.Windows.Forms.Padding(4);
@@ -833,6 +850,7 @@
             // technovisionDataSet
             // 
             this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.EnforceConstraints = false;
             this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // metroTile1

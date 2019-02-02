@@ -53,7 +53,7 @@
             // 
             this.btn_delete.ActiveControl = null;
             this.btn_delete.Location = new System.Drawing.Point(255, 537);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(113, 55);
             this.btn_delete.Style = MetroFramework.MetroColorStyle.Green;
@@ -68,7 +68,7 @@
             // 
             this.btn_add.ActiveControl = null;
             this.btn_add.Location = new System.Drawing.Point(131, 537);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(113, 55);
             this.btn_add.Style = MetroFramework.MetroColorStyle.Green;
@@ -95,18 +95,19 @@
             // 
             // 
             this.txt_model_name.CustomButton.Image = null;
-            this.txt_model_name.CustomButton.Location = new System.Drawing.Point(275, 2);
-            this.txt_model_name.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_model_name.CustomButton.Location = new System.Drawing.Point(206, 2);
+            this.txt_model_name.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txt_model_name.CustomButton.Name = "";
-            this.txt_model_name.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txt_model_name.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txt_model_name.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_model_name.CustomButton.TabIndex = 1;
             this.txt_model_name.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_model_name.CustomButton.UseSelectable = true;
             this.txt_model_name.CustomButton.Visible = false;
+            this.txt_model_name.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txt_model_name.Lines = new string[0];
             this.txt_model_name.Location = new System.Drawing.Point(209, 495);
-            this.txt_model_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_model_name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_model_name.MaxLength = 32767;
             this.txt_model_name.Name = "txt_model_name";
             this.txt_model_name.PasswordChar = '\0';
@@ -159,7 +160,7 @@
             this.grid_frame.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grid_frame.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grid_frame.Location = new System.Drawing.Point(29, 69);
-            this.grid_frame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grid_frame.Margin = new System.Windows.Forms.Padding(4);
             this.grid_frame.Name = "grid_frame";
             this.grid_frame.ReadOnly = true;
             this.grid_frame.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -222,7 +223,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.btn_delete);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "frm_productlist";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
