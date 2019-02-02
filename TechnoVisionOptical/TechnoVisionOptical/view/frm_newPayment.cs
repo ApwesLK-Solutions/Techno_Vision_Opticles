@@ -100,9 +100,6 @@ namespace TechnoVisionOptical.view
             {
                 MSG.ERROR(this, "Can not Pay amount. please Restart the application");
             }
-            
-
-           
         }
 
        
