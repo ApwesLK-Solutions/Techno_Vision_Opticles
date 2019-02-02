@@ -82,7 +82,6 @@ namespace TechnoVisionOptical.model
             SpecialInc = _SpecialInc;
             Remarks = _Remarks;
         }
-
         public static void save(MetroFramework.Forms.MetroForm f)
         {
             specInvoiceController.saveLenseOrder(f);

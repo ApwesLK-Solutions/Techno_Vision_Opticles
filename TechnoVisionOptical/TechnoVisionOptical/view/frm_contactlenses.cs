@@ -45,14 +45,21 @@ namespace TechnoVisionOptical.view
             // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
             this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
             // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
-           
-            getNewNumbers();
-            cmb_jobType.SelectedIndex = 0;
-            cmb_orderStatus.SelectedIndex = 0;
-            cmb_pay_method.SelectedIndex = 0;
-            cmb_pay_plan.SelectedIndex = 0;
-            cmb_testby.SelectedIndex = 0;
+            try
+            {
+                getNewNumbers();
+                cmb_jobType.SelectedIndex = 0;
+                cmb_orderStatus.SelectedIndex = 0;
+                cmb_pay_method.SelectedIndex = 0;
+                cmb_pay_plan.SelectedIndex = 0;
+                cmb_testby.SelectedIndex = 0;
 
+            }
+            catch(Exception)
+            {
+                MSG.ERROR(this, "There are no testers in the system.Add Tester to continue with Errors");
+            }
+           
         }
 
         public void getNewNumbers()

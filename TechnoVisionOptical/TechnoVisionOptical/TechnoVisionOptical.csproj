@@ -77,7 +77,7 @@
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
@@ -98,11 +98,13 @@
   <ItemGroup>
     <Compile Include="controller\contactLenseInvoiceController.cs" />
     <Compile Include="controller\customerController.cs" />
+    <Compile Include="controller\receipt_controller.cs" />
     <Compile Include="controller\specInvoiceController.cs" />
     <Compile Include="controller\userController.cs" />
     <Compile Include="model\Customer.cs" />
     <Compile Include="model\NewContactLenseInvoice.cs" />
     <Compile Include="model\NewSpectaclesInvoice.cs" />
+    <Compile Include="model\payment_receipt.cs" />
     <Compile Include="model\user.cs" />
     <Compile Include="MSG.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs">
@@ -424,7 +426,6 @@
     <None Include="technovisionDataSet.xss">
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
     </None>
-    <None Include="TechnoVisionOptical_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
