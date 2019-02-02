@@ -19,14 +19,26 @@ namespace TechnoVisionOptical.view
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            testersTableAdapter.Insert(txt_emp_name.Text);
-            this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+            if (txt_emp_name.Text == "")
+            {
+                MSG.ERROR(this, "Please Enter Tester s' Name");
+            }
+                testersTableAdapter.Insert(txt_emp_name.Text);
+                this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+            
         }
 
         private void frm_testersList_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
-            this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
+                this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+            }
+            catch (Exception)
+            {
+                MSG.ERROR(this, "Can not Load Data. Try again...");
+            }
 
         }
 

@@ -66,7 +66,7 @@
             this.txt_emp_name.MaxLength = 32767;
             this.txt_emp_name.Name = "txt_emp_name";
             this.txt_emp_name.PasswordChar = '\0';
-            this.txt_emp_name.PromptText = "Enter Employee Name";
+            
             this.txt_emp_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_emp_name.SelectedText = "";
             this.txt_emp_name.SelectionLength = 0;

@@ -294,25 +294,6 @@
     <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.frm_testersList.resources" />
     <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.orderList.resources" />
     <EmbeddedResource Include="obj\Debug\TechnoVisionOptical.view.reportViewer.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.Properties.Resources.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_contactlenses.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_contactlenses2.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_customer.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_customerList.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_dashboard.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_login.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_newPayment.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_orderComplete.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_passwordReset.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_paymentPlan.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_productlist.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_reports.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_selectCustomer.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_specs.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_specs2.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.frm_testersList.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.orderList.resources" />
-    <EmbeddedResource Include="obj\Release\TechnoVisionOptical.view.reportViewer.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -399,9 +380,6 @@
     <None Include="bin\Debug\TechnoVisionOptical.vshost.exe.config" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\TechnoVisionOptical.csproj.GenerateResource.Cache" />
-    <None Include="obj\Debug\TechnoVisionOptical.csprojResolveAssemblyReference.cache" />
-    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Release\TechnoVisionOptical.csproj.GenerateResource.Cache" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -433,28 +411,12 @@
   <ItemGroup>
     <Folder Include="bin\Debug\app.publish\" />
     <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
     <Folder Include="Resources\frm_login\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\TechnoVisionOptical.vshost.exe" />
-    <Content Include="obj\Debug\TechnoVisionOptical.exe" />
-    <Content Include="obj\Debug\TechnoVisionOptical.pdb" />
-    <Content Include="obj\Debug\TempPE\reports.dailyLenseReport.cs.dll" />
-    <Content Include="obj\Debug\TempPE\reports.dailySpecReport.cs.dll" />
-    <Content Include="obj\Debug\TempPE\reports.lensesCompany.cs.dll" />
-    <Content Include="obj\Debug\TempPE\reports.lensesCustomer.cs.dll" />
-    <Content Include="obj\Debug\TempPE\reports.spec_Company.cs.dll" />
-    <Content Include="obj\Debug\TempPE\reports.Spec_customer1.cs.dll" />
-    <Content Include="obj\Debug\TempPE\technovisionDataSet.Designer.cs.dll" />
-    <Content Include="obj\Release\TechnoVisionOptical.exe" />
-    <Content Include="obj\Release\TechnoVisionOptical.pdb" />
-    <Content Include="obj\Release\TempPE\reports.dailyLenseReport.cs.dll" />
-    <Content Include="obj\Release\TempPE\reports.dailySpecReport.cs.dll" />
-    <Content Include="obj\Release\TempPE\reports.lensesCompany.cs.dll" />
-    <Content Include="obj\Release\TempPE\reports.lensesCustomer.cs.dll" />
-    <Content Include="obj\Release\TempPE\reports.spec_Company.cs.dll" />
-    <Content Include="obj\Release\TempPE\reports.Spec_customer1.cs.dll" />
-    <Content Include="obj\Release\TempPE\technovisionDataSet.Designer.cs.dll" />
     <Content Include="Resources\back.ico" />
     <Content Include="Resources\back.png" />
     <Content Include="Resources\backup_KjJ_icon.ico" />
@@ -482,6 +444,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

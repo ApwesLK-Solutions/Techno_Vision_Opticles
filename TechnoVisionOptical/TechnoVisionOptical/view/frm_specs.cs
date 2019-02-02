@@ -50,7 +50,7 @@ namespace TechnoVisionOptical.view
         }
         private void btn_next_Click(object sender, EventArgs e)
         {   
-            if(txt_lenses.Text =="0"||txt_eyeWear.Text=="0" || txt_advance.Text=="0" || txt_total.Text =="0" ||txt_balance.Text=="0" || txt_discount.Text=="0")
+            if(txt_lenses.Text =="0"||txt_eyeWear.Text=="0" || txt_advance.Text=="0" || txt_total.Text =="0" ||txt_balance.Text=="" || txt_discount.Text=="")
             {
                 MSG.ERROR(this, "Fields can not be empty...");
             }

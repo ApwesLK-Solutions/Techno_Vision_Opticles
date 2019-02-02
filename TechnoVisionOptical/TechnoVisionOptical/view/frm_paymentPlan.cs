@@ -20,10 +20,11 @@ namespace TechnoVisionOptical.view
 
         private void frm_paymentPlan_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.payments' table. You can move, or remove it, as needed.
-            this.paymentsTableAdapter.Fill(this.technovisionDataSet.payments);
+            // TODO: This line of code loads data into the 'technovisionDataSet.CustomerPayments' table. You can move, or remove it, as needed.
+            this.customerPaymentsTableAdapter.Fill(this.technovisionDataSet.CustomerPayments);
            
-
+           
+         
         }
 
         private Customer c;
@@ -31,12 +32,14 @@ namespace TechnoVisionOptical.view
         private void btn_new_payment_Click(object sender, EventArgs e)
         {
             
-            new frm_newPayment().Show();
+            new frm_newPayment(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()).Show();
         }
 
         private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        
     }
 }

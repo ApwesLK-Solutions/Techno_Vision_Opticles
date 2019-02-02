@@ -16,13 +16,13 @@ namespace TechnoVisionOptical.controller
         public static void saveLenseOrder(MetroForm f)
         {
             //update summary
-            summary.Insert(NewSpectaclesInvoice.OrderNumber, NewSpectaclesInvoice.receiptNumber, Customer.id, "S",NewSpectaclesInvoice.OrderStatus,NewSpectaclesInvoice.Balance.ToString(),"UNPAID");
+            summary.Insert(NewSpectaclesInvoice.OrderNumber, Customer.id, "S", NewSpectaclesInvoice.OrderStatus, NewSpectaclesInvoice.Balance.ToString(), DateTime.Parse(NewSpectaclesInvoice.OrderDate), DateTime.Parse(NewSpectaclesInvoice.DueDate), NewSpectaclesInvoice.PayMethod, NewSpectaclesInvoice.PayPlan, NewSpectaclesInvoice.Total, NewSpectaclesInvoice.Advance, NewSpectaclesInvoice.Discount);
             //update order
-            spec_order.Insert(NewSpectaclesInvoice.receiptNumber, NewSpectaclesInvoice.OrderNumber, Customer.id, NewSpectaclesInvoice.TestedBy, NewSpectaclesInvoice.EyeWear, NewSpectaclesInvoice.Lense, NewSpectaclesInvoice.Total, NewSpectaclesInvoice.Advance, NewSpectaclesInvoice.Discount, NewSpectaclesInvoice.Balance, NewSpectaclesInvoice.DistRightSph, NewSpectaclesInvoice.DistRightCyl, NewSpectaclesInvoice.DistRightAxis, NewSpectaclesInvoice.DistLeftSph, NewSpectaclesInvoice.DistLeftCyl, NewSpectaclesInvoice.DistLeftAxis, NewSpectaclesInvoice.AddRightSph, NewSpectaclesInvoice.AddRightCyl, NewSpectaclesInvoice.AddRightAxis, NewSpectaclesInvoice.AddLeftSph, NewSpectaclesInvoice.AddLeftCyl, NewSpectaclesInvoice.AddLeftAxis, NewSpectaclesInvoice.LensType, NewSpectaclesInvoice.Frame, NewSpectaclesInvoice.PD, NewSpectaclesInvoice.SegmentHeight, NewSpectaclesInvoice.SpecialInc, NewSpectaclesInvoice.Remarks, NewSpectaclesInvoice.OrderStatus, DateTime.Parse(NewSpectaclesInvoice.OrderDate), DateTime.Parse(NewSpectaclesInvoice.DueDate), NewSpectaclesInvoice.PayMethod, NewSpectaclesInvoice.PayPlan);
+            spec_order.Insert(NewSpectaclesInvoice.OrderNumber, NewSpectaclesInvoice.TestedBy, NewSpectaclesInvoice.EyeWear.ToString(), NewSpectaclesInvoice.Lense.ToString(),NewSpectaclesInvoice.DistRightSph, NewSpectaclesInvoice.DistRightCyl, NewSpectaclesInvoice.DistRightAxis, NewSpectaclesInvoice.DistLeftSph, NewSpectaclesInvoice.DistLeftCyl, NewSpectaclesInvoice.DistLeftAxis, NewSpectaclesInvoice.AddRightSph, NewSpectaclesInvoice.AddRightCyl, NewSpectaclesInvoice.AddRightAxis, NewSpectaclesInvoice.AddLeftSph, NewSpectaclesInvoice.AddLeftCyl, NewSpectaclesInvoice.AddLeftAxis, NewSpectaclesInvoice.LensType, NewSpectaclesInvoice.Frame, NewSpectaclesInvoice.PD, NewSpectaclesInvoice.SegmentHeight, NewSpectaclesInvoice.SpecialInc, NewSpectaclesInvoice.Remarks);
 
             //update receipt
             payments.Insert(NewSpectaclesInvoice.OrderNumber, NewSpectaclesInvoice.receiptNumber + "- 01", NewSpectaclesInvoice.Advance, DateTime.Now.Date);
-            MSG.SUCCESS(f, "Saved!");
+            //MSG.SUCCESS(f, "Saved!");
         }
     }
 }
