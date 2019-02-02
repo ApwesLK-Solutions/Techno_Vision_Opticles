@@ -36,7 +36,7 @@ namespace TechnoVisionOptical.view
 
                      if(i < decimal.Parse(row.reciept_no.ToString().Substring(9,2)))
                      {
-                         MessageBox.Show(row.reciept_no.ToString().Substring(9, 2));
+                         //MessageBox.Show(row.reciept_no.ToString().Substring(9, 2));
                          i = decimal.Parse(row.reciept_no.ToString().Substring(9, 2));
                      }
                  }
@@ -65,16 +65,26 @@ namespace TechnoVisionOptical.view
         }
         private void frm_newPayment_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.payments' table. You can move, or remove it, as needed.
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.payments' table. You can move, or remove it, as needed.
             this.paymentsTableAdapter.Fill(this.technovisionDataSet.payments);
             paymentsBindingSource.Filter = "order_id = '" + OID + "'";
             txt_receiptNumber.Text = getReceiptNumber(OID);
             txt_dueAmount.Text = getDueAmount(OID);
+            }
+            catch(Exception)
+            {
+                MSG.ERROR(this, "can not Load. try again Later");
+            }
+            
         }
 
         private void btn_pay_Click(object sender, EventArgs e)
         {
-            //save the receipt
+            try
+            {
+                //save the receipt
             technovisionDataSetTableAdapters.paymentsTableAdapter payments = new technovisionDataSetTableAdapters.paymentsTableAdapter();
             payments.Insert(Txt_orderNum.Text, txt_receiptNumber.Text, double.Parse(txt_amount.Text), DateTime.Now.Date);
 
@@ -84,8 +94,12 @@ namespace TechnoVisionOptical.view
             double amount = double.Parse(txt_amount.Text);
             double newDue = due - amount;
             q.UpdateDueAmount(newDue.ToString(), OID);
-
-           
+            MSG.SUCCESS(this, "Payment Made Successfully...");
+            }
+            catch
+            {
+                MSG.ERROR(this, "Can not Pay amount. please Restart the application and Try again...");
+            }
         }
 
        

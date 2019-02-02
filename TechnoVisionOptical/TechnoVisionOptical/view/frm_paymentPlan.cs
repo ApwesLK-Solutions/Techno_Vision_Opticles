@@ -20,11 +20,15 @@ namespace TechnoVisionOptical.view
 
         private void frm_paymentPlan_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.CustomerPayments' table. You can move, or remove it, as needed.
+            try
+            {
+                 // TODO: This line of code loads data into the 'technovisionDataSet.CustomerPayments' table. You can move, or remove it, as needed.
             this.customerPaymentsTableAdapter.Fill(this.technovisionDataSet.CustomerPayments);
-           
-           
-         
+            }
+           catch(Exception)
+            {
+                MSG.ERROR(this, "Can not Load Data. Try Again...");
+            }
         }
 
         private Customer c;
@@ -38,6 +42,12 @@ namespace TechnoVisionOptical.view
         private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void txt_order_no_TextChanged(object sender, EventArgs e)
+        {
+            customerPaymentsBindingSource.Filter = ("order_number LIKE '%" + txt_order_no.Text + "%'");
+            
         }
 
         

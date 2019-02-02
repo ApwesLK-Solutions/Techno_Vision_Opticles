@@ -35,9 +35,6 @@
             this.btn_new_payment = new MetroFramework.Controls.MetroTile();
             this.txt_order_no = new MetroFramework.Controls.MetroTextBox();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
-            this.customerPaymentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerPaymentsTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.CustomerPaymentsTableAdapter();
             this.ordernumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordertypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dueamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,9 +44,12 @@
             this.recieptnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerPaymentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
+            this.customerPaymentsTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.CustomerPaymentsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPaymentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_new_payment
@@ -100,6 +100,7 @@
             this.txt_order_no.WaterMark = "Search Here";
             this.txt_order_no.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_order_no.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_order_no.TextChanged += new System.EventHandler(this.txt_order_no_TextChanged);
             // 
             // metroGrid1
             // 
@@ -162,20 +163,6 @@
             this.metroGrid1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroGrid1.TabIndex = 9;
             this.metroGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerPaymentsBindingSource
-            // 
-            this.customerPaymentsBindingSource.DataMember = "CustomerPayments";
-            this.customerPaymentsBindingSource.DataSource = this.technovisionDataSet;
-            // 
-            // customerPaymentsTableAdapter
-            // 
-            this.customerPaymentsTableAdapter.ClearBeforeFill = true;
             // 
             // ordernumberDataGridViewTextBoxColumn
             // 
@@ -240,6 +227,21 @@
             this.paymentdateDataGridViewTextBoxColumn.Name = "paymentdateDataGridViewTextBoxColumn";
             this.paymentdateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // customerPaymentsBindingSource
+            // 
+            this.customerPaymentsBindingSource.DataMember = "CustomerPayments";
+            this.customerPaymentsBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.EnforceConstraints = false;
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customerPaymentsTableAdapter
+            // 
+            this.customerPaymentsTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_paymentPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,8 +260,8 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frm_paymentPlan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPaymentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

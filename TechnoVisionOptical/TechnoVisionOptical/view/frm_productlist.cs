@@ -24,8 +24,16 @@ namespace TechnoVisionOptical.view
 
         private void frm_productlist_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.frame' table. You can move, or remove it, as needed.
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.frame' table. You can move, or remove it, as needed.
             this.frameTableAdapter.Fill(this.technovisionDataSet.frame);
+            }
+            catch(Exception)
+            {
+                MSG.ERROR(this, "Can not Load List...");
+            }
+            
             
            
 
@@ -33,8 +41,16 @@ namespace TechnoVisionOptical.view
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            frameTableAdapter.Insert(txt_model_name.Text);
-            this.frameTableAdapter.Fill(this.technovisionDataSet.frame);
+            if(txt_model_name.Text == "")
+            {
+                MSG.ERROR(this, "Enter Model Number");
+            }
+            else
+            {
+                frameTableAdapter.Insert(txt_model_name.Text);
+                this.frameTableAdapter.Fill(this.technovisionDataSet.frame);
+            }
+            
         }
 
         private void btn_delete_Click(object sender, EventArgs e)

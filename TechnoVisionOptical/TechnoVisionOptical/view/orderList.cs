@@ -22,31 +22,45 @@ namespace TechnoVisionOptical.view
         private void orderList_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'technovisionDataSet.order_summary' table. You can move, or remove it, as needed.
-            this.order_summaryTableAdapter.Fill(this.technovisionDataSet.order_summary);
+            try
+            {
+                this.order_summaryTableAdapter.Fill(this.technovisionDataSet.order_summary);
+                cmb_mark_as.SelectedIndex = 0;
+            }
+          catch(Exception)
+            {
+                MSG.ERROR(this, "UNKOWN ERROR. try Again Later");
+            }
 
         }
 
-        private void metroTile1_Click(object sender, EventArgs e)
+        private void grid_order_list_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(grid_order_list.SelectedRows[0].Cells[3].Value.ToString() == "L")
-            {
-                lenseOrders.UpdateStatusByOrderNumber(grid_order_list.SelectedRows[0].Cells[0].Value.ToString(), "CANCELED");
-                order_summaryTableAdapter.UpdateStatusByID("CANCELED", grid_order_list.SelectedRows[0].Cells[0].Value.ToString());
-                this.order_summaryTableAdapter.Fill(this.technovisionDataSet.order_summary);
 
-            }
-            if(grid_order_list.SelectedRows[0].Cells[3].Value.ToString() == "S")
-            {
-                spec_orders.UpdateStatusByOrderNumber(grid_order_list.SelectedRows[0].Cells[0].Value.ToString(), "CANCELED");
-                order_summaryTableAdapter.UpdateStatusByID("CANCELED", grid_order_list.SelectedRows[0].Cells[0].Value.ToString());
-                this.order_summaryTableAdapter.Fill(this.technovisionDataSet.order_summary);
-
-            }
         }
 
-        private void metroTile2_Click(object sender, EventArgs e)
+        private void btn_cancel_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (grid_order_list.SelectedRows[0].Cells[2].Value.ToString() == "L")
+                {
+                    order_summaryTableAdapter.UpdateStatusByID(cmb_mark_as.Text, grid_order_list.SelectedRows[0].Cells[0].Value.ToString());
+                    this.order_summaryTableAdapter.Fill(this.technovisionDataSet.order_summary);
+                    MSG.SUCCESS(this, "Order Status Changed to " + cmb_mark_as.Text);
+                }
+                if (grid_order_list.SelectedRows[0].Cells[2].Value.ToString() == "S")
+                {
+                    order_summaryTableAdapter.UpdateStatusByID(cmb_mark_as.Text, grid_order_list.SelectedRows[0].Cells[0].Value.ToString());
+                    this.order_summaryTableAdapter.Fill(this.technovisionDataSet.order_summary);
+                    MSG.SUCCESS(this, "Order Status Changed to " + cmb_mark_as.Text);
+                }
+            }
+            catch(Exception)
+            {
+                MSG.ERROR(this,"Can not change. Try again...");
+            }
+            
         }
     }
 }
