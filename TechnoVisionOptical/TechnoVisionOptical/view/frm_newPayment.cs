@@ -36,7 +36,7 @@ namespace TechnoVisionOptical.view
 
                      if(i < decimal.Parse(row.reciept_no.ToString().Substring(9,2)))
                      {
-                         MessageBox.Show(row.reciept_no.ToString().Substring(9, 2));
+                         //MessageBox.Show(row.reciept_no.ToString().Substring(9, 2));
                          i = decimal.Parse(row.reciept_no.ToString().Substring(9, 2));
                      }
                  }
@@ -98,7 +98,7 @@ namespace TechnoVisionOptical.view
             }
             catch
             {
-                MSG.ERROR(this, "Can not Pay amount. please Restart the application");
+                MSG.ERROR(this, "Can not Pay amount. please Restart the application and Try again...");
             }
         }
 

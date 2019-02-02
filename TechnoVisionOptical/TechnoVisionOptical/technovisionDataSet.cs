@@ -2,6 +2,10 @@
     
     
     public partial class technovisionDataSet {
+        partial class CustomerPaymentsDataTable
+        {
+        }
+    
         partial class paymentsDataTable
         {
         }

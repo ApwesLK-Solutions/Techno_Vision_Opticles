@@ -94,13 +94,32 @@ namespace TechnoVisionOptical.view
             }
         }
 
-        private void btn_customerData_Click(object sender, EventArgs e)
+        private void btn_printBoth_Click_1(object sender, EventArgs e)
         {
+            if (orderType == "SPEC")
+            {
+                Spec_customer rpt = new Spec_customer();
+                rpt.RecordSelectionFormula = "{specs_orders1.order_number} = " + "\"" + NewSpectaclesInvoice.OrderNumber + "\"";
+                rpt.PrintToPrinter(1, false, 1, 1);
 
-        }
+                spec_Company rpt1= new spec_Company();
+                rpt1.RecordSelectionFormula = "{specs_orders1.order_number} = " + "\"" + NewSpectaclesInvoice.OrderNumber + "\"";
+                rpt1.PrintToPrinter(1, false, 1, 1);
+            }
+            if (orderType == "LENSE")
+            {
+                lensesCustomer rpt = new lensesCustomer();
+                rpt.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + NewContactLenseInvoice.OrderNumber + "\"";
+                rpt.PrintToPrinter(1, false, 1, 1);
 
-        private void btn_printBoth_Click(object sender, EventArgs e)
-        {
+                lensesCompany rpt1 = new lensesCompany();
+                rpt1.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + NewContactLenseInvoice.OrderNumber + "\"";
+                rpt1.PrintToPrinter(1, false, 1, 1);
+
+
+            }
+
+
 
         }
     }
