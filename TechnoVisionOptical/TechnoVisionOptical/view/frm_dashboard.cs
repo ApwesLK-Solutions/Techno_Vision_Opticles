@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Threading;
+using System.IO;
 namespace TechnoVisionOptical.view
 {
     public partial class frm_dashboard : MetroFramework.Forms.MetroForm
@@ -54,7 +55,18 @@ namespace TechnoVisionOptical.view
 
         private void metroTile4_Click(object sender, EventArgs e)
         {
-            MSG.ERROR(this, "Backup will be enabled in the next Build");
+            try
+            { 
+                System.Diagnostics.Process.Start(Application.StartupPath + "\\mysqldump.exe","-uroot -p1234 technovision --result-file=D:\\DB-BACKUPS\\"+DateTime.Now.ToString("yyyy-MM-dd")+".sql");
+                MSG.SUCCESS(this, "Database Backup Sucess");
+            }
+            catch (Exception ex)
+            {
+                MSG.ERROR(this,"Backup Failed, " + ex.Message);
+            }
+
+
+            //MSG.ERROR(this, "Backup will be enabled in the next Build");
         }       
     }
 }
