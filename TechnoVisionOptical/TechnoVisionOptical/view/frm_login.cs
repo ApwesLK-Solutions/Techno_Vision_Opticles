@@ -47,7 +47,7 @@ namespace TechnoVisionOptical.view
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new frm_passwordReset().Show();
+            new frm_passwordReset().ShowDialog();
         }
 
        

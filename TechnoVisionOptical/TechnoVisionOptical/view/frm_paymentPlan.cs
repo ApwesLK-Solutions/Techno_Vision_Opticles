@@ -35,8 +35,7 @@ namespace TechnoVisionOptical.view
 
         private void btn_new_payment_Click(object sender, EventArgs e)
         {
-            
-            new frm_newPayment(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()).Show();
+            new frm_newPayment(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()).ShowDialog();
         }
 
         private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)

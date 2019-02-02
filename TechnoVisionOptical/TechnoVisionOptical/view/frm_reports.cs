@@ -20,7 +20,7 @@ namespace TechnoVisionOptical.view
 
         private void metroTile4_Click(object sender, EventArgs e)
         {
-            new orderList().Show();
+            new orderList().ShowDialog();
         }
 
         private void btn_generate_date_report_Click(object sender, EventArgs e)

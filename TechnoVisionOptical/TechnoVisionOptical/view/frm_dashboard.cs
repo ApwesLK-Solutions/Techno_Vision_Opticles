@@ -20,37 +20,37 @@ namespace TechnoVisionOptical.view
 
         private void btn_OrderCLense_Click(object sender, EventArgs e)
         {
-            new frm_customerList("L").Show();
+            new frm_customerList("L").ShowDialog();
         }
 
         private void btn_OrderSpecs_Click(object sender, EventArgs e)
         {
-            new frm_customerList("S").Show();
+            new frm_customerList("S").ShowDialog();
         }
 
         private void btn_ViewReports_Click(object sender, EventArgs e)
         {
-            new frm_reports().Show();
+            new frm_reports().ShowDialog();
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            new frm_customerList("D").Show();
+            new frm_customerList("D").ShowDialog();
         }
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
-            new frm_productlist().Show();
+            new frm_productlist().ShowDialog();
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            new frm_paymentPlan().Show();
+            new frm_paymentPlan().ShowDialog();
         }
 
         private void metroTile5_Click(object sender, EventArgs e)
         {
-            new frm_testersList().Show();
+            new frm_testersList().ShowDialog();
         }
 
         private void metroTile4_Click(object sender, EventArgs e)
