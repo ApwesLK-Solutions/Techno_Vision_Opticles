@@ -53,6 +53,8 @@ namespace TechnoVisionOptical.view
                 cmb_pay_method.SelectedIndex = 0;
                 cmb_pay_plan.SelectedIndex = 0;
                 cmb_testby.SelectedIndex = 0;
+                txt_duedate.Value = DateTime.Now;
+                txt_orderdate.Value = DateTime.Now;
                 
 
             }

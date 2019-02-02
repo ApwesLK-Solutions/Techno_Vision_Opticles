@@ -40,13 +40,24 @@ namespace TechnoVisionOptical.view
         }
         private void frm_specs_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
-            this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
-            getNewNumbers();
-            cmb_orderStatus.SelectedIndex = 0;
-            cmb_pay_method.SelectedIndex = 0;
-            cmb_pay_plan.SelectedIndex = 0;
-            cmb_testedby.SelectedIndex = 0;
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
+                this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+                getNewNumbers();
+                cmb_orderStatus.SelectedIndex = 0;
+                cmb_pay_method.SelectedIndex = 0;
+                cmb_pay_plan.SelectedIndex = 0;
+                cmb_testedby.SelectedIndex = 0;
+                txt_duedate.Value = DateTime.Now;
+                txt_orderdate.Value = DateTime.Now;
+            }
+            catch(Exception)
+            {
+                MSG.ERROR(this, "Can not Load.Please Try again...");
+            }
+            
+            
         }
         private void btn_next_Click(object sender, EventArgs e)
         {   

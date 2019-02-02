@@ -42,22 +42,6 @@ namespace TechnoVisionOptical {
         
         private CustomerPaymentsDataTable tableCustomerPayments;
         
-        private global::System.Data.DataRelation relationfk_cust;
-        
-        private global::System.Data.DataRelation relationfk_order_sums;
-        
-        private global::System.Data.DataRelation relationfm_order_sum;
-        
-        private global::System.Data.DataRelation relationfk_order_sum;
-        
-        private global::System.Data.DataRelation relationfk_order_sum1;
-        
-        private global::System.Data.DataRelation relationfm_order_sum1;
-        
-        private global::System.Data.DataRelation relationfk_order_sums1;
-        
-        private global::System.Data.DataRelation relationfk_cust1;
-        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -402,14 +386,6 @@ namespace TechnoVisionOptical {
                     this.tableCustomerPayments.InitVars();
                 }
             }
-            this.relationfk_cust = this.Relations["fk_cust"];
-            this.relationfk_order_sums = this.Relations["fk_order_sums"];
-            this.relationfm_order_sum = this.Relations["fm_order_sum"];
-            this.relationfk_order_sum = this.Relations["fk_order_sum"];
-            this.relationfk_order_sum1 = this.Relations["fk_order_sum1"];
-            this.relationfm_order_sum1 = this.Relations["fm_order_sum1"];
-            this.relationfk_order_sums1 = this.Relations["fk_order_sums1"];
-            this.relationfk_cust1 = this.Relations["fk_cust1"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -418,7 +394,7 @@ namespace TechnoVisionOptical {
             this.DataSetName = "technovisionDataSet";
             this.Prefix = "";
             this.Namespace = "http://tempuri.org/technovisionDataSet.xsd";
-            this.EnforceConstraints = true;
+            this.EnforceConstraints = false;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablecustomers = new customersDataTable();
             base.Tables.Add(this.tablecustomers);
@@ -438,38 +414,6 @@ namespace TechnoVisionOptical {
             base.Tables.Add(this.tablepayments);
             this.tableCustomerPayments = new CustomerPaymentsDataTable();
             base.Tables.Add(this.tableCustomerPayments);
-            this.relationfk_cust = new global::System.Data.DataRelation("fk_cust", new global::System.Data.DataColumn[] {
-                        this.tablecustomers.customerIdColumn}, new global::System.Data.DataColumn[] {
-                        this.tableorder_summary.customer_idColumn}, false);
-            this.Relations.Add(this.relationfk_cust);
-            this.relationfk_order_sums = new global::System.Data.DataRelation("fk_order_sums", new global::System.Data.DataColumn[] {
-                        this.tableorder_summary.order_numberColumn}, new global::System.Data.DataColumn[] {
-                        this.tablelense_orders.order_numberColumn}, false);
-            this.Relations.Add(this.relationfk_order_sums);
-            this.relationfm_order_sum = new global::System.Data.DataRelation("fm_order_sum", new global::System.Data.DataColumn[] {
-                        this.tableorder_summary.order_numberColumn}, new global::System.Data.DataColumn[] {
-                        this.tablespecs_orders.order_numberColumn}, false);
-            this.Relations.Add(this.relationfm_order_sum);
-            this.relationfk_order_sum = new global::System.Data.DataRelation("fk_order_sum", new global::System.Data.DataColumn[] {
-                        this.tableorder_summary.order_numberColumn}, new global::System.Data.DataColumn[] {
-                        this.tablepayments.order_idColumn}, false);
-            this.Relations.Add(this.relationfk_order_sum);
-            this.relationfk_order_sum1 = new global::System.Data.DataRelation("fk_order_sum1", new global::System.Data.DataColumn[] {
-                        this.tableCustomerPayments.order_numberColumn}, new global::System.Data.DataColumn[] {
-                        this.tablepayments.order_idColumn}, false);
-            this.Relations.Add(this.relationfk_order_sum1);
-            this.relationfm_order_sum1 = new global::System.Data.DataRelation("fm_order_sum1", new global::System.Data.DataColumn[] {
-                        this.tableCustomerPayments.order_numberColumn}, new global::System.Data.DataColumn[] {
-                        this.tablespecs_orders.order_numberColumn}, false);
-            this.Relations.Add(this.relationfm_order_sum1);
-            this.relationfk_order_sums1 = new global::System.Data.DataRelation("fk_order_sums1", new global::System.Data.DataColumn[] {
-                        this.tableCustomerPayments.order_numberColumn}, new global::System.Data.DataColumn[] {
-                        this.tablelense_orders.order_numberColumn}, false);
-            this.Relations.Add(this.relationfk_order_sums1);
-            this.relationfk_cust1 = new global::System.Data.DataRelation("fk_cust1", new global::System.Data.DataColumn[] {
-                        this.tablecustomers.customerIdColumn}, new global::System.Data.DataColumn[] {
-                        this.tableCustomerPayments.customer_idColumn}, false);
-            this.Relations.Add(this.relationfk_cust1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1372,7 +1316,7 @@ namespace TechnoVisionOptical {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public lense_ordersRow Addlense_ordersRow(
-                        order_summaryRow parentorder_summaryRowByfk_order_sums, 
+                        string order_number, 
                         string job_type, 
                         string tested_by, 
                         string old_right_sph, 
@@ -1407,7 +1351,7 @@ namespace TechnoVisionOptical {
                         string remarks) {
                 lense_ordersRow rowlense_ordersRow = ((lense_ordersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
+                        order_number,
                         job_type,
                         tested_by,
                         old_right_sph,
@@ -1440,9 +1384,6 @@ namespace TechnoVisionOptical {
                         blink_test,
                         special_instractions,
                         remarks};
-                if ((parentorder_summaryRowByfk_order_sums != null)) {
-                    columnValuesArray[0] = parentorder_summaryRowByfk_order_sums[1];
-                }
                 rowlense_ordersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowlense_ordersRow);
                 return rowlense_ordersRow;
@@ -1948,12 +1889,12 @@ namespace TechnoVisionOptical {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public order_summaryRow Addorder_summaryRow(string order_number, customersRow parentcustomersRowByfk_cust, string order_type, string status, string due_amount, System.DateTime order_date, System.DateTime order_due_date, string payment_method, string payment_plan, double total, double advance, double discount) {
+            public order_summaryRow Addorder_summaryRow(string order_number, int customer_id, string order_type, string status, string due_amount, System.DateTime order_date, System.DateTime order_due_date, string payment_method, string payment_plan, double total, double advance, double discount) {
                 order_summaryRow roworder_summaryRow = ((order_summaryRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         order_number,
-                        null,
+                        customer_id,
                         order_type,
                         status,
                         due_amount,
@@ -1964,9 +1905,6 @@ namespace TechnoVisionOptical {
                         total,
                         advance,
                         discount};
-                if ((parentcustomersRowByfk_cust != null)) {
-                    columnValuesArray[2] = parentcustomersRowByfk_cust[0];
-                }
                 roworder_summaryRow.ItemArray = columnValuesArray;
                 this.Rows.Add(roworder_summaryRow);
                 return roworder_summaryRow;
@@ -2489,7 +2427,7 @@ namespace TechnoVisionOptical {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public specs_ordersRow Addspecs_ordersRow(
-                        order_summaryRow parentorder_summaryRowByfm_order_sum, 
+                        string order_number, 
                         string test_by, 
                         string dist_right_sph, 
                         string dist_right_cyl, 
@@ -2513,7 +2451,7 @@ namespace TechnoVisionOptical {
                         string lenses) {
                 specs_ordersRow rowspecs_ordersRow = ((specs_ordersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
+                        order_number,
                         test_by,
                         dist_right_sph,
                         dist_right_cyl,
@@ -2535,9 +2473,6 @@ namespace TechnoVisionOptical {
                         remarks,
                         eye_wear,
                         lenses};
-                if ((parentorder_summaryRowByfm_order_sum != null)) {
-                    columnValuesArray[0] = parentorder_summaryRowByfm_order_sum[1];
-                }
                 rowspecs_ordersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspecs_ordersRow);
                 return rowspecs_ordersRow;
@@ -3784,16 +3719,13 @@ namespace TechnoVisionOptical {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public paymentsRow AddpaymentsRow(order_summaryRow parentorder_summaryRowByfk_order_sum, string reciept_no, double payment_amount, System.DateTime payment_date) {
+            public paymentsRow AddpaymentsRow(string order_id, string reciept_no, double payment_amount, System.DateTime payment_date) {
                 paymentsRow rowpaymentsRow = ((paymentsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
+                        order_id,
                         reciept_no,
                         payment_amount,
                         payment_date};
-                if ((parentorder_summaryRowByfk_order_sum != null)) {
-                    columnValuesArray[0] = parentorder_summaryRowByfk_order_sum[1];
-                }
                 rowpaymentsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpaymentsRow);
                 return rowpaymentsRow;
@@ -4172,11 +4104,11 @@ namespace TechnoVisionOptical {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomerPaymentsRow AddCustomerPaymentsRow(string order_number, customersRow parentcustomersRowByfk_cust1, string order_type, string due_amount, System.DateTime order_date, string payment_method, string payment_plan, double total, double discount, string reciept_no, double payment_amount, System.DateTime payment_date) {
+            public CustomerPaymentsRow AddCustomerPaymentsRow(string order_number, int customer_id, string order_type, string due_amount, System.DateTime order_date, string payment_method, string payment_plan, double total, double discount, string reciept_no, double payment_amount, System.DateTime payment_date) {
                 CustomerPaymentsRow rowCustomerPaymentsRow = ((CustomerPaymentsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         order_number,
-                        null,
+                        customer_id,
                         order_type,
                         due_amount,
                         order_date,
@@ -4187,9 +4119,6 @@ namespace TechnoVisionOptical {
                         reciept_no,
                         payment_amount,
                         payment_date};
-                if ((parentcustomersRowByfk_cust1 != null)) {
-                    columnValuesArray[1] = parentcustomersRowByfk_cust1[0];
-                }
                 rowCustomerPaymentsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCustomerPaymentsRow);
                 return rowCustomerPaymentsRow;
@@ -4277,6 +4206,7 @@ namespace TechnoVisionOptical {
                 this.columnpayment_plan.MaxLength = 45;
                 this.columntotal.AllowDBNull = false;
                 this.columndiscount.AllowDBNull = false;
+                this.columnreciept_no.AllowDBNull = false;
                 this.columnreciept_no.MaxLength = 45;
                 this.columnpayment_amount.AllowDBNull = false;
                 this.columnpayment_date.AllowDBNull = false;
@@ -4494,28 +4424,6 @@ namespace TechnoVisionOptical {
                 }
                 set {
                     this[this.tablecustomers.emailColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public order_summaryRow[] Getorder_summaryRows() {
-                if ((this.Table.ChildRelations["fk_cust"] == null)) {
-                    return new order_summaryRow[0];
-                }
-                else {
-                    return ((order_summaryRow[])(base.GetChildRows(this.Table.ChildRelations["fk_cust"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomerPaymentsRow[] GetCustomerPaymentsRows() {
-                if ((this.Table.ChildRelations["fk_cust1"] == null)) {
-                    return new CustomerPaymentsRow[0];
-                }
-                else {
-                    return ((CustomerPaymentsRow[])(base.GetChildRows(this.Table.ChildRelations["fk_cust1"])));
                 }
             }
         }
@@ -5049,28 +4957,6 @@ namespace TechnoVisionOptical {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public order_summaryRow order_summaryRow {
-                get {
-                    return ((order_summaryRow)(this.GetParentRow(this.Table.ParentRelations["fk_order_sums"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fk_order_sums"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomerPaymentsRow CustomerPaymentsRow {
-                get {
-                    return ((CustomerPaymentsRow)(this.GetParentRow(this.Table.ParentRelations["fk_order_sums1"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fk_order_sums1"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isold_right_sphNull() {
                 return this.IsNull(this.tablelense_orders.old_right_sphColumn);
             }
@@ -5586,50 +5472,6 @@ namespace TechnoVisionOptical {
                     this[this.tableorder_summary.discountColumn] = value;
                 }
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public customersRow customersRow {
-                get {
-                    return ((customersRow)(this.GetParentRow(this.Table.ParentRelations["fk_cust"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fk_cust"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lense_ordersRow[] Getlense_ordersRows() {
-                if ((this.Table.ChildRelations["fk_order_sums"] == null)) {
-                    return new lense_ordersRow[0];
-                }
-                else {
-                    return ((lense_ordersRow[])(base.GetChildRows(this.Table.ChildRelations["fk_order_sums"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public specs_ordersRow[] Getspecs_ordersRows() {
-                if ((this.Table.ChildRelations["fm_order_sum"] == null)) {
-                    return new specs_ordersRow[0];
-                }
-                else {
-                    return ((specs_ordersRow[])(base.GetChildRows(this.Table.ChildRelations["fm_order_sum"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public paymentsRow[] GetpaymentsRows() {
-                if ((this.Table.ChildRelations["fk_order_sum"] == null)) {
-                    return new paymentsRow[0];
-                }
-                else {
-                    return ((paymentsRow[])(base.GetChildRows(this.Table.ChildRelations["fk_order_sum"])));
-                }
-            }
         }
         
         /// <summary>
@@ -5985,28 +5827,6 @@ namespace TechnoVisionOptical {
                 }
                 set {
                     this[this.tablespecs_orders.lensesColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public order_summaryRow order_summaryRow {
-                get {
-                    return ((order_summaryRow)(this.GetParentRow(this.Table.ParentRelations["fm_order_sum"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fm_order_sum"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomerPaymentsRow CustomerPaymentsRow {
-                get {
-                    return ((CustomerPaymentsRow)(this.GetParentRow(this.Table.ParentRelations["fm_order_sum1"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fm_order_sum1"]);
                 }
             }
             
@@ -6469,28 +6289,6 @@ namespace TechnoVisionOptical {
                     this[this.tablepayments.payment_dateColumn] = value;
                 }
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public order_summaryRow order_summaryRow {
-                get {
-                    return ((order_summaryRow)(this.GetParentRow(this.Table.ParentRelations["fk_order_sum"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fk_order_sum"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomerPaymentsRow CustomerPaymentsRow {
-                get {
-                    return ((CustomerPaymentsRow)(this.GetParentRow(this.Table.ParentRelations["fk_order_sum1"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fk_order_sum1"]);
-                }
-            }
         }
         
         /// <summary>
@@ -6610,12 +6408,7 @@ namespace TechnoVisionOptical {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string reciept_no {
                 get {
-                    try {
-                        return ((string)(this[this.tableCustomerPayments.reciept_noColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'reciept_no\' in table \'CustomerPayments\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableCustomerPayments.reciept_noColumn]));
                 }
                 set {
                     this[this.tableCustomerPayments.reciept_noColumn] = value;
@@ -6641,62 +6434,6 @@ namespace TechnoVisionOptical {
                 }
                 set {
                     this[this.tableCustomerPayments.payment_dateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public customersRow customersRow {
-                get {
-                    return ((customersRow)(this.GetParentRow(this.Table.ParentRelations["fk_cust1"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["fk_cust1"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isreciept_noNull() {
-                return this.IsNull(this.tableCustomerPayments.reciept_noColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setreciept_noNull() {
-                this[this.tableCustomerPayments.reciept_noColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public paymentsRow[] GetpaymentsRows() {
-                if ((this.Table.ChildRelations["fk_order_sum1"] == null)) {
-                    return new paymentsRow[0];
-                }
-                else {
-                    return ((paymentsRow[])(base.GetChildRows(this.Table.ChildRelations["fk_order_sum1"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public specs_ordersRow[] Getspecs_ordersRows() {
-                if ((this.Table.ChildRelations["fm_order_sum1"] == null)) {
-                    return new specs_ordersRow[0];
-                }
-                else {
-                    return ((specs_ordersRow[])(base.GetChildRows(this.Table.ChildRelations["fm_order_sum1"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public lense_ordersRow[] Getlense_ordersRows() {
-                if ((this.Table.ChildRelations["fk_order_sums1"] == null)) {
-                    return new lense_ordersRow[0];
-                }
-                else {
-                    return ((lense_ordersRow[])(base.GetChildRows(this.Table.ChildRelations["fk_order_sums1"])));
                 }
             }
         }
@@ -9398,6 +9135,13 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
                 "der_num) ";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@status";
+            param.DbType = global::System.Data.DbType.Object;
+            param.Size = 1024;
+            param.IsNullable = true;
+            param.SourceColumn = "order_status";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@order_num";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
@@ -9405,14 +9149,6 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "order_number";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._commandCollection[1].Parameters.Add(param);
-            param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@status";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
-            param.Size = 45;
-            param.IsNullable = true;
-            param.SourceColumn = "order_status";
             this._commandCollection[1].Parameters.Add(param);
         }
         
@@ -10653,19 +10389,19 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int UpdateStatusByOrderNumber(string order_num, string status) {
+        public virtual int UpdateStatusByOrderNumber(object status, string order_num) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[1];
+            if ((status == null)) {
+                throw new global::System.ArgumentNullException("status");
+            }
+            else {
+                command.Parameters[0].Value = ((object)(status));
+            }
             if ((order_num == null)) {
                 throw new global::System.ArgumentNullException("order_num");
             }
             else {
-                command.Parameters[0].Value = ((string)(order_num));
-            }
-            if ((status == null)) {
-                command.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[1].Value = ((string)(status));
+                command.Parameters[1].Value = ((string)(order_num));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -16157,21 +15893,21 @@ FROM     order_summary INNER JOIN
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._order_summaryTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.order_summary.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._order_summaryTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._lense_ordersTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.lense_orders.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._lense_ordersTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._order_summaryTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.order_summary.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._order_summaryTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -16238,19 +15974,19 @@ FROM     order_summary INNER JOIN
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._order_summaryTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.order_summary.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._order_summaryTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._lense_ordersTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.lense_orders.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._lense_ordersTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._order_summaryTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.order_summary.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._order_summaryTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -16344,19 +16080,19 @@ FROM     order_summary INNER JOIN
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._lense_ordersTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.lense_orders.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._lense_ordersTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._order_summaryTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.order_summary.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._order_summaryTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._lense_ordersTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.lense_orders.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._lense_ordersTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
