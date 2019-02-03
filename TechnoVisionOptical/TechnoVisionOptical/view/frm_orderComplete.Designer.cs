@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.btn_customerData = new MetroFramework.Controls.MetroTile();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_viewCompany = new MetroFramework.Controls.MetroTile();
             this.btn_viewCustomer = new MetroFramework.Controls.MetroTile();
@@ -51,21 +50,6 @@
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Order is Successfully Completed";
             // 
-            // btn_customerData
-            // 
-            this.btn_customerData.ActiveControl = null;
-            this.btn_customerData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_customerData.Location = new System.Drawing.Point(4, 4);
-            this.btn_customerData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_customerData.Name = "btn_customerData";
-            this.btn_customerData.Size = new System.Drawing.Size(241, 64);
-            this.btn_customerData.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_customerData.TabIndex = 1;
-            this.btn_customerData.Text = "View Customer Data";
-            this.btn_customerData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_customerData.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.btn_customerData.UseSelectable = true;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
@@ -73,13 +57,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.13491F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.73015F));
             this.tableLayoutPanel1.Controls.Add(this.btn_viewCompany, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_viewCustomer, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_customerData, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_printBoth, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_printCompany, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_PrintCustomer, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_viewCustomer, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(151, 364);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -92,7 +75,7 @@
             this.btn_viewCompany.ActiveControl = null;
             this.btn_viewCompany.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_viewCompany.Location = new System.Drawing.Point(502, 4);
-            this.btn_viewCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_viewCompany.Margin = new System.Windows.Forms.Padding(4);
             this.btn_viewCompany.Name = "btn_viewCompany";
             this.btn_viewCompany.Size = new System.Drawing.Size(246, 64);
             this.btn_viewCompany.Style = MetroFramework.MetroColorStyle.Green;
@@ -107,8 +90,8 @@
             // 
             this.btn_viewCustomer.ActiveControl = null;
             this.btn_viewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_viewCustomer.Location = new System.Drawing.Point(253, 4);
-            this.btn_viewCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_viewCustomer.Location = new System.Drawing.Point(4, 4);
+            this.btn_viewCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.btn_viewCustomer.Name = "btn_viewCustomer";
             this.btn_viewCustomer.Size = new System.Drawing.Size(241, 64);
             this.btn_viewCustomer.Style = MetroFramework.MetroColorStyle.Green;
@@ -124,7 +107,7 @@
             this.btn_printBoth.ActiveControl = null;
             this.btn_printBoth.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_printBoth.Location = new System.Drawing.Point(502, 76);
-            this.btn_printBoth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_printBoth.Margin = new System.Windows.Forms.Padding(4);
             this.btn_printBoth.Name = "btn_printBoth";
             this.btn_printBoth.Size = new System.Drawing.Size(246, 64);
             this.btn_printBoth.Style = MetroFramework.MetroColorStyle.Green;
@@ -140,7 +123,7 @@
             this.btn_printCompany.ActiveControl = null;
             this.btn_printCompany.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_printCompany.Location = new System.Drawing.Point(253, 76);
-            this.btn_printCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_printCompany.Margin = new System.Windows.Forms.Padding(4);
             this.btn_printCompany.Name = "btn_printCompany";
             this.btn_printCompany.Size = new System.Drawing.Size(241, 64);
             this.btn_printCompany.Style = MetroFramework.MetroColorStyle.Green;
@@ -156,7 +139,7 @@
             this.btn_PrintCustomer.ActiveControl = null;
             this.btn_PrintCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_PrintCustomer.Location = new System.Drawing.Point(4, 76);
-            this.btn_PrintCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_PrintCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.btn_PrintCustomer.Name = "btn_PrintCustomer";
             this.btn_PrintCustomer.Size = new System.Drawing.Size(241, 64);
             this.btn_PrintCustomer.Style = MetroFramework.MetroColorStyle.Green;
@@ -171,7 +154,7 @@
             // 
             this.pictureBox1.Image = global::TechnoVisionOptical.Properties.Resources.Untitled_1;
             this.pictureBox1.Location = new System.Drawing.Point(431, 58);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(193, 180);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,7 +169,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.metroLabel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frm_orderComplete";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
@@ -204,7 +187,6 @@
         #endregion
 
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroTile btn_customerData;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MetroFramework.Controls.MetroTile btn_printBoth;
         private MetroFramework.Controls.MetroTile btn_printCompany;

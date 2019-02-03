@@ -35,18 +35,19 @@
             this.btn_new_payment = new MetroFramework.Controls.MetroTile();
             this.txt_order_no = new MetroFramework.Controls.MetroTextBox();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.customerPaymentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
+            this.customerPaymentsTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.CustomerPaymentsTableAdapter();
+            this.PrintReceipt = new MetroFramework.Controls.MetroTile();
             this.ordernumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recieptnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordertypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dueamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentplanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recieptnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerPaymentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.technovisionDataSet = new TechnoVisionOptical.technovisionDataSet();
-            this.customerPaymentsTableAdapter = new TechnoVisionOptical.technovisionDataSetTableAdapters.CustomerPaymentsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPaymentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
@@ -55,7 +56,7 @@
             // btn_new_payment
             // 
             this.btn_new_payment.ActiveControl = null;
-            this.btn_new_payment.Location = new System.Drawing.Point(1015, 502);
+            this.btn_new_payment.Location = new System.Drawing.Point(866, 505);
             this.btn_new_payment.Margin = new System.Windows.Forms.Padding(4);
             this.btn_new_payment.Name = "btn_new_payment";
             this.btn_new_payment.Size = new System.Drawing.Size(155, 55);
@@ -124,12 +125,12 @@
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ordernumberDataGridViewTextBoxColumn,
+            this.recieptnoDataGridViewTextBoxColumn,
             this.ordertypeDataGridViewTextBoxColumn,
             this.dueamountDataGridViewTextBoxColumn,
             this.orderdateDataGridViewTextBoxColumn,
             this.paymentplanDataGridViewTextBoxColumn,
             this.totalDataGridViewTextBoxColumn,
-            this.recieptnoDataGridViewTextBoxColumn,
             this.paymentamountDataGridViewTextBoxColumn,
             this.paymentdateDataGridViewTextBoxColumn});
             this.metroGrid1.DataSource = this.customerPaymentsBindingSource;
@@ -164,78 +165,6 @@
             this.metroGrid1.TabIndex = 9;
             this.metroGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
             // 
-            // ordernumberDataGridViewTextBoxColumn
-            // 
-            this.ordernumberDataGridViewTextBoxColumn.DataPropertyName = "order_number";
-            this.ordernumberDataGridViewTextBoxColumn.HeaderText = "Order Number";
-            this.ordernumberDataGridViewTextBoxColumn.Name = "ordernumberDataGridViewTextBoxColumn";
-            this.ordernumberDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ordernumberDataGridViewTextBoxColumn.Width = 152;
-            // 
-            // ordertypeDataGridViewTextBoxColumn
-            // 
-            this.ordertypeDataGridViewTextBoxColumn.DataPropertyName = "order_type";
-            this.ordertypeDataGridViewTextBoxColumn.HeaderText = "Order Type";
-            this.ordertypeDataGridViewTextBoxColumn.Name = "ordertypeDataGridViewTextBoxColumn";
-            this.ordertypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ordertypeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dueamountDataGridViewTextBoxColumn
-            // 
-            this.dueamountDataGridViewTextBoxColumn.DataPropertyName = "due_amount";
-            this.dueamountDataGridViewTextBoxColumn.HeaderText = "Due Amount";
-            this.dueamountDataGridViewTextBoxColumn.Name = "dueamountDataGridViewTextBoxColumn";
-            this.dueamountDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dueamountDataGridViewTextBoxColumn.Width = 137;
-            // 
-            // orderdateDataGridViewTextBoxColumn
-            // 
-            this.orderdateDataGridViewTextBoxColumn.DataPropertyName = "order_date";
-            this.orderdateDataGridViewTextBoxColumn.HeaderText = "Order Date";
-            this.orderdateDataGridViewTextBoxColumn.Name = "orderdateDataGridViewTextBoxColumn";
-            this.orderdateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.orderdateDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // paymentplanDataGridViewTextBoxColumn
-            // 
-            this.paymentplanDataGridViewTextBoxColumn.DataPropertyName = "payment_plan";
-            this.paymentplanDataGridViewTextBoxColumn.HeaderText = "Payment Plan";
-            this.paymentplanDataGridViewTextBoxColumn.Name = "paymentplanDataGridViewTextBoxColumn";
-            this.paymentplanDataGridViewTextBoxColumn.ReadOnly = true;
-            this.paymentplanDataGridViewTextBoxColumn.Width = 143;
-            // 
-            // totalDataGridViewTextBoxColumn
-            // 
-            this.totalDataGridViewTextBoxColumn.DataPropertyName = "total";
-            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
-            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
-            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
-            this.totalDataGridViewTextBoxColumn.Width = 81;
-            // 
-            // recieptnoDataGridViewTextBoxColumn
-            // 
-            this.recieptnoDataGridViewTextBoxColumn.DataPropertyName = "reciept_no";
-            this.recieptnoDataGridViewTextBoxColumn.HeaderText = "Receipt No";
-            this.recieptnoDataGridViewTextBoxColumn.Name = "recieptnoDataGridViewTextBoxColumn";
-            this.recieptnoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.recieptnoDataGridViewTextBoxColumn.Width = 124;
-            // 
-            // paymentamountDataGridViewTextBoxColumn
-            // 
-            this.paymentamountDataGridViewTextBoxColumn.DataPropertyName = "payment_amount";
-            this.paymentamountDataGridViewTextBoxColumn.HeaderText = "Payment Amount";
-            this.paymentamountDataGridViewTextBoxColumn.Name = "paymentamountDataGridViewTextBoxColumn";
-            this.paymentamountDataGridViewTextBoxColumn.ReadOnly = true;
-            this.paymentamountDataGridViewTextBoxColumn.Width = 173;
-            // 
-            // paymentdateDataGridViewTextBoxColumn
-            // 
-            this.paymentdateDataGridViewTextBoxColumn.DataPropertyName = "payment_date";
-            this.paymentdateDataGridViewTextBoxColumn.HeaderText = "Payment Date";
-            this.paymentdateDataGridViewTextBoxColumn.Name = "paymentdateDataGridViewTextBoxColumn";
-            this.paymentdateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.paymentdateDataGridViewTextBoxColumn.Width = 146;
-            // 
             // customerPaymentsBindingSource
             // 
             this.customerPaymentsBindingSource.DataMember = "CustomerPayments";
@@ -251,6 +180,93 @@
             // 
             this.customerPaymentsTableAdapter.ClearBeforeFill = true;
             // 
+            // PrintReceipt
+            // 
+            this.PrintReceipt.ActiveControl = null;
+            this.PrintReceipt.Location = new System.Drawing.Point(1029, 505);
+            this.PrintReceipt.Margin = new System.Windows.Forms.Padding(4);
+            this.PrintReceipt.Name = "PrintReceipt";
+            this.PrintReceipt.Size = new System.Drawing.Size(155, 55);
+            this.PrintReceipt.Style = MetroFramework.MetroColorStyle.Green;
+            this.PrintReceipt.TabIndex = 4;
+            this.PrintReceipt.Text = "Print Receipt";
+            this.PrintReceipt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PrintReceipt.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.PrintReceipt.UseSelectable = true;
+            this.PrintReceipt.Click += new System.EventHandler(this.PrintReceipt_Click);
+            // 
+            // ordernumberDataGridViewTextBoxColumn
+            // 
+            this.ordernumberDataGridViewTextBoxColumn.DataPropertyName = "order_number";
+            this.ordernumberDataGridViewTextBoxColumn.HeaderText = "Order Number";
+            this.ordernumberDataGridViewTextBoxColumn.Name = "ordernumberDataGridViewTextBoxColumn";
+            this.ordernumberDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ordernumberDataGridViewTextBoxColumn.Width = 167;
+            // 
+            // recieptnoDataGridViewTextBoxColumn
+            // 
+            this.recieptnoDataGridViewTextBoxColumn.DataPropertyName = "reciept_no";
+            this.recieptnoDataGridViewTextBoxColumn.HeaderText = "Receipt No";
+            this.recieptnoDataGridViewTextBoxColumn.Name = "recieptnoDataGridViewTextBoxColumn";
+            this.recieptnoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.recieptnoDataGridViewTextBoxColumn.Width = 135;
+            // 
+            // ordertypeDataGridViewTextBoxColumn
+            // 
+            this.ordertypeDataGridViewTextBoxColumn.DataPropertyName = "order_type";
+            this.ordertypeDataGridViewTextBoxColumn.HeaderText = "Order Type";
+            this.ordertypeDataGridViewTextBoxColumn.Name = "ordertypeDataGridViewTextBoxColumn";
+            this.ordertypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ordertypeDataGridViewTextBoxColumn.Width = 136;
+            // 
+            // dueamountDataGridViewTextBoxColumn
+            // 
+            this.dueamountDataGridViewTextBoxColumn.DataPropertyName = "due_amount";
+            this.dueamountDataGridViewTextBoxColumn.HeaderText = "Due Amount";
+            this.dueamountDataGridViewTextBoxColumn.Name = "dueamountDataGridViewTextBoxColumn";
+            this.dueamountDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dueamountDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // orderdateDataGridViewTextBoxColumn
+            // 
+            this.orderdateDataGridViewTextBoxColumn.DataPropertyName = "order_date";
+            this.orderdateDataGridViewTextBoxColumn.HeaderText = "Order Date";
+            this.orderdateDataGridViewTextBoxColumn.Name = "orderdateDataGridViewTextBoxColumn";
+            this.orderdateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.orderdateDataGridViewTextBoxColumn.Width = 136;
+            // 
+            // paymentplanDataGridViewTextBoxColumn
+            // 
+            this.paymentplanDataGridViewTextBoxColumn.DataPropertyName = "payment_plan";
+            this.paymentplanDataGridViewTextBoxColumn.HeaderText = "Payment Plan";
+            this.paymentplanDataGridViewTextBoxColumn.Name = "paymentplanDataGridViewTextBoxColumn";
+            this.paymentplanDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentplanDataGridViewTextBoxColumn.Width = 156;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
+            this.totalDataGridViewTextBoxColumn.Width = 81;
+            // 
+            // paymentamountDataGridViewTextBoxColumn
+            // 
+            this.paymentamountDataGridViewTextBoxColumn.DataPropertyName = "payment_amount";
+            this.paymentamountDataGridViewTextBoxColumn.HeaderText = "Payment Amount";
+            this.paymentamountDataGridViewTextBoxColumn.Name = "paymentamountDataGridViewTextBoxColumn";
+            this.paymentamountDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentamountDataGridViewTextBoxColumn.Width = 190;
+            // 
+            // paymentdateDataGridViewTextBoxColumn
+            // 
+            this.paymentdateDataGridViewTextBoxColumn.DataPropertyName = "payment_date";
+            this.paymentdateDataGridViewTextBoxColumn.HeaderText = "Payment Date";
+            this.paymentdateDataGridViewTextBoxColumn.Name = "paymentdateDataGridViewTextBoxColumn";
+            this.paymentdateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentdateDataGridViewTextBoxColumn.Width = 160;
+            // 
             // frm_paymentPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,6 +274,7 @@
             this.ClientSize = new System.Drawing.Size(1213, 572);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.txt_order_no);
+            this.Controls.Add(this.PrintReceipt);
             this.Controls.Add(this.btn_new_payment);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -283,13 +300,14 @@
         private technovisionDataSet technovisionDataSet;
         private System.Windows.Forms.BindingSource customerPaymentsBindingSource;
         private technovisionDataSetTableAdapters.CustomerPaymentsTableAdapter customerPaymentsTableAdapter;
+        private MetroFramework.Controls.MetroTile PrintReceipt;
         private System.Windows.Forms.DataGridViewTextBoxColumn ordernumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn recieptnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ordertypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dueamountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderdateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentplanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recieptnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentamountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentdateDataGridViewTextBoxColumn;
     }

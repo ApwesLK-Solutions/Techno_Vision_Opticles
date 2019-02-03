@@ -86,16 +86,18 @@ namespace TechnoVisionOptical.view
         {
             string type = grid_order_list.SelectedRows[0].Cells[2].Value.ToString();
             string orderNumber = grid_order_list.SelectedRows[0].Cells[0].Value.ToString();
+            string rno = "R" + orderNumber + "- 01";
+
             if (type == "S")
             {
                 Spec_customer rpt = new Spec_customer();
-                rpt.RecordSelectionFormula = "{specs_orders1.order_number} = " + "\"" + orderNumber + "\"";
+                rpt.RecordSelectionFormula = "{specs_orders1.order_number} = " + "\"" + orderNumber + "\" and {payments1.reciept_no} = "+"\""+rno+"\"";
                 new reportViewer(rpt).Show();
             }
             if (type == "L")
             {
                 lensesCustomer rpt = new lensesCustomer();
-                rpt.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + orderNumber + "\"";
+                rpt.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + orderNumber + "\" and {payments1.reciept_no} = " + "\"" + rno + "\"";
                 new reportViewer(rpt).Show();
             }
         }

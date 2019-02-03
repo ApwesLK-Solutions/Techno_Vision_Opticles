@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TechnoVisionOptical.model;
-
+using TechnoVisionOptical.reports;
 namespace TechnoVisionOptical.view
 {
     public partial class frm_paymentPlan : MetroFramework.Forms.MetroForm
@@ -33,10 +33,7 @@ namespace TechnoVisionOptical.view
 
         private Customer c;
 
-        private void btn_new_payment_Click(object sender, EventArgs e)
-        {
-            new frm_newPayment(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()).ShowDialog();
-        }
+      
 
         private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -47,6 +44,18 @@ namespace TechnoVisionOptical.view
         {
             customerPaymentsBindingSource.Filter = ("order_number LIKE '%" + txt_order_no.Text + "%'");
             
+        }
+
+        private void btn_new_payment_Click(object sender, EventArgs e)
+        {
+            new frm_newPayment(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()).ShowDialog();
+        }
+
+        private void PrintReceipt_Click(object sender, EventArgs e)
+        {
+            paymentReceipt rpt = new paymentReceipt();
+            rpt.RecordSelectionFormula = "{payments1.reciept_no} = " + "\"" + metroGrid1.SelectedRows[0].Cells[1].Value.ToString() +"\"";
+            new reportViewer(rpt).Show();
         }
 
         
