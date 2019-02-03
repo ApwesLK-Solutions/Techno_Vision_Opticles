@@ -28,51 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_ViewReports = new MetroFramework.Controls.MetroTile();
             this.btn_OrderContactLense = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_OrderCLense = new MetroFramework.Controls.MetroTile();
-            this.btn_OrderSpecs = new MetroFramework.Controls.MetroTile();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_OrderCLense = new MetroFramework.Controls.MetroTile();
+            this.btn_OrderSpecs = new MetroFramework.Controls.MetroTile();
+            this.btn_ViewReports = new MetroFramework.Controls.MetroTile();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.btn_OrderContactLense.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::TechnoVisionOptical.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 114);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_ViewReports
-            // 
-            this.btn_ViewReports.ActiveControl = null;
-            this.btn_ViewReports.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ViewReports.Location = new System.Drawing.Point(499, 3);
-            this.btn_ViewReports.Name = "btn_ViewReports";
-            this.btn_ViewReports.Size = new System.Drawing.Size(242, 157);
-            this.btn_ViewReports.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_ViewReports.TabIndex = 3;
-            this.btn_ViewReports.Text = "Reports";
-            this.btn_ViewReports.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.btn_ViewReports.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.btn_ViewReports.UseSelectable = true;
-            this.btn_ViewReports.Click += new System.EventHandler(this.btn_ViewReports_Click);
             // 
             // btn_OrderContactLense
             // 
@@ -112,102 +86,11 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(994, 326);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // btn_OrderCLense
-            // 
-            this.btn_OrderCLense.ActiveControl = null;
-            this.btn_OrderCLense.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OrderCLense.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_OrderCLense.Location = new System.Drawing.Point(3, 3);
-            this.btn_OrderCLense.Name = "btn_OrderCLense";
-            this.btn_OrderCLense.Size = new System.Drawing.Size(242, 157);
-            this.btn_OrderCLense.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_OrderCLense.TabIndex = 1;
-            this.btn_OrderCLense.Text = "New Contact Lense Order";
-            this.btn_OrderCLense.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.btn_OrderCLense.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.btn_OrderCLense.UseSelectable = true;
-            this.btn_OrderCLense.Click += new System.EventHandler(this.btn_OrderCLense_Click);
-            // 
-            // btn_OrderSpecs
-            // 
-            this.btn_OrderSpecs.ActiveControl = null;
-            this.btn_OrderSpecs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_OrderSpecs.Location = new System.Drawing.Point(251, 3);
-            this.btn_OrderSpecs.Name = "btn_OrderSpecs";
-            this.btn_OrderSpecs.Size = new System.Drawing.Size(242, 157);
-            this.btn_OrderSpecs.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_OrderSpecs.TabIndex = 2;
-            this.btn_OrderSpecs.Text = "New Spectacle Order";
-            this.btn_OrderSpecs.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.btn_OrderSpecs.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.btn_OrderSpecs.UseSelectable = true;
-            this.btn_OrderSpecs.Click += new System.EventHandler(this.btn_OrderSpecs_Click);
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile1.Location = new System.Drawing.Point(747, 3);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(244, 157);
-            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile1.TabIndex = 4;
-            this.metroTile1.Text = "Payment Plan Manager";
-            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile3.Location = new System.Drawing.Point(251, 166);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(242, 157);
-            this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 6;
-            this.metroTile3.Text = "Manage Frame List";
-            this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile3.UseSelectable = true;
-            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile2.Location = new System.Drawing.Point(3, 166);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(242, 157);
-            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 5;
-            this.metroTile2.Text = "Manage Customers";
-            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile2.UseSelectable = true;
-            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
-            // 
-            // metroTile5
-            // 
-            this.metroTile5.ActiveControl = null;
-            this.metroTile5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTile5.Location = new System.Drawing.Point(499, 166);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(242, 157);
-            this.metroTile5.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile5.TabIndex = 7;
-            this.metroTile5.Text = "Manage Testers";
-            this.metroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile5.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile5.UseSelectable = true;
-            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 644F));
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
@@ -231,6 +114,144 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(638, 114);
             this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // btn_OrderCLense
+            // 
+            this.btn_OrderCLense.ActiveControl = null;
+            this.btn_OrderCLense.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_OrderCLense.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_OrderCLense.Location = new System.Drawing.Point(3, 3);
+            this.btn_OrderCLense.Name = "btn_OrderCLense";
+            this.btn_OrderCLense.Size = new System.Drawing.Size(242, 157);
+            this.btn_OrderCLense.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_OrderCLense.TabIndex = 1;
+            this.btn_OrderCLense.Text = "New Contact Lense Order";
+            this.btn_OrderCLense.TileImage = global::TechnoVisionOptical.Properties.Resources.lensesM;
+            this.btn_OrderCLense.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btn_OrderCLense.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.btn_OrderCLense.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.btn_OrderCLense.UseSelectable = true;
+            this.btn_OrderCLense.UseTileImage = true;
+            this.btn_OrderCLense.Click += new System.EventHandler(this.btn_OrderCLense_Click);
+            // 
+            // btn_OrderSpecs
+            // 
+            this.btn_OrderSpecs.ActiveControl = null;
+            this.btn_OrderSpecs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_OrderSpecs.Location = new System.Drawing.Point(251, 3);
+            this.btn_OrderSpecs.Name = "btn_OrderSpecs";
+            this.btn_OrderSpecs.Size = new System.Drawing.Size(242, 157);
+            this.btn_OrderSpecs.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_OrderSpecs.TabIndex = 2;
+            this.btn_OrderSpecs.Text = "New Spectacle Order";
+            this.btn_OrderSpecs.TileImage = global::TechnoVisionOptical.Properties.Resources.specs;
+            this.btn_OrderSpecs.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btn_OrderSpecs.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.btn_OrderSpecs.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.btn_OrderSpecs.UseSelectable = true;
+            this.btn_OrderSpecs.UseTileImage = true;
+            this.btn_OrderSpecs.Click += new System.EventHandler(this.btn_OrderSpecs_Click);
+            // 
+            // btn_ViewReports
+            // 
+            this.btn_ViewReports.ActiveControl = null;
+            this.btn_ViewReports.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_ViewReports.Location = new System.Drawing.Point(499, 3);
+            this.btn_ViewReports.Name = "btn_ViewReports";
+            this.btn_ViewReports.Size = new System.Drawing.Size(242, 157);
+            this.btn_ViewReports.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_ViewReports.TabIndex = 3;
+            this.btn_ViewReports.Text = "Reports";
+            this.btn_ViewReports.TileImage = global::TechnoVisionOptical.Properties.Resources.reportsM;
+            this.btn_ViewReports.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btn_ViewReports.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.btn_ViewReports.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.btn_ViewReports.UseSelectable = true;
+            this.btn_ViewReports.UseTileImage = true;
+            this.btn_ViewReports.Click += new System.EventHandler(this.btn_ViewReports_Click);
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTile1.Location = new System.Drawing.Point(747, 3);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(244, 157);
+            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile1.TabIndex = 4;
+            this.metroTile1.Text = "Payment Plan Manager";
+            this.metroTile1.TileImage = global::TechnoVisionOptical.Properties.Resources.planM;
+            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTile5.Location = new System.Drawing.Point(499, 166);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(242, 157);
+            this.metroTile5.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile5.TabIndex = 7;
+            this.metroTile5.Text = "Manage Testers";
+            this.metroTile5.TileImage = global::TechnoVisionOptical.Properties.Resources.testersM;
+            this.metroTile5.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.metroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile5.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile5.UseSelectable = true;
+            this.metroTile5.UseTileImage = true;
+            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTile3.Location = new System.Drawing.Point(251, 166);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(242, 157);
+            this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile3.TabIndex = 6;
+            this.metroTile3.Text = "Manage Frame List";
+            this.metroTile3.TileImage = global::TechnoVisionOptical.Properties.Resources.frames;
+            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.UseTileImage = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroTile2.Location = new System.Drawing.Point(3, 166);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(242, 157);
+            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile2.TabIndex = 5;
+            this.metroTile2.Text = "Manage Customers";
+            this.metroTile2.TileImage = global::TechnoVisionOptical.Properties.Resources.customersM;
+            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::TechnoVisionOptical.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(344, 114);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // metroTile4
             // 
@@ -260,11 +281,11 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Dashboard";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.btn_OrderContactLense.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
