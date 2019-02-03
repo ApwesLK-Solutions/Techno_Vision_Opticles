@@ -93,6 +93,8 @@
             this.btn_clearAll = new MetroFramework.Controls.MetroTile();
             this.btn_save = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // txt_trail
@@ -1545,11 +1547,37 @@
             this.metroTile1.UseTileImage = true;
             this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
+            // metroLabel29
+            // 
+            this.metroLabel29.AutoSize = true;
+            this.metroLabel29.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel29.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel29.Location = new System.Drawing.Point(245, 69);
+            this.metroLabel29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel29.Name = "metroLabel29";
+            this.metroLabel29.Size = new System.Drawing.Size(90, 25);
+            this.metroLabel29.TabIndex = 85;
+            this.metroLabel29.Text = "Right Eye";
+            // 
+            // metroLabel30
+            // 
+            this.metroLabel30.AutoSize = true;
+            this.metroLabel30.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel30.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel30.Location = new System.Drawing.Point(534, 69);
+            this.metroLabel30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel30.Name = "metroLabel30";
+            this.metroLabel30.Size = new System.Drawing.Size(82, 25);
+            this.metroLabel30.TabIndex = 86;
+            this.metroLabel30.Text = "Left  Eye";
+            // 
             // frm_contactlenses2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 634);
+            this.Controls.Add(this.metroLabel30);
+            this.Controls.Add(this.metroLabel29);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_clearAll);
             this.Controls.Add(this.metroTile1);
@@ -1693,5 +1721,7 @@
         private MetroFramework.Controls.MetroTile metroTile1;
         private MetroFramework.Controls.MetroTile btn_clearAll;
         private MetroFramework.Controls.MetroTile btn_save;
+        private MetroFramework.Controls.MetroLabel metroLabel29;
+        private MetroFramework.Controls.MetroLabel metroLabel30;
     }
 }

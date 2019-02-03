@@ -61,7 +61,7 @@ namespace TechnoVisionOptical.view
         private string getDueAmount(string order_id)
         {
             technovisionDataSetTableAdapters.order_summaryTableAdapter summary = new technovisionDataSetTableAdapters.order_summaryTableAdapter();
-            return summary.GetDueAmountByOrderID(order_id);
+            return summary.GetDueAmountByOrderID(order_id).ToString();
         }
         private void frm_newPayment_Load(object sender, EventArgs e)
         {

@@ -108,14 +108,14 @@
             this.metroGrid1.AllowUserToDeleteRows = false;
             this.metroGrid1.AllowUserToResizeRows = false;
             this.metroGrid1.AutoGenerateColumns = false;
-            this.metroGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.metroGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
@@ -135,7 +135,7 @@
             this.metroGrid1.DataSource = this.customerPaymentsBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
@@ -170,6 +170,7 @@
             this.ordernumberDataGridViewTextBoxColumn.HeaderText = "Order Number";
             this.ordernumberDataGridViewTextBoxColumn.Name = "ordernumberDataGridViewTextBoxColumn";
             this.ordernumberDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ordernumberDataGridViewTextBoxColumn.Width = 152;
             // 
             // ordertypeDataGridViewTextBoxColumn
             // 
@@ -177,6 +178,7 @@
             this.ordertypeDataGridViewTextBoxColumn.HeaderText = "Order Type";
             this.ordertypeDataGridViewTextBoxColumn.Name = "ordertypeDataGridViewTextBoxColumn";
             this.ordertypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ordertypeDataGridViewTextBoxColumn.Width = 125;
             // 
             // dueamountDataGridViewTextBoxColumn
             // 
@@ -184,6 +186,7 @@
             this.dueamountDataGridViewTextBoxColumn.HeaderText = "Due Amount";
             this.dueamountDataGridViewTextBoxColumn.Name = "dueamountDataGridViewTextBoxColumn";
             this.dueamountDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dueamountDataGridViewTextBoxColumn.Width = 137;
             // 
             // orderdateDataGridViewTextBoxColumn
             // 
@@ -191,6 +194,7 @@
             this.orderdateDataGridViewTextBoxColumn.HeaderText = "Order Date";
             this.orderdateDataGridViewTextBoxColumn.Name = "orderdateDataGridViewTextBoxColumn";
             this.orderdateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.orderdateDataGridViewTextBoxColumn.Width = 125;
             // 
             // paymentplanDataGridViewTextBoxColumn
             // 
@@ -198,6 +202,7 @@
             this.paymentplanDataGridViewTextBoxColumn.HeaderText = "Payment Plan";
             this.paymentplanDataGridViewTextBoxColumn.Name = "paymentplanDataGridViewTextBoxColumn";
             this.paymentplanDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentplanDataGridViewTextBoxColumn.Width = 143;
             // 
             // totalDataGridViewTextBoxColumn
             // 
@@ -205,6 +210,7 @@
             this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
             this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
             this.totalDataGridViewTextBoxColumn.ReadOnly = true;
+            this.totalDataGridViewTextBoxColumn.Width = 81;
             // 
             // recieptnoDataGridViewTextBoxColumn
             // 
@@ -212,6 +218,7 @@
             this.recieptnoDataGridViewTextBoxColumn.HeaderText = "Receipt No";
             this.recieptnoDataGridViewTextBoxColumn.Name = "recieptnoDataGridViewTextBoxColumn";
             this.recieptnoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.recieptnoDataGridViewTextBoxColumn.Width = 124;
             // 
             // paymentamountDataGridViewTextBoxColumn
             // 
@@ -219,6 +226,7 @@
             this.paymentamountDataGridViewTextBoxColumn.HeaderText = "Payment Amount";
             this.paymentamountDataGridViewTextBoxColumn.Name = "paymentamountDataGridViewTextBoxColumn";
             this.paymentamountDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentamountDataGridViewTextBoxColumn.Width = 173;
             // 
             // paymentdateDataGridViewTextBoxColumn
             // 
@@ -226,6 +234,7 @@
             this.paymentdateDataGridViewTextBoxColumn.HeaderText = "Payment Date";
             this.paymentdateDataGridViewTextBoxColumn.Name = "paymentdateDataGridViewTextBoxColumn";
             this.paymentdateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentdateDataGridViewTextBoxColumn.Width = 146;
             // 
             // customerPaymentsBindingSource
             // 

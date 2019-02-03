@@ -65,7 +65,7 @@ namespace TechnoVisionOptical.view
                 {
                     this.Hide();
                     frm_specs n = new frm_specs();
-                    n.ShowDialog();
+                    n.Show();
                     this.Close();
                     
                 }
@@ -73,7 +73,7 @@ namespace TechnoVisionOptical.view
                 {
                     this.Hide();
                     frm_contactlenses n = new frm_contactlenses();
-                    n.ShowDialog();
+                    n.Show();
                     this.Close();
                 }
             }

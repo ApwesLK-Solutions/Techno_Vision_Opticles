@@ -1715,6 +1715,8 @@ namespace TechnoVisionOptical {
             
             private global::System.Data.DataColumn columndiscount;
             
+            private global::System.Data.DataColumn columndue_amount1;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public order_summaryDataTable() {
@@ -1854,6 +1856,14 @@ namespace TechnoVisionOptical {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn due_amount1Column {
+                get {
+                    return this.columndue_amount1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1889,7 +1899,7 @@ namespace TechnoVisionOptical {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public order_summaryRow Addorder_summaryRow(string order_number, int customer_id, string order_type, string status, string due_amount, System.DateTime order_date, System.DateTime order_due_date, string payment_method, string payment_plan, double total, double advance, double discount) {
+            public order_summaryRow Addorder_summaryRow(string order_number, int customer_id, string order_type, string status, double due_amount, System.DateTime order_date, System.DateTime order_due_date, string payment_method, string payment_plan, double total, double advance, double discount, double due_amount1) {
                 order_summaryRow roworder_summaryRow = ((order_summaryRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1904,7 +1914,8 @@ namespace TechnoVisionOptical {
                         payment_plan,
                         total,
                         advance,
-                        discount};
+                        discount,
+                        due_amount1};
                 roworder_summaryRow.ItemArray = columnValuesArray;
                 this.Rows.Add(roworder_summaryRow);
                 return roworder_summaryRow;
@@ -1947,6 +1958,7 @@ namespace TechnoVisionOptical {
                 this.columntotal = base.Columns["total"];
                 this.columnadvance = base.Columns["advance"];
                 this.columndiscount = base.Columns["discount"];
+                this.columndue_amount1 = base.Columns["due_amount1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1962,7 +1974,7 @@ namespace TechnoVisionOptical {
                 base.Columns.Add(this.columnorder_type);
                 this.columnstatus = new global::System.Data.DataColumn("status", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnstatus);
-                this.columndue_amount = new global::System.Data.DataColumn("due_amount", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columndue_amount = new global::System.Data.DataColumn("due_amount", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndue_amount);
                 this.columnorder_date = new global::System.Data.DataColumn("order_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnorder_date);
@@ -1978,6 +1990,8 @@ namespace TechnoVisionOptical {
                 base.Columns.Add(this.columnadvance);
                 this.columndiscount = new global::System.Data.DataColumn("discount", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndiscount);
+                this.columndue_amount1 = new global::System.Data.DataColumn("due_amount1", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndue_amount1);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnorder_number}, true));
                 this.columnid.AutoIncrement = true;
@@ -1993,7 +2007,6 @@ namespace TechnoVisionOptical {
                 this.columnstatus.AllowDBNull = false;
                 this.columnstatus.MaxLength = 45;
                 this.columndue_amount.AllowDBNull = false;
-                this.columndue_amount.MaxLength = 45;
                 this.columnorder_date.AllowDBNull = false;
                 this.columnorder_due_date.AllowDBNull = false;
                 this.columnpayment_method.AllowDBNull = false;
@@ -2003,6 +2016,8 @@ namespace TechnoVisionOptical {
                 this.columntotal.AllowDBNull = false;
                 this.columnadvance.AllowDBNull = false;
                 this.columndiscount.AllowDBNull = false;
+                this.columndue_amount1.AllowDBNull = false;
+                this.columndue_amount1.Caption = "due_amount";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5387,9 +5402,9 @@ namespace TechnoVisionOptical {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string due_amount {
+            public double due_amount {
                 get {
-                    return ((string)(this[this.tableorder_summary.due_amountColumn]));
+                    return ((double)(this[this.tableorder_summary.due_amountColumn]));
                 }
                 set {
                     this[this.tableorder_summary.due_amountColumn] = value;
@@ -5470,6 +5485,17 @@ namespace TechnoVisionOptical {
                 }
                 set {
                     this[this.tableorder_summary.discountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double due_amount1 {
+                get {
+                    return ((double)(this[this.tableorder_summary.due_amount1Column]));
+                }
+                set {
+                    this[this.tableorder_summary.due_amount1Column] = value;
                 }
             }
         }
@@ -10547,7 +10573,6 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("customer_id", "customer_id");
             tableMapping.ColumnMappings.Add("order_type", "order_type");
             tableMapping.ColumnMappings.Add("status", "status");
-            tableMapping.ColumnMappings.Add("due_amount", "due_amount");
             tableMapping.ColumnMappings.Add("order_date", "order_date");
             tableMapping.ColumnMappings.Add("order_due_date", "order_due_date");
             tableMapping.ColumnMappings.Add("payment_method", "payment_method");
@@ -10555,6 +10580,7 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("total", "total");
             tableMapping.ColumnMappings.Add("advance", "advance");
             tableMapping.ColumnMappings.Add("discount", "discount");
+            tableMapping.ColumnMappings.Add("due_amount", "due_amount1");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -10594,8 +10620,8 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p5";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.DbType = global::System.Data.DbType.Double;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Double;
             param.IsNullable = true;
             param.SourceColumn = "due_amount";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -10691,8 +10717,8 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.DbType = global::System.Data.DbType.Double;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Double;
             param.IsNullable = true;
             param.SourceColumn = "due_amount";
             this._adapter.InsertCommand.Parameters.Add(param);
@@ -10779,8 +10805,8 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.DbType = global::System.Data.DbType.Double;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Double;
             param.IsNullable = true;
             param.SourceColumn = "due_amount";
             this._adapter.UpdateCommand.Parameters.Add(param);
@@ -10874,8 +10900,8 @@ namespace TechnoVisionOptical.technovisionDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p17";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.DbType = global::System.Data.DbType.Double;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Double;
             param.IsNullable = true;
             param.SourceColumn = "due_amount";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -11089,7 +11115,7 @@ FROM     order_summary INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int p1, string p2, int p3, string p4, string p5, string p6, System.DateTime p7, System.DateTime p8, string p9, string p10, double p11, double p12, double p13) {
+        public virtual int Delete(int p1, string p2, int p3, string p4, double p5, string p6, System.DateTime p7, System.DateTime p8, string p9, string p10, double p11, double p12, double p13) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p1));
             if ((p2 == null)) {
                 throw new global::System.ArgumentNullException("p2");
@@ -11104,12 +11130,7 @@ FROM     order_summary INNER JOIN
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(p4));
             }
-            if ((p5 == null)) {
-                throw new global::System.ArgumentNullException("p5");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(p5));
-            }
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((double)(p5));
             if ((p6 == null)) {
                 throw new global::System.ArgumentNullException("p6");
             }
@@ -11153,7 +11174,7 @@ FROM     order_summary INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string p1, int p2, string p3, string p4, string p5, System.DateTime p6, System.DateTime p7, string p8, string p9, double p10, double p11, double p12) {
+        public virtual int Insert(string p1, int p2, string p3, double p4, string p5, System.DateTime p6, System.DateTime p7, string p8, string p9, double p10, double p11, double p12) {
             if ((p1 == null)) {
                 throw new global::System.ArgumentNullException("p1");
             }
@@ -11167,12 +11188,7 @@ FROM     order_summary INNER JOIN
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(p3));
             }
-            if ((p4 == null)) {
-                throw new global::System.ArgumentNullException("p4");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(p4));
-            }
+            this.Adapter.InsertCommand.Parameters[3].Value = ((double)(p4));
             if ((p5 == null)) {
                 throw new global::System.ArgumentNullException("p5");
             }
@@ -11220,7 +11236,7 @@ FROM     order_summary INNER JOIN
                     string p1, 
                     int p2, 
                     string p3, 
-                    string p4, 
+                    double p4, 
                     string p5, 
                     System.DateTime p6, 
                     System.DateTime p7, 
@@ -11233,7 +11249,7 @@ FROM     order_summary INNER JOIN
                     string p14, 
                     int p15, 
                     string p16, 
-                    string p17, 
+                    double p17, 
                     string p18, 
                     System.DateTime p19, 
                     System.DateTime p20, 
@@ -11255,12 +11271,7 @@ FROM     order_summary INNER JOIN
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(p3));
             }
-            if ((p4 == null)) {
-                throw new global::System.ArgumentNullException("p4");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(p4));
-            }
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((double)(p4));
             if ((p5 == null)) {
                 throw new global::System.ArgumentNullException("p5");
             }
@@ -11298,12 +11309,7 @@ FROM     order_summary INNER JOIN
             else {
                 this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(p16));
             }
-            if ((p17 == null)) {
-                throw new global::System.ArgumentNullException("p17");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(p17));
-            }
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((double)(p17));
             if ((p18 == null)) {
                 throw new global::System.ArgumentNullException("p18");
             }
@@ -11350,7 +11356,7 @@ FROM     order_summary INNER JOIN
         public virtual int Update(
                     int p2, 
                     string p3, 
-                    string p4, 
+                    double p4, 
                     string p5, 
                     System.DateTime p6, 
                     System.DateTime p7, 
@@ -11363,7 +11369,7 @@ FROM     order_summary INNER JOIN
                     string p14, 
                     int p15, 
                     string p16, 
-                    string p17, 
+                    double p17, 
                     string p18, 
                     System.DateTime p19, 
                     System.DateTime p20, 
@@ -11378,7 +11384,7 @@ FROM     order_summary INNER JOIN
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual string GetDueAmountByOrderID(string p1) {
+        public virtual object GetDueAmountByOrderID(string p1) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
             if ((p1 == null)) {
                 throw new global::System.ArgumentNullException("p1");
@@ -11405,7 +11411,7 @@ FROM     order_summary INNER JOIN
                 return null;
             }
             else {
-                return ((string)(returnValue));
+                return ((object)(returnValue));
             }
         }
         

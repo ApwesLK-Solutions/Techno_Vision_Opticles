@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TechnoVisionOptical.reports;
 namespace TechnoVisionOptical.view
 {
     public partial class orderList : MetroFramework.Forms.MetroForm
@@ -63,9 +63,47 @@ namespace TechnoVisionOptical.view
             
         }
 
-        private void btn_print_Click(object sender, EventArgs e)
+        private void btn_print_comp_Click(object sender, EventArgs e)
         {
-
+            string type = grid_order_list.SelectedRows[0].Cells[2].Value.ToString();
+            string orderNumber = grid_order_list.SelectedRows[0].Cells[0].Value.ToString();
+            if (type == "S")
+            {
+                spec_Company rpt = new spec_Company();
+                rpt.RecordSelectionFormula = "{specs_orders1.order_number} = " + "\"" + orderNumber + "\"";
+                new reportViewer(rpt).Show();
+               
+            }
+            else
+            {
+                lensesCompany rpt = new lensesCompany();
+                rpt.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + orderNumber + "\"";
+                new reportViewer(rpt).Show();
+            }
         }
+
+        private void btn_print_cust_Click(object sender, EventArgs e)
+        {
+            string type = grid_order_list.SelectedRows[0].Cells[2].Value.ToString();
+            string orderNumber = grid_order_list.SelectedRows[0].Cells[0].Value.ToString();
+            if (type == "S")
+            {
+                Spec_customer rpt = new Spec_customer();
+                rpt.RecordSelectionFormula = "{specs_orders1.order_number} = " + "\"" + orderNumber + "\"";
+                new reportViewer(rpt).Show();
+            }
+            if (type == "L")
+            {
+                lensesCustomer rpt = new lensesCustomer();
+                rpt.RecordSelectionFormula = "{lense_orders1.order_number} = " + "\"" + orderNumber + "\"";
+                new reportViewer(rpt).Show();
+            }
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            ordersummaryBindingSource.Filter = ("order_number LIKE '%" + txt_search.Text + "%'");
+        }
+
     }
 }
