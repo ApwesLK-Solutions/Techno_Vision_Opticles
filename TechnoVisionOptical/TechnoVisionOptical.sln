@@ -5,6 +5,11 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnoVisionOptical", "TechnoVisionOptical\TechnoVisionOptical.csproj", "{7AB31EDD-EB5E-444A-9AC9-0E8BB47B988B}"
 EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "technovision", "technovision\technovision.isproj", "{11A5C370-CB4B-43EB-A560-FFB74C66016C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7AB31EDD-EB5E-444A-9AC9-0E8BB47B988B} = {7AB31EDD-EB5E-444A-9AC9-0E8BB47B988B}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
@@ -24,6 +29,16 @@ Global
 		{7AB31EDD-EB5E-444A-9AC9-0E8BB47B988B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7AB31EDD-EB5E-444A-9AC9-0E8BB47B988B}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
 		{7AB31EDD-EB5E-444A-9AC9-0E8BB47B988B}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.Debug|Any CPU.ActiveCfg = DVD-5
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.Debug|Any CPU.Build.0 = DVD-5
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.DVD-5|Any CPU.Build.0 = DVD-5
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.Release|Any CPU.ActiveCfg = SingleImage
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.Release|Any CPU.Build.0 = SingleImage
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{11A5C370-CB4B-43EB-A560-FFB74C66016C}.SingleImage|Any CPU.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
