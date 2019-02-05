@@ -95,6 +95,7 @@ namespace TechnoVisionOptical.view
             double newDue = due - amount;
             q.UpdateDueAmount(newDue.ToString(), OID);
             MSG.SUCCESS(this, "Payment Made Successfully...");
+            this.Close();
             }
             catch
             {

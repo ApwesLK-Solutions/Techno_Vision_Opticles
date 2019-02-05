@@ -248,12 +248,6 @@
     <Compile Include="view\frm_reports.Designer.cs">
       <DependentUpon>frm_reports.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\frm_selectCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\frm_selectCustomer.Designer.cs">
-      <DependentUpon>frm_selectCustomer.cs</DependentUpon>
-    </Compile>
     <Compile Include="view\frm_specs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -371,9 +365,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_reports.resx">
       <DependentUpon>frm_reports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\frm_selectCustomer.resx">
-      <DependentUpon>frm_selectCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\frm_specs.resx">
       <DependentUpon>frm_specs.cs</DependentUpon>

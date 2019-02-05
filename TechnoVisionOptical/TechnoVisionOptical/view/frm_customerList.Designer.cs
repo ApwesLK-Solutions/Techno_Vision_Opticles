@@ -59,39 +59,43 @@
             // 
             // 
             this.txt_search.CustomButton.Image = null;
-            this.txt_search.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txt_search.CustomButton.Location = new System.Drawing.Point(243, 2);
+            this.txt_search.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_search.CustomButton.Name = "";
-            this.txt_search.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txt_search.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.txt_search.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_search.CustomButton.TabIndex = 1;
             this.txt_search.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_search.CustomButton.UseSelectable = true;
             this.txt_search.CustomButton.Visible = false;
             this.txt_search.Lines = new string[0];
-            this.txt_search.Location = new System.Drawing.Point(234, 27);
+            this.txt_search.Location = new System.Drawing.Point(312, 33);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_search.MaxLength = 32767;
             this.txt_search.Name = "txt_search";
             this.txt_search.PasswordChar = '\0';
-            
+            this.txt_search.PromptText = "Search Here";
             this.txt_search.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_search.SelectedText = "";
             this.txt_search.SelectionLength = 0;
             this.txt_search.SelectionStart = 0;
             this.txt_search.ShortcutsEnabled = true;
-            this.txt_search.Size = new System.Drawing.Size(156, 23);
+            this.txt_search.Size = new System.Drawing.Size(208, 28);
             this.txt_search.TabIndex = 0;
             this.txt_search.UseSelectable = true;
             this.txt_search.WaterMark = "Search Here";
             this.txt_search.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_search.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
+            
             // 
             // btn_select
             // 
             this.btn_select.ActiveControl = null;
-            this.btn_select.Location = new System.Drawing.Point(651, 414);
+            this.btn_select.Location = new System.Drawing.Point(868, 510);
+            this.btn_select.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_select.Name = "btn_select";
-            this.btn_select.Size = new System.Drawing.Size(85, 45);
+            this.btn_select.Size = new System.Drawing.Size(113, 55);
             this.btn_select.Style = MetroFramework.MetroColorStyle.Green;
             this.btn_select.TabIndex = 5;
             this.btn_select.Text = "Select";
@@ -103,9 +107,10 @@
             // metroTile3
             // 
             this.metroTile3.ActiveControl = null;
-            this.metroTile3.Location = new System.Drawing.Point(402, 414);
+            this.metroTile3.Location = new System.Drawing.Point(536, 510);
+            this.metroTile3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(85, 45);
+            this.metroTile3.Size = new System.Drawing.Size(113, 55);
             this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile3.TabIndex = 3;
             this.metroTile3.Text = "Refresh";
@@ -117,6 +122,7 @@
             // technovisionDataSet
             // 
             this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.EnforceConstraints = false;
             this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // customersBindingSource
@@ -170,8 +176,8 @@
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(40, 62);
-            this.metroGrid1.Margin = new System.Windows.Forms.Padding(2);
+            this.metroGrid1.Location = new System.Drawing.Point(53, 76);
+            this.metroGrid1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroGrid1.MultiSelect = false;
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.ReadOnly = true;
@@ -190,7 +196,7 @@
             this.metroGrid1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.metroGrid1.RowTemplate.Height = 24;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(660, 266);
+            this.metroGrid1.Size = new System.Drawing.Size(880, 327);
             this.metroGrid1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroGrid1.TabIndex = 2;
             // 
@@ -200,7 +206,7 @@
             this.customerIdDataGridViewTextBoxColumn.HeaderText = "ID";
             this.customerIdDataGridViewTextBoxColumn.Name = "customerIdDataGridViewTextBoxColumn";
             this.customerIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.customerIdDataGridViewTextBoxColumn.Width = 48;
+            this.customerIdDataGridViewTextBoxColumn.Width = 58;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -208,7 +214,7 @@
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nameDataGridViewTextBoxColumn.Width = 75;
+            this.nameDataGridViewTextBoxColumn.Width = 91;
             // 
             // addressDataGridViewTextBoxColumn
             // 
@@ -216,7 +222,7 @@
             this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
             this.addressDataGridViewTextBoxColumn.ReadOnly = true;
-            this.addressDataGridViewTextBoxColumn.Width = 89;
+            this.addressDataGridViewTextBoxColumn.Width = 109;
             // 
             // professionDataGridViewTextBoxColumn
             // 
@@ -224,7 +230,7 @@
             this.professionDataGridViewTextBoxColumn.HeaderText = "Profession";
             this.professionDataGridViewTextBoxColumn.Name = "professionDataGridViewTextBoxColumn";
             this.professionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.professionDataGridViewTextBoxColumn.Width = 106;
+            this.professionDataGridViewTextBoxColumn.Width = 129;
             // 
             // ageDataGridViewTextBoxColumn
             // 
@@ -232,7 +238,7 @@
             this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
             this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
             this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ageDataGridViewTextBoxColumn.Width = 60;
+            this.ageDataGridViewTextBoxColumn.Width = 74;
             // 
             // phoneDataGridViewTextBoxColumn
             // 
@@ -240,7 +246,7 @@
             this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
             this.phoneDataGridViewTextBoxColumn.ReadOnly = true;
-            this.phoneDataGridViewTextBoxColumn.Width = 77;
+            this.phoneDataGridViewTextBoxColumn.Width = 94;
             // 
             // emailDataGridViewTextBoxColumn
             // 
@@ -248,14 +254,15 @@
             this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             this.emailDataGridViewTextBoxColumn.ReadOnly = true;
-            this.emailDataGridViewTextBoxColumn.Width = 71;
+            this.emailDataGridViewTextBoxColumn.Width = 86;
             // 
             // btn_addNewCustomer
             // 
             this.btn_addNewCustomer.ActiveControl = null;
-            this.btn_addNewCustomer.Location = new System.Drawing.Point(493, 414);
+            this.btn_addNewCustomer.Location = new System.Drawing.Point(657, 510);
+            this.btn_addNewCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_addNewCustomer.Name = "btn_addNewCustomer";
-            this.btn_addNewCustomer.Size = new System.Drawing.Size(152, 45);
+            this.btn_addNewCustomer.Size = new System.Drawing.Size(203, 55);
             this.btn_addNewCustomer.Style = MetroFramework.MetroColorStyle.Green;
             this.btn_addNewCustomer.TabIndex = 4;
             this.btn_addNewCustomer.Text = "Add New Customer";
@@ -266,16 +273,18 @@
             // 
             // frm_customerList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 471);
+            this.ClientSize = new System.Drawing.Size(1005, 580);
             this.Controls.Add(this.btn_addNewCustomer);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.btn_select);
             this.Controls.Add(this.txt_search);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "frm_customerList";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Customer List";

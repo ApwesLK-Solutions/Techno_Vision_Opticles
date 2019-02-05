@@ -35,6 +35,7 @@
             this.btn_specsSaleDaily = new MetroFramework.Controls.MetroTile();
             this.btn_lenseSaleDaily = new MetroFramework.Controls.MetroTile();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_to_date = new MetroFramework.Controls.MetroDateTime();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_specSaleMonthly = new MetroFramework.Controls.MetroTile();
@@ -42,7 +43,6 @@
             this.txt_from_date = new MetroFramework.Controls.MetroDateTime();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.btn_show_order_list = new MetroFramework.Controls.MetroTile();
-            this.txt_to_date = new MetroFramework.Controls.MetroDateTime();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -145,6 +145,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Monthly Reports";
             // 
+            // txt_to_date
+            // 
+            this.txt_to_date.Location = new System.Drawing.Point(326, 33);
+            this.txt_to_date.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_to_date.MinimumSize = new System.Drawing.Size(0, 30);
+            this.txt_to_date.Name = "txt_to_date";
+            this.txt_to_date.Size = new System.Drawing.Size(197, 30);
+            this.txt_to_date.TabIndex = 8;
+            // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
@@ -235,20 +244,11 @@
             this.btn_show_order_list.UseSelectable = true;
             this.btn_show_order_list.Click += new System.EventHandler(this.metroTile4_Click);
             // 
-            // txt_to_date
-            // 
-            this.txt_to_date.Location = new System.Drawing.Point(326, 33);
-            this.txt_to_date.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_to_date.MinimumSize = new System.Drawing.Size(0, 30);
-            this.txt_to_date.Name = "txt_to_date";
-            this.txt_to_date.Size = new System.Drawing.Size(197, 30);
-            this.txt_to_date.TabIndex = 8;
-            // 
             // frm_reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 368);
+            this.ClientSize = new System.Drawing.Size(1189, 368);
             this.Controls.Add(this.btn_show_order_list);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -256,6 +256,7 @@
             this.MaximizeBox = false;
             this.Name = "frm_reports";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Reports";
             this.TopMost = true;

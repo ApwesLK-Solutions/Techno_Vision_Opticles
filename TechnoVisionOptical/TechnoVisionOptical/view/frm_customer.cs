@@ -35,6 +35,7 @@ namespace TechnoVisionOptical.view
                     Customer.profession = txt_proffession.Text;
                     Customer.saveCustomer(this);
                     MSG.SUCCESS(this, "Customer Saved Successfully...Please Refresh the Customer List to Get Updated One");
+                    this.Close();
 
                 }
             }

@@ -24,10 +24,7 @@ namespace TechnoVisionOptical.view
             orderType = o_type;
         }
 
-        private void frm_orderComplete_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btn_viewCustomer_Click(object sender, EventArgs e)
         {

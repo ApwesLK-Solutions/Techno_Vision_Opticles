@@ -1644,8 +1644,10 @@
             this.Controls.Add(this.txt_trail);
             this.Controls.Add(this.metroLabel1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frm_contactlenses2";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "   Contact Lenses - Diagnosis";
             this.TopMost = true;

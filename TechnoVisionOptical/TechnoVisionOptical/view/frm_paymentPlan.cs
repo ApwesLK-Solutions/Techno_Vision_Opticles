@@ -42,13 +42,15 @@ namespace TechnoVisionOptical.view
 
         private void txt_order_no_TextChanged(object sender, EventArgs e)
         {
-            customerPaymentsBindingSource.Filter = ("order_number LIKE '%" + txt_order_no.Text + "%'");
+            customerPaymentsBindingSource.Filter = ("order_number LIKE '%" + txt_order_no.Text + "%' OR reciept_no LIKE '%" + txt_order_no.Text + "%'");
             
         }
 
         private void btn_new_payment_Click(object sender, EventArgs e)
         {
-            new frm_newPayment(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()).ShowDialog();
+            this.Close();
+            new frm_newPayment(metroGrid1.SelectedRows[0].Cells[0].Value.ToString()).Show();
+            
         }
 
         private void PrintReceipt_Click(object sender, EventArgs e)
@@ -58,6 +60,11 @@ namespace TechnoVisionOptical.view
             new reportViewer(rpt).Show();
         }
 
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            metroGrid1.Refresh();
+        }
+        
         
     }
 }
